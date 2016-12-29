@@ -6,22 +6,51 @@
 -->
 <html>
 
-{% include head.html %}
+<head>
+  <title>ICON Engineering, Inc.</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+  <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
 
 <body>
+  <!-- Header -->
+    <div id="header" class="alt">
+      <a class="logo" href="index.html"><strong>ICON</strong> Engineering, Inc.</a>
+      <nav id="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="news">News</a></li>
+          <li>
+            <a href="#">About ICON <i class="fa fa-angle-down"></i></a>
+            <ul>
+              <li><a href="about">Our Company</a></li>
+              <li><a href="about/management">Management</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Projects <i class="fa fa-angle-down"></i></a>
+            <ul>
+              <li><a href="current-projects">Current Projects</a></li>
+              <li><a href="past-projects">Past Projects</a></li>
+            </ul>
+          </li>
+          <li><a href="careers">Careers</a></li>
+          <li><a href="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
 
         <!-- Main -->
         <div id="main">
 
-                {% include header.html %}
-
                 {{ content }}
 
-            
-        </div>
 
-    {% include contact.html %}
-    {% include footer.html %}
+    
 
 </body>
 
