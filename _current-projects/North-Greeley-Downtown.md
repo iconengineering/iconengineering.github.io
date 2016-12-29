@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: North Greeley and Downtown Master Plan
 image: images/greeley-rain-drain.png
 categories:
