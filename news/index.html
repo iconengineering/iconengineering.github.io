@@ -1,0 +1,70 @@
+---
+title: News
+layout: page
+---
+
+    {% for post in site.categories['news'] limit:1 %}
+    {% assign base = '' %}
+    {% assign depth = page.url | split: '/' | size | minus: 0 %}
+    {% if    depth <= 1 %}{% assign base = '.' %}
+    {% elsif depth == 2 %}{% assign base = '..' %}
+    {% elsif depth == 3 %}{% assign base = '../..' %}
+    {% elsif depth == 4 %}{% assign base = '../../..' %}{% endif %}
+    <h3>{{post.title}}</h3>
+    <h6>{{ post.date | date_to_string }}</h6>
+    <div class="row">
+      <div class="6u 12u$(small)">
+
+          <p>{{post.excerpt}}</p>
+          <ul class="actions">
+            <li><a href="{{base}}{{post.url}}" class="button">More</a></li>
+          </ul>
+      
+      </div>
+      <div class="6u 12u$(small)">
+        <span class="image fit"><img src="{{base}}/{{post.image}}"></span>
+      </div>
+    </div>
+    {% endfor %}
+
+    <div class="row">
+      <h2>Past News</h2>
+      <div class="posts row">
+      {% for post in site.categories['news'] offset:1 limit:3 %}
+      {% assign base = '' %}
+      {% assign depth = page.url | split: '/' | size | minus: 0 %}
+      {% if    depth <= 1 %}{% assign base = '.' %}
+      {% elsif depth == 2 %}{% assign base = '..' %}
+      {% elsif depth == 3 %}{% assign base = '../..' %}
+      {% elsif depth == 4 %}{% assign base = '../../..' %}{% endif %}
+        <div class="4u 12u$(small)">
+          <a href="{{base}}{{post.url}}" class="image fit"><img src="{{base}}/{{post.image}}" alt="" /></a>
+          <h3>{{post.title}}</h3>
+          <h6>{{ post.date | date_to_string }}</h6>
+          <p>{{post.description}}</p>
+          <ul class="actions">
+            <li><a href="{{base}}{{post.url}}" class="button">More</a></li>
+          </ul>
+        </div>
+      {% endfor %}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="12u">
+      {% for post in site.categories['news'] offset:4 %}
+      {% assign base = '' %}
+      {% assign depth = page.url | split: '/' | size | minus: 0 %}
+      {% if    depth <= 1 %}{% assign base = '.' %}
+      {% elsif depth == 2 %}{% assign base = '..' %}
+      {% elsif depth == 3 %}{% assign base = '../..' %}
+      {% elsif depth == 4 %}{% assign base = '../../..' %}{% endif %}
+          <article>
+          <hr>
+            <a href="{{base}}{{post.url}}"><strong>{{post.title}}</strong></a>
+            <small>{{ post.date | date_to_string }}</small>
+            <p>{{post.description}}</p>
+          </article>
+      {% endfor %}
+      </div>
+    </div>

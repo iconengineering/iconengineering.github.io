@@ -1,0 +1,18 @@
+{% assign base = '' %}
+{% assign depth = page.url | split: '/' | size | minus: 0 %}
+{% if    depth <= 1 %}{% assign base = '.' %}
+{% elsif depth == 2 %}{% assign base = '..' %}
+{% elsif depth == 3 %}{% assign base = '../..' %}
+{% elsif depth == 4 %}{% assign base = '../../..' %}
+{% elsif depth == 5 %}{% assign base = '../../../..' %}
+{% elsif depth == 6 %}{% assign base = '../../../../..' %}
+{% elsif depth == 7 %}{% assign base = '../../../../../..' %}{% endif %}
+<head>
+  <title>ICON Engineering, Inc.</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <!--[if lte IE 8]><script src="{{base}}/assets/js/ie/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" href="{{base}}/assets/css/main.css" />
+  <!--[if lte IE 9]><link rel="stylesheet" href="{{base}}/assets/css/ie9.css" /><![endif]-->
+  <!--[if lte IE 8]><link rel="stylesheet" href="{{base}}/assets/css/ie8.css" /><![endif]-->
+</head>

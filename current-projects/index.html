@@ -1,0 +1,26 @@
+---
+title: Current Projects
+layout: page
+---
+
+<div class="posts row">
+{% for post in site.current-projects %}
+{% assign base = '' %}
+{% assign depth = page.url | split: '/' | size | minus: 0 %}
+{% if    depth <= 1 %}{% assign base = '.' %}
+{% elsif depth == 2 %}{% assign base = '..' %}
+{% elsif depth == 3 %}{% assign base = '../..' %}
+{% elsif depth == 4 %}{% assign base = '../../..' %}
+{% elsif depth == 5 %}{% assign base = '../../../..' %}
+{% elsif depth == 6 %}{% assign base = '../../../../..' %}
+{% elsif depth == 7 %}{% assign base = '../../../../../..' %}{% endif %}
+  <div class="4u 12u$(small)">
+    <a href="{{base}}{{post.url}}" class="image fit"><img src="{{base}}/{{post.image}}" alt="" /></a>
+    <h3>{{post.title}}</h3>
+    <p>{{post.description}}</p>
+    <ul class="actions">
+      <li><a href="{{base}}{{post.url}}" class="button">More</a></li>
+    </ul>
+  </div>
+{% endfor %}
+</div>

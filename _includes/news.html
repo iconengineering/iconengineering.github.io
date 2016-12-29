@@ -1,0 +1,52 @@
+{% for post in site.categories['news'] %}
+  {% if post.url == page.url %}
+      {% assign post_index0 = forloop.index0 %}
+      {% assign post_index1 = forloop.index %}
+  {% endif %}
+{% endfor %}
+{% for post in site.categories['news'] %}
+  {% if post_index0 == forloop.index %}
+      {% assign next_post = post.url %}
+      {% assign next_img = post.image %}
+      {% assign next_desc = post.description %}
+      {% assign next_title = post.title %}
+      {% assign next_date = post.date %}
+  {% endif %}
+  {% if post_index1 == forloop.index0 %}
+      {% assign prev_post = post.url %}
+      {% assign prev_img = post.image %}
+      {% assign prev_desc = post.description %}
+      {% assign prev_title = post.title %}
+      {% assign prev_date = post.date %}
+  {% endif %}
+{% endfor %}
+<!-- Sidebar -->
+<div class="box">
+{% if next_post %}
+    <section class="post preview">
+      <span class="image fit"><img src="{{base}}/{{next_img}}"></span>
+      <div class="content">
+        <h3>{{next_title}}</h3>
+        <h6>{{ next_date | date_to_string }}</h6>
+        <p>{{next_desc}}</p>
+        <ul class="actions">
+          <li><a href="{{base}}{{next_post}}" class="button">Next</a></li>
+        </ul>
+      </div>
+    </section>
+  <hr />
+  {% endif %}
+  {% if prev_post %}
+    <section class="post preview">
+      <span class="image fit"><img src="{{base}}/{{prev_img}}"></span>
+      <div class="content">
+        <h3>{{prev_title}}</h3>
+        <h6>{{ prev_date | date_to_string }}</h6>
+        <p>{{prev_desc}}</p>
+        <ul class="actions">
+          <li><a href="{{base}}{{prev_post}}" class="button">Previous</a></li>
+        </ul>
+      </div>
+    </section>
+  {% endif %}
+</div>

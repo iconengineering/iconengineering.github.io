@@ -1,0 +1,36 @@
+# Site settings
+title: ICON Engineering, Inc.
+subtitle:
+email: info@iconeng.com
+description:
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "//iconeng.com/" # the base hostname & protocol for your site
+author:
+street_address: 7000 S Yosemite St, Suite 120
+city: Centennial
+state: CO
+zip_code: 80015
+country: United States of America
+phone: 303.221.0802
+
+# Social settings
+500px_url:
+facebook_url: https://www.facebook.com/ICONEng/
+github_url:
+gitlab_url:
+googleplus_url:
+instagram_url:
+linkedin_url: https://www.linkedin.com/company/icon-engineering
+pinterest_url:
+slack_url:
+twitter_url:
+
+# Build settings
+markdown: kramdown
+exclude: [node_modules, gulpfile.js, pixelarity, package.json]
+categories: [news, past-projects, current-projects]
+collections:
+  past-projects:
+    output: true
+  current-projects:
+    output: true
