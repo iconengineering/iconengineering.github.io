@@ -12,18 +12,18 @@
 		@include padding(7em, 0);
 		@include vendor('background-image', (
 			'linear-gradient(to top, rgba(74,74,74,0.50), rgba(74,74,74,0.50))',
-			'url("../../images/ClearCreekDrop.jpg")'
+			'url("../../images/ClearCreekDropCover.jpg")'
 		));
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
 		position: relative;
 		text-align: center;
-		-webkit-transition: all 0.7s ease;
-		-moz-transition: all 0.7s ease;
-		-ms-transition: all 0.7s ease;
-		-o-transition: all 0.7s ease;
-		transition: all 0.7s ease;
+		-webkit-transition: all 1.5s ease;
+		-moz-transition: all 1.5s ease;
+		-ms-transition: all 1.5s ease;
+		-o-transition: all 1.5s ease;
+		transition: all 1.5s ease;
 
 		h2 {
 			font-size: 2.5em;

@@ -2094,7 +2094,7 @@ ul.joined-icons li {
 .logo {
   text-decoration: none;
   border: 0;
-  color: inherit;
+  color: #e09476;
   display: block;
   margin: 0 0 1.5em 0; }
   .logo:before {
@@ -2108,7 +2108,7 @@ ul.joined-icons li {
     background: #e09476;
     border-radius: 4px;
     color: #ffffff;
-    background-image: 'images/icon-logo-horizontal-dark.png';
+    content: '\f0ae';
     display: inline-block;
     font-size: 3em;
     height: 1.65em;
@@ -2211,20 +2211,20 @@ table.alt tbody tr td {
   background-color: #4a4a4a;
   color: #ffffff;
   padding: 7em 0 5em 0 ;
-  background-image: -moz-linear-gradient(to top, rgba(74,74,74,0.50), rgba(74,74,74,0.50)), url("../../images/ClearCreekDrop.jpg");
-  background-image: -webkit-linear-gradient(to top, rgba(74,74,74,0.50), rgba(74,74,74,0.50)), url("../../images/ClearCreekDrop.jpg");
-  background-image: -ms-linear-gradient(to top, rgba(74,74,74,0.50), rgba(74,74,74,0.50)), url("../../images/ClearCreekDrop.jpg");
-  background-image: linear-gradient(to top, rgba(74,74,74,0.50), rgba(74,74,74,0.50)), url("../../images/ClearCreekDrop.jpg");
+  background-image: -moz-linear-gradient(to top, rgba(74,74,74,0.50), rgba(74,74,74,0.50)), url("../../images/ClearCreekDropCover.jpg");
+  background-image: -webkit-linear-gradient(to top, rgba(74,74,74,0.50), rgba(74,74,74,0.50)), url("../../images/ClearCreekDropCover.jpg");
+  background-image: -ms-linear-gradient(to top, rgba(74,74,74,0.50), rgba(74,74,74,0.50)), url("../../images/ClearCreekDropCover.jpg");
+  background-image: linear-gradient(to top, rgba(74,74,74,0.50), rgba(74,74,74,0.50)), url("../../images/ClearCreekDropCover.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   text-align: center;
-  -webkit-transition: all 0.7s ease;
-  -moz-transition: all 0.7s ease;
-  -ms-transition: all 0.7s ease;
-  -o-transition: all 0.7s ease;
-  transition: all 0.7s ease; }
+  -webkit-transition: all 1.5s ease;
+  -moz-transition: all 1.5s ease;
+  -ms-transition: all 1.5s ease;
+  -o-transition: all 1.5s ease;
+  transition: all 1.5s ease; }
   .banner input[type="submit"],
   .banner input[type="reset"],
   .banner input[type="button"],
@@ -2802,7 +2802,7 @@ body {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  background: #ffffff;
+  background: #313c49;
   box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.075);
   height: 3.5em;
   left: 0;
@@ -2835,15 +2835,15 @@ body {
         #header > nav > ul > li > ul {
           display: none; }
         #header > nav > ul > li a {
-          color: inherit;
+          color: #e3e3e3;
           border: 0;
           padding: 0.35em 0.75em;
           border-radius: 4px; }
         #header > nav > ul > li:first-child {
           margin-left: 0 !important; }
         #header > nav > ul > li.dropotron-active a {
-          color: inherit !important;
-          background-color: rgba(144, 144, 144, 0.075); }
+          color: #cdcdcd !important;
+          background-color: rgba(255, 255, 255, 0.2); }
         #header > nav > ul > li.active a {
           color: #5e5e5e;
           font-weight: 700;
@@ -2881,6 +2881,11 @@ body {
     box-shadow: none;
     height: 8em;
     position: absolute; }
+    #header.alt li a {
+      color: #5e5e5e; }
+    #header.alt li.dropotron-active a {
+      color: #4a4a4a !important;
+      background-color: rgba(74, 74, 74, 0.15) !important; }
     #header.alt > .logo {
       display: none; }
     #header.alt > nav {
@@ -2894,9 +2899,9 @@ body {
       margin-left: 1em; } }
 
 .dropotron {
-  background: #fff;
+  background: #ffffff;
   border-radius: 4px;
-  box-shadow: 0 0.05em 0.175em 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.05em 0.175em 0 rgba(0, 0, 0, 0.4);
   list-style: none;
   margin-top: -0.75em;
   min-width: 10em;
@@ -3177,3 +3182,25 @@ body {
   @media screen and (max-width: 980px) {
     #navButton {
       display: block; } }
+
+.slide {
+  position: relative; }
+
+.slide_caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: .5em 1em;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  min-height: 40px;
+  background-color: rgba(76, 76, 76, 0.5);
+  color: #ffffff; }
+
+.slick-arrow, .slick-dots li button {
+  box-shadow: none !important; }
+
+.slick-arrow:before, .slick-dots:before {
+  color: #6e6e6e !important; }

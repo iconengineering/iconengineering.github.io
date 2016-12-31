@@ -8,6 +8,10 @@
 
 {% include head.html %}
 
+{% for extra_css in page.extra-css %}
+<link rel="stylesheet" type="text/css" href="{{ extra_css }}"/>
+{% endfor %}
+
 <body>
 
       {% include header.html %}
@@ -35,6 +39,10 @@
 
       {% include contact.html %}
       {% include footer.html %}
+
+      {% for extra_js in page.extra-js %}
+      <script src="{{ extra_js }}"></script>
+      {% endfor %}
 
 </body>
 

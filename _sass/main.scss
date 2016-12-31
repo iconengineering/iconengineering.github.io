@@ -62,3 +62,29 @@
 	@import 'layout/main';
 	@import 'layout/footer';
 	@import 'layout/navPanel';
+
+	.slide {
+		position: relative;
+	}
+
+	.slide_caption {
+		position: absolute;
+		bottom:0;
+		left:0;
+		width: 100%;
+		text-align: center;
+		padding: .5em 1em;
+		border-bottom-left-radius: _size(border-radius);
+		border-bottom-right-radius: _size(border-radius);
+		min-height: 40px;
+		background-color: rgba(76,76,76,.5);
+		color: _palette(bg);
+	}
+
+	.slick-arrow, .slick-dots li button {
+		box-shadow: none !important;
+	}
+
+	.slick-arrow:before, .slick-dots:before {
+		color: _palette(fg) !important;
+	}

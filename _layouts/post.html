@@ -55,6 +55,10 @@
 
       {% include footer.html %}
 
+      {% if page.extra-js %}
+      <script src=" {{ page.extra-js }} "></script>
+      {% endif %}
+
 </body>
 
 </html>

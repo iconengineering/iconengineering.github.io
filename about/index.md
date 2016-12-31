@@ -4,11 +4,16 @@ layout: page
 ---
 
 <!-- Content -->
-ICON is a mid-sized consulting firm with a national reputation for excellence.
-We are small enough to be responsive yet large enough to have the resources
-required for expansive civil engineering projects. We bring a committed,
-experienced team. ICON currently employs 20+ engineering staff with GIS, CAD,
-and administrative support.
+Founded in January 1997, ICON Engineering, Inc. is a locally owned and operated
+consulting civil engineering firm based in Centennial, Colorado.  Although our
+areas of service include nearly all aspects of civil engineering, we are best
+known for our expertise in water resources.  ICON specializes in complex
+floodplain modeling and hydrologic/hydraulic analyses, development of river and
+drainage master plans, stream stabilization and restoration improvements, bridge
+hydraulics, and design of utility and storm water infrastructure.  ICON’s
+capabilities also include roadway design, land development, and the development
+of geospatial and web-based solutions.   ICON currently employs over 20
+engineering staff with GIS, CAD, and administrative support.
 
 ICON offers its clients expertise in the Planning, Design, and Management of
 civil engineering projects, with emphasis on drainage, flood control, and

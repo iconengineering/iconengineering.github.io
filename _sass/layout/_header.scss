@@ -17,7 +17,7 @@
 
 	#header {
 		@include vendor('display', 'flex');
-		background: _palette(bg);
+		background: _palette(dark);
 		box-shadow: 0 0 0.15em 0 rgba(0,0,0,0.075);
 		height: 3.5em;
 		left: 0;
@@ -60,7 +60,7 @@
 					}
 
 					a {
-						color: inherit;
+						color: _palette(border);
 						border: 0;
 						padding: 0.35em 0.75em;
 						border-radius: _size(border-radius);
@@ -72,8 +72,8 @@
 
 					&.dropotron-active {
 						a {
-							color: inherit !important;
-							background-color: _palette(border-bg);
+							color: _palette(fg-light) !important;
+							background-color: _palette(accent1, border-bg-alt);
 						}
 					}
 
@@ -118,6 +118,19 @@
 			height: 8em;
 			position: absolute;
 
+			li {
+				a {
+					color: _palette(fg-bold);
+				}
+
+				&.dropotron-active {
+					a {
+						color: _palette(accent4, bg) !important;
+						background-color: rgba(74,74,74,.15) !important;
+					}
+				}
+			}
+
 			> .logo {
 				display: none;
 			}
@@ -155,9 +168,9 @@
 	}
 
 	.dropotron {
-		background: #fff;
+		background: _palette(bg);
 		border-radius: _size(border-radius);
-		box-shadow: 0 0.05em 0.175em 0 rgba(0,0,0,0.1);
+		box-shadow: 0 0.05em 0.175em 0 rgba(0,0,0,0.4);
 		list-style: none;
 		margin-top: -0.75em;
 		min-width: 10em;

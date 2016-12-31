@@ -28,9 +28,9 @@ twitter_url:
 # Build settings
 markdown: kramdown
 exclude: [node_modules, gulpfile.js, pixelarity, package.json]
-categories: [news, past-projects, current-projects]
+categories: [news, cutsheets, current-projects]
 collections:
-  past-projects:
+  cutsheets:
     output: true
   current-projects:
     output: true

@@ -9,7 +9,7 @@
 	.logo {
 		@include icon;
 		border: 0;
-		color: inherit;
+		color: _palette(accent1, bg);
 		display: block;
 		margin: 0 0 (_size(element-margin) * 0.75) 0;
 
@@ -17,7 +17,7 @@
 			background: _palette(accent1, bg);
 			border-radius: _size(border-radius);
 			color: _palette(accent1, fg-bold);
-			background-image: 'images/icon-logo-horizontal-dark.png';
+			content: '\f0ae';
 			display: inline-block;
 			font-size: 3em;
 			height: 1.65em;
