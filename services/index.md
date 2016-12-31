@@ -9,6 +9,16 @@ extra-css:
   - //cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css
 ---
 
+{% assign base = '' %}
+{% assign depth = page.url | split: '/' | size | minus: 0 %}
+{% if    depth <= 1 %}{% assign base = '.' %}
+{% elsif depth == 2 %}{% assign base = '..' %}
+{% elsif depth == 3 %}{% assign base = '../..' %}
+{% elsif depth == 4 %}{% assign base = '../../..' %}
+{% elsif depth == 5 %}{% assign base = '../../../..' %}
+{% elsif depth == 6 %}{% assign base = '../../../../..' %}
+{% elsif depth == 7 %}{% assign base = '../../../../../..' %}{% endif %}
+
 With ICON’s focus being drainageway and stormwater projects for public sector
 clients, ICON has been afforded opportunities to work with nearly all local
 governments within the Denver metropolitan area, and others along Colorado’s
