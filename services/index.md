@@ -19,6 +19,20 @@ extra-css:
 {% elsif depth == 6 %}{% assign base = '../../../../..' %}
 {% elsif depth == 7 %}{% assign base = '../../../../../..' %}{% endif %}
 
+<section>
+  <ul class="actions fit small">
+    <li><a href="#stormwater-design" class="button fit small special">Stormwater</a></li>
+    <li><a href="#stream-restoration" class="button fit small">Restoration</a></li>
+    <li><a href="#mitigation-master-planning" class="button fit small special">Mitigation</a></li>
+  </ul>
+  <ul class="actions fit small">  
+    <li><a href="#floodplain-analysis" class="button fit small">Floodplains</a></li>
+    <li><a href="#roadway-design-and-multi-modal-transportation" class="button fit small special">Roadways</a></li>
+    <li><a href="#parks--recreation" class="button fit small">Parks</a></li>
+    <li><a href="#gis-and-web-based-interfacing" class="button fit small special">Geospatial</a></li>
+  </ul>
+</section>
+
 With ICON’s focus being drainageway and stormwater projects for public sector
 clients, ICON has been afforded opportunities to work with nearly all local
 governments within the Denver metropolitan area, and others along Colorado’s

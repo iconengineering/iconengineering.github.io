@@ -15,42 +15,51 @@ capabilities also include roadway design, land development, and the development
 of geospatial and web-based solutions.   ICON currently employs over 20
 engineering staff with GIS, CAD, and administrative support.
 
-ICON offers its clients expertise in the Planning, Design, and Management of
-civil engineering projects, with emphasis on drainage, flood control, and
-watershed management. ICON specializes in complex floodplain modeling and
-hydrologic/hydraulic analyses, development of river and drainage master plans,
-stream stabilization and restoration, bridge hydraulics, roadways, and design of
-utility and storm water infrastructure. ICON currently serves as a production
-contractor developing Digital Flood Insurance Rate Maps (DFIRMs) for FEMA, the
-Colorado Water Conservation Board (CWCB), and the Urban Drainage and Flood
-Control District (UDFCD). We bring firsthand knowledge of flood insurance
-requirements; Community Rating System (CRS); and floodplain mapping protocols.
-Our GIS capabilities remain on the cutting edge where we routinely integrate GIS
-components into our master plans, often providing interactive components to
-enhance user experience.
+## Management
 
-Our technical expertise is already well known throughout Front Range
-communities. Since the 2013 floods, we have been actively working with
-communities including the City of Boulder, Boulder County, City of Aurora, Weld
-County, Fort Collins, and Estes Park, completing flood documentation, updating
-flood risk maps, and preparing flood recovery master plans and designs. For the
-City of Boulder, we completed a 2-dimensional floodplain model that essentially
-recreated the flood event on Fourmile Canyon Creek. ICON and the City is now
-using this information to further study the behavior of the flood and evaluate
-key areas that need to be restored to manage the changes.
-
-ICON’s expertise is also apparent in the vast number of stormwater and drainage
-master plans and designs the company has produced. Along the Colorado front
-range, planning studies have been completed for the UDFCD, City of Fort Collins,
-Southeast Metro Stormwater Authority, and the City of Boulder to name a few.
-Other clients have included:  CWCB; Colorado Springs; Grand Junction; Sterling;
-Summit County; and the Town of Eagle. Of particular note is our work in Grand
-Junction where we developed a Master Plan that the City enacted through capital
-expenditures in excess of $17 million. A portion of the cost was off-set by a
-FEMA Mitigation Grant that ICON helped to acquire by preparing a full benefit
-cost analysis. Each study involved a wide range of engineering tasks, including:
-Hydrologic and hydraulic modeling; floodplain delineation; damage assessment;
-alternatives analysis; economic analysis for benefits vs. costs; conceptual or
-preliminary design presentation; and report preparation.
-
-[Management]({{base}}management)
+<div class="box alt">
+  <div class="row">
+    <div class="9u">
+      <h4>Doug Williams, PE</h4>
+      <p>
+        With nearly 40 years of experience, Doug has a wide variety of engineering expertise in water resources planning, design and construction. He has completed numerous drainage and flood control designs ranging from less than $10,000 to over $5M in construction costs. His practical approach to problem solving has been coupled with an awareness of aesthetics that has produced facilities that are functional as well as community amenities.</p>
+    </div>
+    <div class="3u">
+      <span class="image fit"><img src="{{base}}/images/Doug.jpg" alt="" /></span>
+    </div>
+  </div>
+</div>
+<div class="box alt">
+  <div class="row">
+    <div class="9u">
+      <h4>Matt Ursetta, PE</h4>
+      <p>
+        Matt has over 30 years of experience in general civil engineering, including water resources, park development and design, roadway design, utility design, and development services. He has managed and designed hundreds of large, medium, and small drainage and flood control improvements throughout the state of Colorado. He also specializes in managing the completion of drawings and contract documents for drainage and flood control projects that include open channels, major storm sewer outfalls, regional detention ponds, water quality ponds, dams, hydraulics structures, and transportation/roadway systems.</p>
+    </div>
+    <div class="3u">
+      <span class="image fit"><img src="{{base}}/images/Matt.jpg" alt="" /></span>
+    </div>
+  </div>
+</div>
+<div class="box alt">
+  <div class="row">
+    <div class="9u">
+      <h4>Craig Jacobson, PE, CFM</h4>
+      <p>Craig has 20 years of water resource engineering with an emphasis in floodplain management and hydrologic and hydraulic analyses. Craig has managed and designed a large array of stormwater improvements throughout the state of Colorado. His project experience includes steady state and two-dimensional hydraulic modeling, stormwater improvement and channel stabilization designs, channel restoration and maintenance, master planning, and construction management. He completed or managed the hydraulic analysis of hundreds of miles of floodplains for creeks and rivers along Colorado’s Front Range and western slope, in addition to projects in Wyoming and South Dakota. Craig is a Certified Floodplain Manager (CFM) through ASFPM and instructs classes with the Urban Watershed Research Institute (UWRI) regarding preparation and processing of FEMA Letters of Map Changes (LOMCs).</p>
+    </div>
+    <div class="3u">
+      <span class="image fit"><img src="{{base}}/images/Craig.jpg" alt="" /></span>
+    </div>
+  </div>
+</div>
+<div class="box alt">
+  <div class="row">
+    <div class="9u">
+      <h4>Troy Carmann, PE, CFM</h4>
+      <p>Troy has 20 years of experience in civil engineering specializing in stormwater projects along the Front Range of his home state of Colorado. His design work includes stream restoration, channel stabilization, and flood control projects across numerous tributaries in the South Platte River Basin. Project designs have required coordination with the Army Corps of Engineers, Environmental Consultants, U.S. Fish and Wildlife Service, EPA, CDPHE, and local municipal entities. Additionally, he directs ICON’s GIS department and has been responsible for the production of countywide DFIRMs for FEMA Map Modernization projects in Colorado, South Dakota and Wyoming.  Troy routinely presents this work to city councils, commissions, and boards and has made multiple presentations at national, state, and local conferences.</p>
+    </div>
+    <div class="3u">
+      <span class="image fit"><img src="{{base}}/images/Troy.jpg" alt="" /></span>
+    </div>
+  </div>
+</div>
