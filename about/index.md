@@ -5,14 +5,14 @@ layout: page
 
 <!-- Content -->
 Founded in January 1997, ICON Engineering, Inc. is a locally owned and operated
-consulting civil engineering firm based in Centennial, Colorado.  Although our
+consulting civil engineering firm based in Centennial, Colorado. Although our
 areas of service include nearly all aspects of civil engineering, we are best
-known for our expertise in water resources.  ICON specializes in complex
+known for our expertise in water resources. ICON specializes in complex
 floodplain modeling and hydrologic/hydraulic analyses, development of river and
 drainage master plans, stream stabilization and restoration improvements, bridge
-hydraulics, and design of utility and storm water infrastructure.  ICON’s
+hydraulics, and design of utility and storm water infrastructure. ICON’s
 capabilities also include roadway design, land development, and the development
-of geospatial and web-based solutions.   ICON currently employs over 20
+of geospatial and web-based solutions. ICON currently employs over 20
 engineering staff with GIS, CAD, and administrative support.
 
 ## Management
@@ -56,7 +56,7 @@ engineering staff with GIS, CAD, and administrative support.
   <div class="row">
     <div class="9u">
       <h4>Troy Carmann, PE, CFM</h4>
-      <p>Troy has 20 years of experience in civil engineering specializing in stormwater projects along the Front Range of his home state of Colorado. His design work includes stream restoration, channel stabilization, and flood control projects across numerous tributaries in the South Platte River Basin. Project designs have required coordination with the Army Corps of Engineers, Environmental Consultants, U.S. Fish and Wildlife Service, EPA, CDPHE, and local municipal entities. Additionally, he directs ICON’s GIS department and has been responsible for the production of countywide DFIRMs for FEMA Map Modernization projects in Colorado, South Dakota and Wyoming.  Troy routinely presents this work to city councils, commissions, and boards and has made multiple presentations at national, state, and local conferences.</p>
+      <p>Troy has 20 years of experience in civil engineering specializing in stormwater projects along the Front Range of his home state of Colorado. His design work includes stream restoration, channel stabilization, and flood control projects across numerous tributaries in the South Platte River Basin. Project designs have required coordination with the Army Corps of Engineers, Environmental Consultants, U.S. Fish and Wildlife Service, EPA, CDPHE, and local municipal entities. Additionally, he directs ICON’s GIS department and has been responsible for the production of countywide DFIRMs for FEMA Map Modernization projects in Colorado, South Dakota and Wyoming. Troy routinely presents this work to city councils, commissions, and boards and has made multiple presentations at national, state, and local conferences.</p>
     </div>
     <div class="3u">
       <span class="image fit"><img src="{{base}}/images/Troy.jpg" alt="" /></span>

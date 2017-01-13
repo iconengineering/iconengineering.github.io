@@ -33,14 +33,6 @@ extra-css:
   </ul>
 </section>
 
-With ICON’s focus being drainageway and stormwater projects for public sector
-clients, ICON has been afforded opportunities to work with nearly all local
-governments within the Denver metropolitan area, and others along Colorado’s
-Front Range.   Much of this work has been completed in partnership with the
-Urban Drainage and Flood Control District (UDFCD), ICON’s one of ICON’s largest
-clients from our beginning.  Our general workload distribution for the past 5
-years (2011 through 2016) is shown below.
-
 ## Stormwater Design
 
 ICON has established long term contracts with many Front Range municipalities to
@@ -63,22 +55,26 @@ preparation, permitting, outreach and meeting facilitation, and meeting local
 design criteria.
 
 <div class="row">
-<div class="8u -2u 12u$(small)">
-<div class="sd-slides">
-<div class="image fit slide">
-<img src="{{base}}/images/sd-cherry-creek.jpg">
-<div class="slide_caption">Cherry Creek - City & County of Denver</div>
-</div>
-<div class="image fit slide">
-<img src="{{base}}/images/sd-spring-creek.jpg">
-<div class="slide_caption">Spring Creek - City of Fort Collins</div>
-</div>
-<div class="image fit slide">
-<img src="{{base}}/images/sd-clear-creek.jpg">
-<div class="slide_caption">Clear Creek - Adams County</div>
-</div>
-</div>
-</div>
+  <div class="8u -2u 12u$(small)">
+    <div class="sd-slides">
+      <div class="image fit slide">
+        <img src="{{base}}/images/sd-cherry-creek.jpg">
+        <div class="slide_caption">Cherry Creek - City & County of Denver</div>
+      </div>
+      <div class="image fit slide">
+        <img src="{{base}}/images/sd-spring-creek.jpg">
+        <div class="slide_caption">Spring Creek - City of Fort Collins</div>
+      </div>
+      <div class="image fit slide">
+        <img src="{{base}}/images/sd-clear-creek.jpg">
+        <div class="slide_caption">Clear Creek - Adams County</div>
+      </div>
+      <div class="image fit slide">
+        <img src="{{base}}/images/sd-divinney.jpg">
+        <div class="slide_caption">Divinney Reservoir - City of Lakewood</div>
+      </div>
+    </div>
+  </div>
 </div>
 <br />
 
@@ -91,7 +87,33 @@ and projects related to stream stability and sediment transport challenges where
 restoration activities provide a balance of geomorphic design, sediment
 transport, and ecological diversity.
 
-
+<div class="row">
+  <div class="8u -2u 12u$(small)">
+    <div class="sr-slides">
+      <div class="image fit slide">
+        <img src="{{base}}/images/sr-kennys-1.jpg">
+        <div class="slide_caption">West Fork Kenny's Run - Golden</div>
+      </div>
+      <div class="image fit slide">
+        <img src="{{base}}/images/sr-babiyar.jpg">
+        <div class="slide_caption">Babi Yar Park - City and County of Denver</div>
+      </div>
+      <div class="image fit slide">
+      <img src="{{base}}/images/sr-kennys-2.jpg">
+      <div class="slide_caption">West Fork Kenny's Run - Golden</div>
+      </div>
+      <div class="image fit slide">
+        <img src="{{base}}/images/sr-woodie.jpg">
+        <div class="slide_caption">Little Dry Creek and Woodie Hollow Park - Cherry Hills Village</div>
+      </div>
+      <div class="image fit slide">
+        <img src="{{base}}/images/sr-kennys-3.jpg">
+        <div class="slide_caption">West Fork Kenny's Run - Golden</div>
+      </div>
+    </div>
+  </div>
+</div>
+<br />
 
 ## Mitigation Master Planning
 
@@ -102,7 +124,21 @@ hydraulic modeling, floodplain delineation, damage assessment, geomorphology,
 stream stabilization, alternatives analysis, economic analysis for benefits vs.
 costs, conceptual or preliminary design presentation, and report preparation.
 
-
+<div class="row">
+  <div class="8u -2u 12u$(small)">
+    <div class="mp-slides">
+      <div class="image fit slide">
+        <img src="{{base}}/images/mp-coalcreek.jpg">
+        <div class="slide_caption">Upper Coal Creek Watershed</div>
+      </div>
+      <div class="image fit slide">
+        <img src="{{base}}/images/mp-lyons.jpg">
+        <div class="slide_caption">Town of Lyons</div>
+      </div>
+    </div>
+  </div>
+</div>
+<br />
 
 
 ## Floodplain Analysis
@@ -115,7 +151,17 @@ FEMA Region VIII states. ICON staff has experience in 2-dimensional modeling and
 unsteady flow hydraulics, including use of the FLO-2D, SRH-2D and HECRAS 2D
 software programs.
 
-
+<div class="row">
+  <div class="8u -2u 12u$(small)">
+    <div class="fa-slides">
+      <div class="image fit slide">
+        <img src="{{base}}/images/fa-panel.jpg">
+        <div class="slide_caption">FEMA LOMC Preparation and Reviews</div>
+      </div>
+    </div>
+  </div>
+</div>
+<br />
 
 ## Roadway Design and Multi-Modal Transportation
 
@@ -130,7 +176,37 @@ traffic control plans, drainage design, including storm sewers, swales, and
 permanent BMP’s, storm water management plans, and erosion and preparation of
 sediment and control plans.
 
-
+<div class="row">
+  <div class="8u -2u 12u$(small)">
+    <div class="rd-slides">
+      <div class="image fit slide">
+        <img src="{{base}}/images/rd-1.jpg">
+        <div class="slide_caption">...</div>
+      </div>
+      <div class="image fit slide">
+        <img src="{{base}}/images/rd-2.jpg">
+        <div class="slide_caption">...</div>
+      </div>
+      <div class="image fit slide">
+        <img src="{{base}}/images/rd-3.jpg">
+        <div class="slide_caption">...</div>
+      </div>
+      <div class="image fit slide">
+        <img src="{{base}}/images/rd-4.jpg">
+        <div class="slide_caption">...</div>
+      </div>
+      <div class="image fit slide">
+        <img src="{{base}}/images/rd-5.jpg">
+        <div class="slide_caption">...</div>
+      </div>
+      <div class="image fit slide">
+        <img src="{{base}}/images/rd-dahlia.jpg">
+        <div class="slide_caption">...</div>
+      </div>
+    </div>
+  </div>
+</div>
+<br />
 
 
 ## Parks & Recreation
@@ -149,7 +225,29 @@ improve floodplain conditions. From a recreation standpoint the project provides
 better connect with the riverine environments and incorporate recreation
 programming specific to each site.  
 
-
+<div class="row">
+  <div class="8u -2u 12u$(small)">
+    <div class="pr-slides">
+      <div class="image fit slide">
+        <img src="{{base}}/images/pr-1.jpg">
+        <div class="slide_caption">Johnson Habitat Park - City and County of Denver</div>
+      </div>
+      <div class="image fit slide">
+        <img src="{{base}}/images/pr-2.jpg">
+        <div class="slide_caption">Johnson Habitat Park - City and County of Denver</div>
+      </div>
+      <div class="image fit slide">
+        <img src="{{base}}/images/pr-3.jpg">
+        <div class="slide_caption">Sun Valley Community Park - City and County of Denver</div>
+      </div>
+      <div class="image fit slide">
+        <img src="{{base}}/images/pr-4.jpg">
+        <div class="slide_caption">Clear Creek Trail - City of Wheat Ridge</div>
+      </div>
+    </div>
+  </div>
+</div>
+<br />
 
 
 ## GIS and Web-based Interfacing
@@ -162,3 +260,16 @@ easily updated. Similarly, ICON integrates new tools and techniques to outreach
 and engage interested parties in our projects. For many projects, ICON will
 develop custom project websites to display general project information, as well
 as upcoming events, mailing list subscriptions, and web-based comment.
+
+<div class="row">
+  <div class="8u -2u 12u$(small)">
+    <div class="gis-slides">
+      <div class="image fit slide">
+        <img src="{{base}}/images/gis-oldtown.jpg">
+        <div class="slide_caption">Old Town Fort Collins</div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br />
