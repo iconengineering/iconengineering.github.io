@@ -2094,7 +2094,7 @@ ul.joined-icons li {
 .logo {
   text-decoration: none;
   border: 0;
-  color: #ca572a;
+  color: #ffffff;
   display: block;
   margin: 0 0 1.5em 0; }
   .logo:before {
@@ -2105,9 +2105,9 @@ ul.joined-icons li {
     font-weight: normal;
     text-transform: none !important; }
   .logo:before {
-    background: #ca572a;
+    background: #ffffff;
     border-radius: 4px;
-    color: #ffffff;
+    color: #ca572a;
     content: '\f0ac';
     display: inline-block;
     font-size: 3em;

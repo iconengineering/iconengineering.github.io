@@ -9,14 +9,14 @@
 	.logo {
 		@include icon;
 		border: 0;
-		color: _palette(accent1, bg);
+		color: _palette(accent1, fg-bold);
 		display: block;
 		margin: 0 0 (_size(element-margin) * 0.75) 0;
 
 		&:before {
-			background: _palette(accent1, bg);
+			background: _palette(accent1, fg-bold);
 			border-radius: _size(border-radius);
-			color: _palette(accent1, fg-bold);
+			color: _palette(accent1, bg);
 			content: '\f0ac';
 			display: inline-block;
 			font-size: 3em;
