@@ -7,10 +7,6 @@
     text-align: center;
     line-height: 1.2em;
 
-    .small {
-      font-size: 80%;
-    }
-
   }
 
 }
@@ -19,4 +15,22 @@
   li {
     padding-bottom: 1em !important;
   }
+}
+
+.small {
+  font-size: 80%;
+}
+
+.principal-contact {
+  padding-bottom: 1em;
+
+  .small {
+    display: block;
+  }
+}
+
+.principal {
+  font-family: _font(family-heading);
+  font-size: 1.1em;
+  font-weight: 700;
 }

@@ -2759,11 +2759,22 @@ table.alt tbody tr td {
   padding-bottom: 5em;
   text-align: center;
   line-height: 1.2em; }
-  .staff .profile .small {
-    font-size: 80%; }
 
 .menu li {
   padding-bottom: 1em !important; }
+
+.small {
+  font-size: 80%; }
+
+.principal-contact {
+  padding-bottom: 1em; }
+  .principal-contact .small {
+    display: block; }
+
+.principal {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.1em;
+  font-weight: 700; }
 
 /* Header */
 @-moz-keyframes reveal-header {

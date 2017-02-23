@@ -19,4 +19,4 @@ We are always looking for the best people to join our team. Typical needs includ
 >Ideal candidate will have 1 to 4 years experience. ArcGIS, geodatabase, spatial analysis skills essential. AutoCad experience is a plus.
 
 <hr>
-**Contact [careers@iconeng.com](mailto:careers@iconeng.com) if you think you would be a great addition to our company.**
+**Contact [icon@iconeng.com](mailto:icon@iconeng.com) if you think you would be a great addition to our company.**
