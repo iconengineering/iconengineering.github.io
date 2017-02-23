@@ -9,7 +9,7 @@
 	.banner {
 		@include color-button(accent4);
 		@include color-typography(accent4);
-		@include padding(7em, 0);
+		@include padding(10em, 0);
 		@include vendor('background-image', (
 			'linear-gradient(to top, rgba(74,74,74,0.50), rgba(74,74,74,0.50))',
 			'url("../../images/ClearCreekDropCover.jpg")'

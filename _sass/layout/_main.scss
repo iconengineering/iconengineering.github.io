@@ -14,7 +14,7 @@
 		max-width: calc(100% - 4em);
 
 		> header {
-			@include padding(4em, 0);
+			padding: 4em 0 0 0;
 			text-align: center;
 
 			.logo {

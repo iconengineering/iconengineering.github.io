@@ -6,7 +6,8 @@ $(document).ready(function(){
     speed: 500,
     fade: true,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
+    pauseOnFocus:false,
     cssEase: 'ease-in-out'
   });
 
@@ -17,7 +18,8 @@ $(document).ready(function(){
     speed: 500,
     fade: true,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
+    pauseOnFocus:false,
     cssEase: 'ease-in-out'
   });
 
@@ -28,7 +30,8 @@ $(document).ready(function(){
     speed: 500,
     fade: true,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
+    pauseOnFocus:false,
     cssEase: 'ease-in-out'
   });
 
@@ -39,7 +42,8 @@ $(document).ready(function(){
     speed: 500,
     fade: true,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
+    pauseOnFocus:false,
     cssEase: 'ease-in-out'
   });
 
@@ -50,7 +54,8 @@ $(document).ready(function(){
     speed: 500,
     fade: true,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
+    pauseOnFocus:false,
     cssEase: 'ease-in-out'
   });
 
@@ -61,7 +66,8 @@ $(document).ready(function(){
     speed: 500,
     fade: true,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
+    pauseOnFocus:false,
     cssEase: 'ease-in-out'
   });
 
@@ -72,7 +78,8 @@ $(document).ready(function(){
     speed: 500,
     fade: true,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
+    pauseOnFocus:false,
     cssEase: 'ease-in-out'
   });
 });

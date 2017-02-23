@@ -2,9 +2,6 @@
 title: Careers at ICON Engineering
 layout: page
 ---
-<header class="major">
-<h2>Careers at ICON Engineering</h2>
-</header>
 
 We are always looking for the best people to join our team. Typical needs include:  
 

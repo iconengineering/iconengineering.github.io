@@ -13,17 +13,9 @@
 		display: block;
 		margin: 0 0 (_size(element-margin) * 0.75) 0;
 
-		&:before {
-			background: _palette(accent1, fg-bold);
-			border-radius: _size(border-radius);
-			color: _palette(accent1, bg);
-			content: '\f0ac';
-			display: inline-block;
-			font-size: 3em;
-			height: 1.65em;
-			line-height: 1.65em;
-			text-align: center;
-			width: 1.65em;
+		img {
+			max-height: 1.25em;
+			vertical-align: middle;
 		}
 
 		@include breakpoint(large) {

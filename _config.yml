@@ -34,3 +34,5 @@ collections:
     output: true
   current-projects:
     output: true
+  staff:
+    output: false

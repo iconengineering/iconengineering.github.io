@@ -55,6 +55,7 @@
 	@import 'components/table';
 	@import 'components/banner';
 	@import 'components/wrapper';
+	@import 'components/staff';
 
 // Layout.
 
@@ -87,4 +88,16 @@
 
 	.slick-arrow:before, .slick-dots:before {
 		color: _palette(fg) !important;
+	}
+
+	.footnotes {
+		font-size: 70%;
+	}
+
+	.uniform {
+		height: 10em;
+		vertical-align: middle;
+		img {
+			object-fit: cover;
+		}
 	}
