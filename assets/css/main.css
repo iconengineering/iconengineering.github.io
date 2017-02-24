@@ -2203,10 +2203,10 @@ table.alt tbody tr td {
   background-color: #4a4a4a;
   color: #ffffff;
   padding: 10em 0 8em 0 ;
-  background-image: -moz-linear-gradient(to top, rgba(74,74,74,0.50), rgba(74,74,74,0.50)), url("../../images/ClearCreekDropCover.jpg");
-  background-image: -webkit-linear-gradient(to top, rgba(74,74,74,0.50), rgba(74,74,74,0.50)), url("../../images/ClearCreekDropCover.jpg");
-  background-image: -ms-linear-gradient(to top, rgba(74,74,74,0.50), rgba(74,74,74,0.50)), url("../../images/ClearCreekDropCover.jpg");
-  background-image: linear-gradient(to top, rgba(74,74,74,0.50), rgba(74,74,74,0.50)), url("../../images/ClearCreekDropCover.jpg");
+  background-image: -moz-linear-gradient(to top, rgba(74,74,74,0.50), rgba(74,74,74,0.50)), url("//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/ClearCreekDropCover2.jpg");
+  background-image: -webkit-linear-gradient(to top, rgba(74,74,74,0.50), rgba(74,74,74,0.50)), url("//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/ClearCreekDropCover2.jpg");
+  background-image: -ms-linear-gradient(to top, rgba(74,74,74,0.50), rgba(74,74,74,0.50)), url("//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/ClearCreekDropCover2.jpg");
+  background-image: linear-gradient(to top, rgba(74,74,74,0.50), rgba(74,74,74,0.50)), url("//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/ClearCreekDropCover2.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3228,3 +3228,17 @@ body {
   vertical-align: middle; }
   .uniform img {
     object-fit: cover; }
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #cdcdcd;
+  border-radius: 0; }
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #cdcdcd; }
+
+::-webkit-scrollbar-track {
+  background-color: #f7f7f7; }

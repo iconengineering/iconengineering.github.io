@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Milliken Stormwater</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.0/mapbox.js'></script>
+<script src='ext/milliken/flowdepth.js'></script>
+<script src='ext/milliken/problemAreas.js'></script>
+<script src='ext/milliken/reaches.js'></script>
+<script src='ext/milliken/basins.js'></script>
+<script src='ext/milliken/thalwegs.js'></script>
+<script src='ext/milliken/altNoDet.js'></script>
+<script src='ext/milliken/altDet.js'></script>
+<script src='ext/milliken/altPonds.js'></script>
+<script src='ext/milliken/recPlan.js'></script>
+<script src='ext/milliken/recPolys.js'></script>
+<script src='ext/milliken/recPonds.js'></script>
+<script src='ext/milliken/millikenBounds.js'></script>
+<script src='ext/milliken/fema100yr.js'></script>
+<script src='ext/milliken/icon100yr.js'></script>
+<script src='ext/milliken/icon100yrPoly.js'></script>
+<script src='ext/milliken/exStormSewer.js'></script>
+<script src='ext/milliken/exCulverts.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.0/mapbox.css' rel='stylesheet' />
+<style>
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+  body { margin:0; padding:0;font-family: "Open Sans","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;font-weight:300; }
+  strong {font-family: 'Oswald',"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+    font-weight:400;
+    }
+  ul{list-style-type: none;
+    -webkit-padding-start:0;}
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+  .leaflet-top-pane {
+      pointer-events: none;
+    }
+  .leaflet-popup-pane{z-index:100;}
+  .header{font-weight: bold;white-space:nowrap;vertical-align:top;text-align:right;padding-right:5px;}
+  .heavy{font-weight: bold;vertical-align:top;}
+
+  .leaflet-control-layers-toggle{
+    background-position: 208px -208px;
+    background-image: url(http://www.chartophile.com/img/icons-000000@2x.png);
+    opacity:1;
+    background-size: 52px 520px;
+    width: 260px;
+    height:52px;
+  }
+  .leaflet-control-layers-base{width:244px;}
+  .leaflet-popup-content-wrapper {box-shadow:0px 0px 4px 2px rgba(50%,50%,50%,0.25) !important;}
+  .leaflet-container {font-family: "Open Sans","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;font-weight:300;}
+
+  .title {
+        position:absolute;
+        z-index:100;
+        padding:5px;
+        border-radius:3px;
+        box-shadow:-1px 1px 1px rgba(0,0,0,0.5);
+        background:#fff;
+        top:10px;
+        left:70px;
+        text-align:center;
+        font-size:1.25em;
+    }
+   .title strong{
+    font-family: 'Oswald',"Open Sans","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+    font-weight:400;
+    font-size:1.75em;
+   }
+
+  .tabs {
+    width:auto;
+    display:inline-block;
+    position:absolute;
+    z-index:100;
+    bottom:10px;
+    left:10px;
+}
+
+    /*----- Tab Links -----*/
+    /* Clearfix */
+    .tab-links{margin:0;}
+    .tab-links:after {
+        display:block;
+        clear:both;
+        content:'';
+    }
+
+    .tab-links {
+        list-style:none;
+        padding-left:0px;
+    }
+
+    .tab-links li {
+        margin:0px 5px;
+        float:left;
+        list-style:none;
+        padding-left:0px;
+    }
+
+        .tab-links a {
+            padding:0px 5px;
+            display:inline-block;
+            border-radius:3px 3px 0px 0px;
+            background:#fff;
+            font-size:12px;
+            font-weight:600;
+            color:#404040;
+            transition:all linear 0.15s;
+            text-decoration:none;
+        }
+
+        .tab-links a:hover {
+            background:#ccc;
+            text-decoration:none;
+        }
+
+    li.active a{
+        background:#3887BE;
+        color:#fff;
+    }
+    li.active a:hover {
+        background:#3074a4;
+        color:#fff;
+    }
+
+    /*----- Content of Tabs -----*/
+    .tab-content {
+        padding:15px;
+        border-radius:3px;
+        box-shadow:-1px 1px 1px rgba(0,0,0,0.5);
+        background:#fff;
+    }
+
+        .tab {
+            display:none;
+        }
+
+        .tab.active {
+            display:block;
+        }
+
+  .menu-ui {
+  background:#fff;
+  position:absolute;
+  top:10px;right:10px;
+  z-index:1;
+  border-radius:3px;
+  width:120px;
+  border:1px solid rgba(0,0,0,0.4);
+  }
+  .menu-ui a {
+    font-size:.8em;
+    color:#404040;
+    display:block;
+    margin:0;padding:0;
+    padding:10px;
+    text-decoration:none;
+    border-bottom:1px solid rgba(0,0,0,0.25);
+    text-align:center;
+    }
+    .menu-ui a:first-child {
+      border-radius:3px 3px 0 0;
+      }
+    .menu-ui a:last-child {
+      border:none;
+      border-radius:0 0 3px 3px;
+      }
+    .menu-ui a:hover {
+      background:#f8f8f8;
+      color:#404040;
+      }
+    .menu-ui a.active {
+      background:#3887BE;
+      color:#FFF;
+      }
+      .menu-ui a.active:hover {
+        background:#3074a4;
+        }
+    .basins-scale ul, .alt-scale ul{
+        list-style:none;
+        padding-left:0px;
+    }
+    .basins ul,.alt ul{
+    margin: 0;
+    margin-bottom: 5px;
+    padding-left: 0;
+    float: left;
+    list-style: none;
+    }
+   #tab1 .basins-scale ul li, #tab3 .alt-scale ul li, #tab4 .alt-scale ul li {
+    font-size: 80%;
+    list-style: none;
+    margin-left: 0;
+    line-height: 18px;
+    margin-bottom: 2px;
+    }
+   #tab1 ul.basins li span {
+    display: block;
+    float: left;
+    height: 16px;
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 0;
+    border: 1px solid #999;
+    }
+   #tab3 ul.alt li span {
+    display: block;
+    float: left;
+    height: 4px;
+    width: 30px;
+    margin-right: 5px;
+    margin-top:6px;
+    margin-left: 0;
+    vertical-align:middle;
+    }
+    #tab4 ul.alt li span {
+    display: block;
+    float: left;
+    height: 4px;
+    width: 30px;
+    margin-right: 5px;
+    margin-top:6px;
+    margin-left: 0;
+    vertical-align:middle;
+    }
+    .flowDepth label,
+    .flowDepth span {
+        display:block;
+        float:left;
+        height:15px;
+        width:20%;
+        text-align:center;
+        font-size:12px;
+        color:#555;
+    }
+    .flowDepth label{
+        padding-bottom:15px;
+    }
+    #tab2 img{
+    max-height:35px;
+    vertical-align: top;
+    padding-right:15px;
+    margin-bottom:-10px;
+    }
+    #tab3 img {
+    max-height:35px;
+    vertical-align: top;
+    padding-right:14px;
+    padding-left:8px;
+    margin-bottom:-10px;
+    }
+    #tab4 img {
+    max-height:35px;
+    vertical-align: top;
+    padding-right:14px;
+    padding-left:8px;
+    margin-bottom:-10px;
+    }
+    .tab2item{padding-top:20px;}
+    #tab2 div{
+    font-size: 80%;
+    margin-left: 0;
+    line-height: 18px;
+    margin-bottom: 2px;
+    }
+
+    fieldset { width:240px; }
+</style>
+<script>jQuery(document).ready(function() {
+    jQuery('.tabs .tab-links a').on('click', function(e)  {
+        var currentAttrValue = jQuery(this).attr('href');
+
+        // Show/Hide Tabs
+        jQuery('.tabs ' + currentAttrValue).siblings().slideUp(400);
+        jQuery('.tabs ' + currentAttrValue).delay(400).slideDown(400);
+
+        // Change/remove current tab to active
+        jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+
+        e.preventDefault();
+    });
+});
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52156619-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+
+<nav id='menu-ui' class='menu-ui'></nav>
+<div class='title'>
+    <div><strong>Town of Milliken</strong></div>
+    <div>Stormwater Master Plan</div>
+</div>
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#tab1">Basins</a></li>
+        <li><a href="#tab4">Ex. Structures</a></li>
+        <li><a href="#tab2">Problem Areas</a></li>
+        <li><a href="#tab3">Alternatives</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="tab1" class="tab active">
+            <div class='basins-scale'>
+            <ul class='basins'><strong>Reaches:</strong>
+                <li><span style='background:#fc8d62;opacity:.5;'></span>Northern Tributary</li>
+                <li><span style='background:#ffd92f;opacity:.5'></span>Western Tributary</li>
+                <li><span style='background:#a6d854;opacity:.5'></span>Lola Park Tributary</li>
+                <li><span style='background:#a65628;opacity:.5'></span>Eastern Tributary</li>
+                <li><span style='background:#ff7f00;opacity:.5'></span>Big Thompson Tributary</li>
+            </ul>
+            </div>
+        </div>
+
+        <div id="tab4" class="tab">
+            <div class='alt-scale'>
+            <ul class='alt'><strong>Existing Structures:</strong>
+                <li><span style='background:#0000ff;'></span>Storm Sewer</li>
+                <li><img src="http://a.tiles.mapbox.com/v3/marker/pin-s-triangle+ffff66.png">Culverts</li>
+            </ul>
+            </div>
+        </div>
+
+        <div id="tab2" class="tab">
+            <div>Maximum Flow Depth</div>
+    <nav class='flowDepth clearfix'>
+    <span style='background:#00aaff;'></span>
+    <span style='background:#0055ff;'></span>
+    <span style='background:#0000ff;'></span>
+    <span style='background:#aa55ff;'></span>
+    <span style='background:#ff91ff;'></span>
+    <label>0-6"</label>
+    <label>6"-1'</label>
+    <label>1'-2'</label>
+    <label>2'-4'</label>
+    <label>4'+</label></nav>
+    <div class='tab2item'><img src="http://a.tiles.mapbox.com/v3/marker/pin-s-cross+ac0000.png">Identified Problem Area</div>
+        </div>
+
+        <div id="tab3" class="tab">
+            <div class='alt-scale'>
+            <ul class='alt'><strong>Improvements:</strong>
+                <li><span style='background:#e41a1c;'></span>Culvert</li>
+                <li><span style='background:#377eb8;'></span>Open Channel</li>
+                <li><span style='background:#4daf4a;'></span>Pipe</li>
+                <li><span style='background:#984ea3;'></span>Drop Structure</li>
+                <li><span style='background:#ff7f00;'></span>Other</li>
+                <li><img src="http://a.tiles.mapbox.com/v3/marker/pin-s-water+00aaff.png">Detention Pond</li>
+            </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id='map'></div>
+
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoiaWNvbmVuZyIsImEiOiJjaXBwc2V1ZnMwNGY3ZmptMzQ3ZmJ0ZXE1In0.mo_STWygoqFqRI-od05qFg';
+
+var map = L.mapbox.map('map','iconeng.j74911pj')
+    .setView([40.33, -104.855], 14);
+var layers = document.getElementById('menu-ui');
+// As with any other AJAX request, this technique is subject to the Same Origin Policy:
+// http://en.wikipedia.org/wiki/Same_origin_policy
+// So the CSV file must be on the same domain as the Javascript, or the server
+// delivering it should support CORS.
+
+// Set base style of vector data
+
+ function millikenBoundsStyle(feature) {
+    return {
+        weight: 4,
+        dashArray: '15,10,5,10',
+        lineCap:'butt',
+        fillOpacity: 0.05,
+        fillColor: 'yellow',
+        color: '#222',
+        opacity:.5
+      };
+    }
+
+ var millikenBoundsLayer = L.geoJson(millikenBounds, {
+      style: millikenBoundsStyle
+    });
+
+ function flowdepthStyle(feature) {
+      switch (feature.properties.Class) {
+        case 1: return {fillColor: '#00aaff',stroke:false,fillOpacity: 0.5};
+        case 2: return {fillColor: '#0055ff',stroke:false,fillOpacity: 0.5};
+        case 3: return {fillColor: '#0000ff',stroke:false,fillOpacity: 0.5};
+        case 4: return {fillColor: '#aa55ff',stroke:false,fillOpacity: 0.5};
+        case 5: return {fillColor: '#ff91ff',stroke:false,fillOpacity: 0.5};
+      }
+      return {
+        fillOpacity: 0.9
+      };
+    }
+
+
+    // Add vector data to map
+var flowdepthLayer = L.geoJson(flowdepth, {
+      style: flowdepthStyle
+    });
+
+var problemAreasLayer = L.mapbox.featureLayer();
+problemAreasLayer.on('layeradd', function(e) {
+    var marker = e.layer,
+        feature = marker.feature;
+    var popupContent =  "<table><tr><td class='header'>Problem Area: </td><td> " + feature.properties.Flood_Haza+"</td></tr></table>";
+        marker.bindPopup(popupContent);});
+problemAreasLayer.setGeoJSON(problemAreas);
+
+function reachesStyle(feature) {
+      switch (feature.properties.id) {
+        case 0: return {fillColor: '#ff7f00',fillOpacity: 0.25,color:'#fff', weight:2.5};
+        case 1: return {fillColor: '#fc8d62',fillOpacity: 0.25,color:'#fff', weight:2.5};
+        case 2: return {fillColor: '#a6d854',fillOpacity: 0.25,color:'#fff', weight:2.5};
+        case 3: return {fillColor: '#ffd92f',fillOpacity: 0.25,color:'#fff', weight:2.5};
+        case 4: return {fillColor: '#a65628',fillOpacity: 0.25,color:'#fff', weight:2.5};
+      }
+        return {
+      };
+    }
+
+    // Set hover colors
+    function highlightReaches(e) {
+      var layer = e.target;
+      layer.setStyle({
+        weight: 2.5,
+        opacity: 1,
+        color: '#555',
+        fillOpacity: 0.5,
+        fillColor: '#888'
+      });
+    }
+
+    // A function to reset the colors when a neighborhood is not longer 'hovered'
+    function resetReaches(e) {
+      reachesLayer.resetStyle(e.target);
+    }
+
+    // Tell MapBox.js what functions to call when mousing over and out of a neighborhood
+    function onReaches(feature, layer) {
+      layer.on({
+        mouseover: highlightReaches,
+        mouseout: resetReaches
+      });
+       if (feature.properties && feature.properties.name) {
+        layer.bindPopup("<span class='heavy'>"+feature.properties.name+"</span>");
+    }
+    }
+
+    // Add vector data to map
+var reachesLayer = L.geoJson(reaches, {
+      style: reachesStyle,
+      onEachFeature: onReaches
+    });
+
+function basinsStyle(feature) {
+      return {
+        weight: 1.75,
+        fillOpacity: 0.1,
+        fillColor: '#eee',
+        color: '#555',
+        opacity:.5
+      };
+    }
+
+    // Set hover colors
+    function highlightBasins(e) {
+      var layer = e.target;
+      layer.setStyle({
+        weight: 2.5,
+        opacity: 1,
+        color: '#555',
+        fillOpacity: 0.5,
+        fillColor: '#6B8FB2'
+      });
+    }
+
+    // A function to reset the colors when a neighborhood is not longer 'hovered'
+    function resetBasins(e) {
+      basinsLayer.resetStyle(e.target);
+    }
+
+    // Tell MapBox.js what functions to call when mousing over and out of a neighborhood
+    function onBasins(feature, layer) {
+      layer.on({
+        mouseover: highlightBasins,
+        mouseout: resetBasins
+      });
+       if (feature.properties && feature.properties.BasinID) {
+        layer.bindPopup("<table><tr><td class='header'>Basin ID: </td><td>"+feature.properties.BasinID+"</td></tr>"+
+                        "<tr><td class='header'>Area: </td><td>"+feature.properties.Acres+" Acres</td></tr>"+
+                        "<tr><td class='header'>Existing Q<sub>100</sub>: </td><td>"+feature.properties.Q100Ex+" cfs</td></tr>"+
+                        "<tr><td class='header'>Future Q<sub>100</sub>: </td><td>"+feature.properties.Q100Fut+" cfs</td></tr>"+
+                        "<tr><td class='header'>Existing Impervious: </td><td>"+feature.properties.ImpEx+"%</td></tr>"+
+                        "<tr><td class='header'>Future Impervious: </td><td>"+feature.properties.ImpFut+"%</td></tr></table>");
+    }
+    }
+
+    // Add vector data to map
+var basinsLayer = L.geoJson(basins, {
+      style: basinsStyle,
+      onEachFeature: onBasins
+    });
+
+     // Set base style of vector data
+ function thalwegsStyle(feature) {
+      return {
+        color: '#0000ff',
+        weight: 1.25,
+        opacity: .5,
+        lineJoin: 'miter',
+      };
+    }
+
+    // Set hover colors
+    function highlightThalwegs(e) {
+      var layer2 = e.target;
+      layer2.setStyle({
+        color: '#0066ff',
+        weight: 4,
+        opacity: .95,
+        lineJoin: 'miter',
+      });
+    }
+
+    // A function to reset the colors when a neighborhood is not longer 'hovered'
+    function resetThalwegs(e) {
+      thalwegsLayer.resetStyle(e.target);
+    }
+
+    // Tell MapBox.js what functions to call when mousing over and out of a neighborhood
+    function onThalwegs(feature, layer) {
+      layer.on({
+        mouseover: highlightThalwegs,
+        mouseout: resetThalwegs
+      });
+       if (feature.properties && feature.properties.Slope) {
+        layer.bindPopup("<span class='heavy'>Average Slope: </span> " + feature.properties.Slope+"%");
+    }
+    }
+
+    // Add vector data to map
+var thalwegsLayer = L.geoJson(thalwegs, {
+      style: thalwegsStyle,
+      onEachFeature: onThalwegs
+    });
+
+function fema100yrStyle(feature) {
+      return {
+        color: '#29A3CC',
+        weight: 2,
+        opacity: .75,
+        lineJoin: 'miter',
+        fillOpacity:.25,
+        fillColor:'#33ccff',
+      };
+    }
+var fema100yrLayer = L.geoJson(fema100yr, {
+      style: fema100yrStyle
+    });
+
+function icon100yrStyle(feature) {
+      return {
+        color: '#ac0000',
+        weight: 3,
+        opacity: .75,
+        lineJoin: 'miter',
+      };
+    }
+var icon100yrLayer = L.geoJson(icon100yr, {
+      style: icon100yrStyle
+    });
+
+function icon100yrPolyStyle(feature) {
+      return {
+        color: '#00cc00',
+        weight: 2,
+        opacity: .75,
+        lineJoin: 'miter',
+        fillOpacity:.25,
+        fillColor:'#00ff00',
+      };
+    }
+var icon100yrPolyLayer = L.geoJson(icon100yrPoly, {
+      style: icon100yrPolyStyle
+    });
+
+function altNoDetStyle(feature) {
+      switch (feature.properties.structure) {
+        case 'culvert': return {color: '#e41a1c', weight:3.5,opacity:0.9};
+        case 'openChannel': return {color: '#377eb8', weight:3.5,opacity:0.9};
+        case 'pipe': return {color: '#4daf4a', weight:3.5,opacity:0.9};
+        case 'dropStructure': return {color: '#984ea3', weight:3.5,opacity:0.9};
+        case 'other': return {color: '#ff7f00', weight:3.5,opacity:0.9};
+      }
+        return {
+      };
+    }
+
+    // Set hover colors
+    function highlightAltNoDet(e) {
+      var layer = e.target;
+      layer.setStyle({
+        weight: 3.5,
+        opacity: 1,
+        color: '#00ffff'
+      });
+    }
+
+    // A function to reset the colors when a neighborhood is not longer 'hovered'
+    function resetAltNoDet(e) {
+      altNoDetLayer.resetStyle(e.target);
+    }
+
+    // Tell MapBox.js what functions to call when mousing over and out of a neighborhood
+    function onAltNoDet(feature, layer) {
+      layer.on({
+        mouseover: highlightAltNoDet,
+        mouseout: resetAltNoDet
+      });
+       if (feature.properties && feature.properties.improvement) {
+        layer.bindPopup("<table><tr><td class='header'>Alt w/o Detention: </td><td> "+feature.properties.improvement+"</td></tr></table>");
+    }
+    }
+
+    // Add vector data to map
+var altNoDetLayer = L.geoJson(altNoDet, {
+      style: altNoDetStyle,
+      onEachFeature: onAltNoDet
+    });
+
+function altDetStyle(feature) {
+      switch (feature.properties.structure) {
+        case 'culvert': return {color: '#e41a1c', weight:3.5,opacity:0.9};
+        case 'openChannel': return {color: '#377eb8', weight:3.5,opacity:0.9};
+        case 'pipe': return {color: '#4daf4a', weight:3.5,opacity:0.9};
+        case 'dropStructure': return {color: '#984ea3', weight:3.5,opacity:0.9};
+        case 'other': return {color: '#ff7f00', weight:3.5,opacity:0.9};
+      }
+        return {
+      };
+    }
+
+    // Set hover colors
+    function highlightAltDet(e) {
+      var layer = e.target;
+      layer.setStyle({
+        weight: 3.5,
+        opacity: 1,
+        color: '#00ffff'
+      });
+    }
+
+    // A function to reset the colors when a neighborhood is not longer 'hovered'
+    function resetAltDet(e) {
+      altDetLayer.resetStyle(e.target);
+    }
+
+    // Tell MapBox.js what functions to call when mousing over and out of a neighborhood
+    function onAltDet(feature, layer) {
+      layer.on({
+        mouseover: highlightAltDet,
+        mouseout: resetAltDet
+      });
+       if (feature.properties && feature.properties.proposed) {
+        layer.bindPopup("<table><tr><td class='header'>Alt w/ Detention: </td><td> "+feature.properties.proposed+"</td></tr></table>");
+    }
+    }
+
+    // Add vector data to map
+var altDetLayer = L.geoJson(altDet, {
+      style: altDetStyle,
+      onEachFeature: onAltDet
+    });
+
+var altPondsLayer = L.mapbox.featureLayer();
+altPondsLayer.on('layeradd', function(e) {
+    var marker = e.layer,
+        feature = marker.feature;
+    var popupContent =  "<table><tr><td class='header'>Alt w/ Detention: </td><td> "+feature.properties.structure+"</td></tr></table>";
+        marker.bindPopup(popupContent);});
+altPondsLayer.setGeoJSON(altPonds);
+
+function recPolysStyle(feature) {
+      return {
+        weight: 1.75,
+        fillOpacity: 0.1,
+        fillColor: '#ff33cc',
+        color: '#ff33cc',
+        opacity:.5
+      };
+    }
+
+    // Set hover colors
+    function highlightRecPolys(e) {
+      var layer = e.target;
+      layer.setStyle({
+        weight: 2.5,
+        opacity: 1,
+        color: '#fff',
+        fillOpacity: 0.5,
+        fillColor: '#ff33cc'
+      });
+    }
+
+    // A function to reset the colors when a neighborhood is not longer 'hovered'
+    function resetRecPolys(e) {
+      recPolysLayer.resetStyle(e.target);
+    }
+
+    // Tell MapBox.js what functions to call when mousing over and out of a neighborhood
+    function onRecPolys(feature, layer) {
+      layer.on({
+        mouseover: highlightRecPolys,
+        mouseout: resetRecPolys
+      });
+       if (feature.properties && feature.properties.structure) {
+        layer.bindPopup("<table><tr><td class='header'>Recommended Plan: </td><td>"+feature.properties.structure+"</td></tr></table>");
+    }
+    }
+
+    // Add vector data to map
+var recPolysLayer = L.geoJson(recPolys, {
+      style: recPolysStyle,
+      onEachFeature: onRecPolys
+    });
+
+function recPlanStyle(feature) {
+      switch (feature.properties.structure) {
+        case 'culvert': return {color: '#e41a1c', weight:3.5,opacity:0.9};
+        case 'openChannel': return {color: '#377eb8', weight:3.5,opacity:0.9};
+        case 'pipe': return {color: '#4daf4a', weight:3.5,opacity:0.9};
+        case 'dropStructure': return {color: '#984ea3', weight:3.5,opacity:0.9};
+        case 'other': return {color: '#ff7f00', weight:3.5,opacity:0.9};
+      }
+        return {
+      };
+    }
+
+    // Set hover colors
+    function highlightRecPlan(e) {
+      var layer = e.target;
+      layer.setStyle({
+        weight: 3.5,
+        opacity: 1,
+        color: '#00ffff'
+      });
+    }
+
+    // A function to reset the colors when a neighborhood is not longer 'hovered'
+    function resetRecPlan(e) {
+      recPlanLayer.resetStyle(e.target);
+    }
+
+    // Tell MapBox.js what functions to call when mousing over and out of a neighborhood
+    function onRecPlan(feature, layer) {
+      layer.on({
+        mouseover: highlightRecPlan,
+        mouseout: resetRecPlan
+      });
+       if (feature.properties && feature.properties.proposed) {
+        layer.bindPopup("<table><tr><td class='header'>Recommended Plan: </td><td>"+feature.properties.proposed+"</td></tr></table>");
+    }
+    }
+
+    // Add vector data to map
+var recPlanLayer = L.geoJson(recPlan, {
+      style: recPlanStyle,
+      onEachFeature: onRecPlan
+    });
+
+var recPondsLayer = L.mapbox.featureLayer();
+recPondsLayer.on('layeradd', function(e) {
+    var marker = e.layer,
+        feature = marker.feature;
+    var popupContent =  "<table><tr><td class='header'>Recommended Plan: </td><td>"+feature.properties.structure+"</td></tr></table>";
+        marker.bindPopup(popupContent);});
+recPondsLayer.setGeoJSON(recPonds);
+
+function exStormSewerStyle(feature) {
+      return {
+        color: '#0000ff',
+        weight: 3,
+        opacity: .75,
+        lineJoin: 'miter',
+      };
+    }
+
+    // Set hover colors
+    function highlightExStormSewer(e) {
+      var layer = e.target;
+      layer.setStyle({
+        color: '#0066ff',
+        weight: 4,
+        opacity: .95,
+        lineJoin: 'miter',
+      });
+    }
+
+    // A function to reset the colors when a neighborhood is not longer 'hovered'
+    function resetExStormSewer(e) {
+      exStormSewerLayer.resetStyle(e.target);
+    }
+
+    // Tell MapBox.js what functions to call when mousing over and out of a neighborhood
+    function onExStormSewer(feature, layer) {
+      layer.on({
+        mouseover: highlightExStormSewer,
+        mouseout: resetExStormSewer
+      });
+       if (feature.properties && feature.properties.Existing_S) {
+        layer.bindPopup("<table><tr><td class='header'>Existing Structure: </td><td>" + feature.properties.Existing_S+"</td></tr></table>");
+    }
+    }
+
+    // Add vector data to map
+var exStormSewerLayer = L.geoJson(exStormSewer, {
+      style: exStormSewerStyle,
+      onEachFeature: onExStormSewer
+    });
+
+var exCulvertsLayer = L.mapbox.featureLayer();
+exCulvertsLayer.on('layeradd', function(e) {
+    var marker = e.layer,
+        feature = marker.feature;
+    var popupContent =  "<table><tr><td class='header'>Existing Structure: </td><td> " + feature.properties.Existing_C+"</td></tr></table>";
+        marker.bindPopup(popupContent);});
+exCulvertsLayer.setGeoJSON(exCulverts);
+
+addLayer(millikenBoundsLayer, 'Town Boundary', 1);
+addLayer(L.layerGroup([reachesLayer,basinsLayer]), 'Basins', 2);
+waitLayer(L.layerGroup([exStormSewerLayer,exCulvertsLayer]), 'Existing Structures', 3);
+waitLayer(L.layerGroup([icon100yrPolyLayer,fema100yrLayer]), 'Flood Boundary', 4);
+waitLayer(L.layerGroup([flowdepthLayer,problemAreasLayer]), 'Problem Areas', 5);
+waitLayer(altNoDetLayer, 'Alternative w/o Detention', 6);
+waitLayer(L.layerGroup([altDetLayer,altPondsLayer]), 'Alternative w/ Detention', 7);
+waitLayer(L.layerGroup([recPolysLayer,recPlanLayer,recPondsLayer]), 'Recommended Plan', 8);
+
+
+function addLayer(layer, name, zIndex) {
+    layer
+        .setZIndex(zIndex)
+        .addTo(map);
+
+
+
+    // Create a simple layer switcher that
+    // toggles layers on and off.
+    var link = document.createElement('a');
+        link.href = '#';
+        link.className = 'active';
+        link.innerHTML = name;
+
+    link.onclick = function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        if (map.hasLayer(layer)) {
+            map.removeLayer(layer);
+            this.className = '';
+        } else {
+            map.addLayer(layer);
+            this.className = 'active';
+        }
+    };
+
+    layers.appendChild(link);
+}
+
+function waitLayer(layer, name, zIndex) {
+    layer
+        .setZIndex(zIndex);
+
+
+
+    // Create a simple layer switcher that
+    // toggles layers on and off.
+    var link = document.createElement('a');
+        link.href = '#';
+        link.className = '';
+        link.innerHTML = name;
+
+    link.onclick = function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        if (map.hasLayer(layer)) {
+            map.removeLayer(layer);
+            this.className = '';
+        } else {
+            map.addLayer(layer);
+            this.className = 'active';
+        }
+    };
+
+    layers.appendChild(link);
+}
+</script>
+
+
+</body>
+</html>

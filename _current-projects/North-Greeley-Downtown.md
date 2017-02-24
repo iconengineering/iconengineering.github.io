@@ -1,7 +1,7 @@
 ---
 layout: project
 title: North Greeley and Downtown Master Plan
-image: images/greeley-rain-drain.png
+image: greeley-rain-drain.png
 categories:
 - current-projects
 description: Greeley Stormwater Master Plan

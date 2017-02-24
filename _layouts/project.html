@@ -1,9 +1,5 @@
 <!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 
 {% include head-alt.html %}
@@ -24,7 +20,7 @@
 
 
                   {% if page.image %}
-                	<span class="image main"><img src="{{base}}/{{page.image}}" alt="" /></span>
+                	<span class="image main"><img src="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/project/{{page.image}}" alt="" /></span>
                   {% endif %}
 
                 {{ content }}
@@ -35,7 +31,7 @@
             <div id="footer">
               <p class="copyright">&copy; Icon Engineering, Inc. All rights reserved.</p>
             </div>
-            
+
       {% include footer.html %}
 
 </body>

@@ -101,3 +101,10 @@
 			object-fit: cover;
 		}
 	}
+
+::-webkit-scrollbar{width: 6px;height: 6px;}
+
+::-webkit-scrollbar-thumb{background-color:_palette(fg-light); border-radius: 0;}
+::-webkit-scrollbar-thumb:hover{background-color:_palette(fg-light);}
+
+::-webkit-scrollbar-track{background-color:_palette(bg-alt);}

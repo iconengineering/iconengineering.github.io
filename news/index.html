@@ -22,7 +22,7 @@ layout: page
 
       </div>
       <div class="6u 12u$(small)">
-        <span class="image fit"><img src="{{base}}/{{post.image}}"></span>
+        <span class="image fit"><img src="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/news/{{post.image}}"></span>
       </div>
     </div>
     {% endfor %}
@@ -38,7 +38,7 @@ layout: page
       {% elsif depth == 3 %}{% assign base = '../..' %}
       {% elsif depth == 4 %}{% assign base = '../../..' %}{% endif %}
         <div class="4u 12u$(small)">
-          <a href="{{base}}{{post.url}}" class="image fit uniform"><img src="{{base}}/{{post.image}}" alt="" /></a>
+          <a href="{{base}}{{post.url}}" class="image fit uniform"><img src="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/news/{{post.image}}" alt="" /></a>
           <h3>{{post.title}}</h3>
           <h6>{{ post.date | date_to_string }}</h6>
           <p>{{post.description}}</p>

@@ -2,7 +2,7 @@
 layout: post
 title: Fourmile Canyon Creek Restoration
 author: Tyler
-image: images/news/Rosburg_CASFM2016.jpg
+image: Rosburg_CASFM2016.jpg
 categories:
 - news
 description: Fourmile Canyon Creek Restoration presentation at CASFM 2016

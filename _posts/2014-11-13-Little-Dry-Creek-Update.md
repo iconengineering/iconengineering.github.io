@@ -2,7 +2,7 @@
 layout: post
 title: Little Dry Creek Update
 author: Aaron
-image: images/woodie-hollow.jpg
+image: woodie-hollow.jpg
 categories:
 - news
 description: Bank stabilization update for Woodie Hollow Park in Cherry Hills Village

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>TCV MS4 Update</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css' rel='stylesheet' />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/jPushMenu.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+<style>
+
+.filter-ui {
+  background: #fff;
+  position: absolute;
+  top: 140px;
+  left: 10px;
+  z-index: 100;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+</style>
+</head>
+<body>
+<script src='https://cdn.firebase.com/js/client/1.1.1/firebase.js'></script>
+<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.24.0/L.Control.Locate.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.24.0/L.Control.Locate.css' rel='stylesheet' />
+
+<nav id="myNavmenu" class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
+
+    <div class="hidden-md hidden-lg xs-legend col-sm-12">
+      <b>Instructions:</b>
+        <p><small>Image upload still broken in Firefox, so use another browser.</small></p>
+        <p><small>Why not write some instructions for this thing?</small></p>
+        <p><small>I'm sure you can come up with something.</small></p>
+
+      <b>Rating:</b>
+        <ul class='legend clearfix'>
+          <li><img src="http://a.tiles.mapbox.com/v3/marker/pin-s+a1dc40.png"></span>1</li>
+          <li><img src="http://a.tiles.mapbox.com/v3/marker/pin-s+4ecdc4.png"></span>2</li>
+          <li><img src="http://a.tiles.mapbox.com/v3/marker/pin-s+ffa500.png"></span>3</li>
+          <li><img src="http://a.tiles.mapbox.com/v3/marker/pin-s+ac0000.png"></span>4</li>
+          <li><img src="http://a.tiles.mapbox.com/v3/marker/pin-s+660033.png"></span>5</li>
+        </ul>
+        <small>Source: <a href="http://www.iconeng.com">ICON Engineering; </a><a href='https://www.mapbox.com/about/maps/' target='_blank'>Maps &copy; Mapbox &copy; OpenStreetMap</a></small>
+    </div>
+    <h3>Layers</h3>
+</nav>
+<div id='main'>
+<div class="container-fluid">
+  <nav class="navbar navbar-default navbar-top">
+    <button type="button" class="toggle-menu menu-left push-body toggle-button">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <div class="hidden-xs"><h3>TCV MS4 Update</h3></div>
+    <div class="visible-xs small-header"><h6>TCV MS4 Update</h6></div>
+  </nav>
+
+<div id='map'>
+  <nav id='filters' class='filter-ui'></nav>
+  <iframe type="hidden" name="hideframe" style="display:none;"></iframe>
+  <div class="visible-md visible-lg">
+  <div class="bs-docs-section col-md-3 instructions">
+     <div class="panel panel-primary">
+        <div class="panel-leftheading">
+            <h3 class="panel-lefttitle">Instructions</h3>
+        </div>
+        <div class="panel-rightbody">
+          <p><small>Image upload still broken in Firefox, so use another browser.</small></p>
+          <p><small>Why not write some instructions for this thing?</small></p>
+          <p><small>I'm sure you can come up with something.</small></p>
+        </div><div class="clearfix">
+          </div>
+      </div>
+  </div>
+  <div class="bs-docs-section col-md-3 legend-main">
+     <div class="panel panel-primary  legend-box">
+        <div class="panel-leftheading">
+            <h3 class="panel-lefttitle">Legend</h3>
+        </div>
+        <div class="panel-rightbody">
+            <ul class='legend clearfix'>Rating
+              <li><img src="http://a.tiles.mapbox.com/v3/marker/pin-s+a1dc40.png"></span>1</li>
+              <li><img src="http://a.tiles.mapbox.com/v3/marker/pin-s+4ecdc4.png"></span>2</li>
+              <li><img src="http://a.tiles.mapbox.com/v3/marker/pin-s+ffa500.png"></span>3</li>
+              <li><img src="http://a.tiles.mapbox.com/v3/marker/pin-s+ac0000.png"></span>4</li>
+              <li><img src="http://a.tiles.mapbox.com/v3/marker/pin-s+660033.png"></span>5</li>
+            </ul>
+              <small>Source: <a href="http://www.iconeng.com">ICON Engineering; </a><a href='https://www.mapbox.com/about/maps/' target='_blank'>Maps &copy; Mapbox &copy; OpenStreetMap</a></small>
+        </div><div class="clearfix">
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoiZWJlbmRlbm5pcyIsImEiOiJ1M2tMMC0wIn0.HL9nr43JrA_mzhGVBI_B_Q'; // Mapbox API
+var base = new Firebase('https://tcv-ms4update.firebaseio.com/'); // Insert database name
+
+
+  var map = L.mapbox.map('map', 'iconeng.0811ba6b', {attributionControl: false}) // Insert basemap ID
+      .setView([39.600754, -105.031120], 15);
+      L.control.locate().addTo(map);
+
+      var layers = document.getElementById('myNavmenu');
+
+
+
+
+ var filterLayer = L.mapbox.featureLayer(base.on('child_added', function(snapshot) {
+    // And for each new marker, add a featureLayer.
+    L.mapbox.featureLayer(snapshot.val())
+        .eachLayer(function(l) {
+            // And each marker should have a label with its title.
+            var id = snapshot.name();
+            var geojson = l.toGeoJSON();
+            var content = '<h4>' + geojson.properties.title + '</h4>' +
+            '<div>Surface: <b>' + geojson.properties.surface + '</b></div>' +
+            '<div>Flow: <b>' + geojson.properties.flow + '</b></div>' +
+            '<div>Notes: ' + geojson.properties.notes + '</div>' +
+        '<br \/><img src="//s3-us-west-2.amazonaws.com/iconeng/tcv-ms4update-img/' + geojson.properties.random + '.' + geojson.properties.extension + '"><\/div>';
+
+
+            l.bindPopup(content, {closeButton:true, minWidth:273});
+
+        })
+        .addTo(map);
+}));
+
+var filters = document.getElementById('filters');
+
+// Wait until the marker layer is loaded in order to build a list of possible
+// types. If you are doing this with another featureLayer, you should change
+// map.featureLayer to the variable you have assigned to your featureLayer.
+filterLayer.on('ready', function() {
+// Collect the types of symbols in this layer. you can also just
+// hardcode an array of types if you know what you want to filter on,
+// like var types = ['foo', 'bar'];
+var typesObj = {}, types = [];
+var features = filterLayer.getGeoJSON().features;
+for (var i = 0; i < features.length; i++) {
+typesObj[features[i].properties['marker-symbol']] = true;
+}
+for (var k in typesObj) types.push(k);
+
+var checkboxes = [];
+// Create a filter interface.
+for (var i = 0; i < types.length; i++) {
+// Create an an input checkbox and label inside.
+var item = filters.appendChild(document.createElement('div'));
+var checkbox = item.appendChild(document.createElement('input'));
+var label = item.appendChild(document.createElement('label'));
+checkbox.type = 'checkbox';
+checkbox.id = types[i];
+checkbox.checked = true;
+// create a label to the right of the checkbox with explanatory text
+label.innerHTML = types[i];
+label.setAttribute('for', types[i]);
+// Whenever a person clicks on this checkbox, call the update().
+checkbox.addEventListener('change', update);
+checkboxes.push(checkbox);
+}
+
+// This function is called whenever someone clicks on a checkbox and changes
+// the selection of markers to be displayed.
+function update() {
+var enabled = {};
+// Run through each checkbox and record whether it is checked. If it is,
+// add it to the object of types to display, otherwise do not.
+for (var i = 0; i < checkboxes.length; i++) {
+if (checkboxes[i].checked) enabled[checkboxes[i].id] = true;
+}
+filterLayer.setFilter(function(feature) {
+// If this symbol is in the list, return true. if not, return false.
+// The 'in' operator in javascript does exactly that: given a string
+// or number, it says if that is in a object.
+// 2 in { 2: true } // true
+// 2 in { } // false
+return (feature.properties['marker-symbol'] in enabled);
+});
+}
+});
+</script>
+<script src="ext/jPushMenu.js"></script>
+
+<!--call jPushMenu, required-->
+<script>
+jQuery(document).ready(function($) {
+	$('.toggle-menu').jPushMenu();
+});
+</script>
+</body>
+</html>

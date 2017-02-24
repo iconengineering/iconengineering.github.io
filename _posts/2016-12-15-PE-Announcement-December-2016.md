@@ -2,10 +2,10 @@
 layout: post
 title: PE Announcement
 author: Craig
-image: images/news/applause.jpg
+image: applause.jpg
 categories:
 - news
-description: ICON staff earn their PE license
+description: ICON staff earn their PE license.
 ---
 
 Congratulations to ICON Engineering staff engineers Tyler Rosburg and Daniel

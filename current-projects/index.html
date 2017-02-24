@@ -15,12 +15,21 @@ layout: page
 {% elsif depth == 6 %}{% assign base = '../../../../..' %}
 {% elsif depth == 7 %}{% assign base = '../../../../../..' %}{% endif %}
   <div class="4u 12u$(small)">
-    <a href="{{base}}{{post.url}}" class="image fit"><img src="{{base}}/{{post.image}}" alt="" /></a>
+    {% if post.type == "archive" %}
+    <a href="{{base}}/{{post.link}}" class="image fit uniform"><img src="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/project/{{post.image}}" alt="" /></a>
+    <h3>{{post.title}}</h3>
+    <p>{{post.description}}</p>
+    <ul class="actions">
+      <li><a href="{{base}}/{{post.link}}" class="button">More</a></li>
+    </ul>
+    {% else %}
+    <a href="{{base}}{{post.url}}" class="image fit uniform"><img src="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/project/{{post.image}}" alt="" /></a>
     <h3>{{post.title}}</h3>
     <p>{{post.description}}</p>
     <ul class="actions">
       <li><a href="{{base}}{{post.url}}" class="button">More</a></li>
     </ul>
+    {% endif %}
   </div>
 {% endfor %}
 </div>

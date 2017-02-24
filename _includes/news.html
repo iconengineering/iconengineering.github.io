@@ -22,9 +22,9 @@
 {% endfor %}
 <!-- Sidebar -->
 <div class="box">
-{% if next_post %}
+{% if next_post %} 
     <section class="post preview">
-      <span class="image fit"><img src="{{base}}/{{next_img}}"></span>
+      <span class="image fit"><img src="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/news/{{next_img}}"></span>
       <div class="content">
         <h3>{{next_title}}</h3>
         <h6>{{ next_date | date_to_string }}</h6>
@@ -38,7 +38,7 @@
   {% endif %}
   {% if prev_post %}
     <section class="post preview">
-      <span class="image fit"><img src="{{base}}/{{prev_img}}"></span>
+      <span class="image fit"><img src="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/news/{{prev_img}}"></span>
       <div class="content">
         <h3>{{prev_title}}</h3>
         <h6>{{ prev_date | date_to_string }}</h6>

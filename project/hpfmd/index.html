@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>HPFMD Data Collection</title>
+<meta name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css' rel='stylesheet' />
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.structure.min.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/jPushMenu.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+<style>
+</style>
+</head>
+<body>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label.css' rel='stylesheet' />
+  <link href='css/leaflet.draw.css' rel='stylesheet' />
+  <script src='ext/leaflet.draw.js'></script>
+  <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.24.0/L.Control.Locate.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.24.0/L.Control.Locate.css' rel='stylesheet' />
+
+  <script>
+  $(document).ready(function() {
+      $('iframe').contents().find('body').css('margin','0px');
+      });
+  </script>
+
+<nav id="myNavmenu" class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
+
+    <div class="hidden-md hidden-lg xs-legend col-sm-12">
+      <div id="controls">
+        <p>Click points for more information, or add your own.</br></p>
+        <div class="col-md-12"><button class="btn btn-info btn-md" onclick="startEdits()" value="Click to Start Editing">Click to Start Editing</button></div>
+        <div class="col-md-12"><button class="btn btn-warning btn-md" onclick="stopEdits()" value="Stop Your Editing Session">Stop Your Editing Session</button></div><br>
+      </div>
+
+      <b>Legend:</b>
+        <ul class='legend clearfix'>Condition
+          <li><img class="marker-legend" src="css/images/blue_marker.png">5</li>
+          <li><img class="marker-legend" src="css/images/green_marker.png">4</li>
+          <li><img class="marker-legend" src="css/images/yellow_marker.png">3</li>
+          <li><img class="marker-legend" src="css/images/orange_marker.png">2</li>
+          <li><img class="marker-legend" src="css/images/red_marker.png">1</li>
+        <small>Source: <a class="attrib" href="http://www.iconeng.com">ICON Engineering; </a><a class="attrib" href='https://www.mapbox.com/about/maps/' target='_blank'>Maps &copy; Mapbox &copy; OpenStreetMap</a></small>
+    </div>
+    <h3>Layers</h3>
+</nav>
+<div id='main'>
+<div class="container-fluid">
+  <nav class="navbar navbar-default navbar-top">
+    <button type="button" class="toggle-menu menu-left push-body toggle-button">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <div class="hidden-xs"><h3>HPFMD Data Collection</h3></div>
+    <div class="visible-xs small-header"><h6>Remote Data Collection</h6></div>
+  </nav>
+  <div id="map">
+    <iframe type="hidden" name="hideframe" style="display:none;"></iframe>
+    <div class="visible-md visible-lg">
+    <div class="bs-docs-section col-md-3 instructions">
+       <div class="panel panel-primary">
+          <div class="panel-leftheading">
+              <h3 class="panel-lefttitle">Instructions</h3>
+          </div>
+          <div class="panel-rightbody">
+            <div id="controls">
+              <p>Click points for more information, or add your own.</br></p>
+              <div class="col-md-12"><button class="btn btn-info btn-xs" onclick="startEdits()" value="Click to Start Editing">Click to Start Editing</button></div>
+              <div class="col-md-12"><button class="btn btn-warning btn-xs" onclick="stopEdits()" value="Stop Your Editing Session">Stop Your Editing Session</button></div><br>
+            </div>
+          </div><div class="clearfix">
+            </div>
+        </div>
+    </div>
+    <div class="bs-docs-section col-md-3 legend-main">
+       <div class="panel panel-primary  legend-box">
+          <div class="panel-leftheading">
+              <h3 class="panel-lefttitle">Legend</h3>
+          </div>
+          <div class="panel-rightbody">
+              <ul class='legend clearfix'>Condition
+                <li><img class="marker-legend" src="css/images/blue_marker.svg">5</li>
+                <li><img class="marker-legend" src="css/images/green_marker.svg">4</li>
+                <li><img class="marker-legend" src="css/images/yellow_marker.svg">3</li>
+                <li><img class="marker-legend" src="css/images/orange_marker.svg">2</li>
+                <li><img class="marker-legend" src="css/images/red_marker.svg">1</li>
+              </ul>
+                <small>Source: <a href="http://www.iconeng.com">ICON Engineering; </a><a href='https://www.mapbox.com/about/maps/' target='_blank'>Maps &copy; Mapbox &copy; OpenStreetMap</a></small>
+          </div><div class="clearfix">
+            </div>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div id="dialog" title="Feature Information">
+  <form action="php/photoUpload.php" method="post" enctype="multipart/form-data" id="uploadform" target="results">
+    <fieldset>
+      <div class="productAttributeValue" style="display:none">
+        <input type="text" class="Field validation" id="random" name="random" value="" size="5"/>
+      </div>
+      <div>
+        <label for="photo">Photo</label>
+        <input type="file" accept="image/*" capture:"camera" id="photo" name="photo"></input>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <button class="btn btn-primary btn-sm" id="photoSubmit" class="col3" type="submit">Add Photo</button>
+        </div>
+        <div class="col-md-6">
+          <iframe id="results" name="results">
+          </iframe>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+  <form id="postGIS" method="post" class="form-horizontal">
+    <fieldset>
+        <!-- Select Basic -->
+        <div class="form-group">
+          <label class="col-md-6 control-label" for="generation">Generation</label>
+          <div class="col-md-6">
+            <select id="generation" name="generation" class="form-control">
+              <option value="Existing">Existing</option>
+              <option value="Proposed">Proposed</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Select Basic -->
+        <div class="form-group">
+          <label class="col-md-6 control-label" for="type">Feature Type</label>
+          <div class="col-md-6">
+            <select id="type" name="type" class="form-control">
+              <option value="Pond">Pond</option>
+              <option value="Channel">Channel</option>
+              <option value="Pipe">Pipe</option>
+              <option value="Outlet">Outlet</option>
+              <option value="Inlet">Inlet</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Select Basic -->
+        <div class="form-group">
+          <label class="col-md-6 control-label" for="purpose">Purpose</label>
+          <div class="col-md-6">
+            <select id="purpose" name="purpose" class="form-control">
+              <option value="Detention">Detention</option>
+              <option value="Retention">Retention</option>
+              <option value="Water Quality">Water Quality</option>
+              <option value="Conveyance">Conveyance</option>
+              <option value="Capture">Capture</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Select Basic -->
+        <div class="form-group">
+          <label class="col-md-6 control-label" for="sediment">Sediment</label>
+          <div class="col-md-6">
+            <select id="sediment" name="sediment" class="form-control">
+              <option value="High">High</option>
+              <option value="Moderate">Moderate</option>
+              <option value="Low">Low</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Select Basic -->
+        <div class="form-group">
+          <label class="col-md-6 control-label" for="debris">Debris</label>
+          <div class="col-md-6">
+            <select id="debris" name="debris" class="form-control">
+              <option value="High">High</option>
+              <option value="Moderate">Moderate</option>
+              <option value="Low">Low</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Select Basic -->
+        <div class="form-group">
+          <label class="col-md-6 control-label" for="condition">Condition</label>
+          <div class="col-md-6">
+            <select id="condition" name="condition" class="form-control">
+              <option value="5">5-Excellent</option>
+              <option value="4">4-Functional</option>
+              <option value="3">3-Maintenance Req'd</option>
+              <option value="2">2-Marginal</option>
+              <option value="1">1-Disfunctional</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Select Basic -->
+        <div class="form-group">
+          <label class="col-md-6 control-label" for="recommendation">Recommendation</label>
+          <div class="col-md-6">
+            <select id="recommendation" name="recommendation" class="form-control">
+              <option value="Do Nothing">Do Nothing</option>
+              <option value="Maintenance">Maintenance</option>
+              <option value="Repairs">Repairs</option>
+              <option value="Replace">Replace</option>
+              <option value="Abandon">Abandon</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Textarea -->
+        <div class="form-group">
+          <label class="col-md-3 control-label" for="notes">Notes</label>
+          <div class="col-md-9">
+            <textarea class="form-control" id="notes" name="notes" placeholder="Describe 'other', no special characters"></textarea>
+          </div>
+        </div>
+      <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+    </fieldset>
+  </form>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="ext/vendor/jquery.ui.widget.js"></script>
+<script src="ext/jquery.iframe-transport.js"></script>
+<script src="ext/jquery.fileupload.js"></script>
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoiZWJlbmRlbm5pcyIsImEiOiJ1M2tMMC0wIn0.HL9nr43JrA_mzhGVBI_B_Q'; // Mapbox API
+
+  var map = L.mapbox.map('map', 'iconeng.ld19b8nf', {attributionControl: false}) // Insert basemap ID
+      .setView([39.443, -104.7374], 14);
+      L.control.locate().addTo(map);
+
+      var layers = document.getElementById('myNavmenu');
+
+      addLayer(L.mapbox.tileLayer('iconeng.HPFMD_Base'), 'Base Features', 1);
+
+
+      function addLayer(layer, name, zIndex) {
+          layer
+              .setZIndex(zIndex)
+              .addTo(map);
+
+
+
+          // Create a simple layer switcher that
+          // toggles layers on and off.
+          var link = document.createElement('a');
+              link.href = '#';
+              link.className = 'active';
+              link.innerHTML = name;
+
+          link.onclick = function(e) {
+              e.preventDefault();
+              e.stopPropagation();
+
+              if (map.hasLayer(layer)) {
+                  map.removeLayer(layer);
+                  this.className = '';
+              } else {
+                  map.addLayer(layer);
+                  this.className = 'active';
+              }
+          };
+
+          layers.appendChild(link);
+      }
+
+      function waitLayer(layer, name, zIndex) {
+          layer
+              .setZIndex(zIndex);
+
+
+
+          // Create a simple layer switcher that
+          // toggles layers on and off.
+          var link = document.createElement('a');
+              link.href = '#';
+              link.className = '';
+              link.innerHTML = name;
+
+          link.onclick = function(e) {
+              e.preventDefault();
+              e.stopPropagation();
+
+              if (map.hasLayer(layer)) {
+                  map.removeLayer(layer);
+                  this.className = '';
+              } else {
+                  map.addLayer(layer);
+                  this.className = 'active';
+              }
+          };
+
+          layers.appendChild(link);
+      }
+
+  var featureGroup = L.featureGroup().addTo(map);
+
+  // Define circle options
+  // http://leafletjs.com/reference.html#circle
+
+  // Declare Variables
+  // Create Global Variable to hold CartoDB points
+  var cartoDBPoints = null;
+
+  // Set your CartoDB Username
+  var cartoDBUsername = "ebendennis";
+
+  // Write SQL Selection Query to be Used on CartoDB Table
+  // Name of table is 'data_collector'
+  var sqlQuery = "SELECT * FROM hpfmd_data_collector";
+      sqlQuery1= "SELECT * FROM hpfmd_data_collector WHERE condition IN ('1')";
+      sqlQuery2= "SELECT * FROM hpfmd_data_collector WHERE condition IN ('2')";
+      sqlQuery3= "SELECT * FROM hpfmd_data_collector WHERE condition IN ('3')";
+      sqlQuery4= "SELECT * FROM hpfmd_data_collector WHERE condition IN ('4')";
+      sqlQuery5= "SELECT * FROM hpfmd_data_collector WHERE condition IN ('5')";
+
+  // Create variable for Leaflet.draw features
+  var drawnItems = new L.FeatureGroup();
+
+  var blueIcon = L.icon({
+    iconUrl: 'css/images/blue_marker.svg',
+    iconSize: [25,35],
+    iconAnchor: [10,35],
+    popupAnchor: [0,-35]
+  });
+
+    greenIcon = L.icon({
+      iconUrl: 'css/images/green_marker.svg',
+      iconSize: [25,35],
+      iconAnchor: [10,35],
+      popupAnchor: [0,-35]
+  });
+
+    yellowIcon = L.icon({
+      iconUrl: 'css/images/yellow_marker.svg',
+      iconSize: [25,35],
+      iconAnchor: [10,35],
+      popupAnchor: [0,-35]
+  });
+
+    orangeIcon = L.icon({
+      iconUrl: 'css/images/orange_marker.svg',
+      iconSize: [37.5,52.5],
+      iconAnchor: [15,52.5],
+      popupAnchor: [0,-52]
+  });
+
+    redIcon = L.icon({
+      iconUrl: 'css/images/red_marker.svg',
+      iconSize: [37.5,52.5],
+      iconAnchor: [15,52.5],
+      popupAnchor: [0,-52]
+  });
+
+
+  // Get CartoDB selection as GeoJSON and Add to Map
+  function getGeoJSON(){
+    $.getJSON("https://"+cartoDBUsername+".cartodb.com/api/v2/sql?format=GeoJSON&q="+sqlQuery1, function(data) {
+      cartoDBPoints = L.geoJson(data,{
+        pointToLayer: function(feature,latlng){
+          var marker = L.marker(latlng,{icon:redIcon});
+          var content = '<span style="font-size:15px;font-weight:600;color:#556270;">' + feature.properties.generation + ' ' + feature.properties.type + '</span><br />Purpose: <b>' + feature.properties.purpose + '</b><br />Sediment: <b>' + feature.properties.sediment + '</b><br />Debris: <b>'+ feature.properties.debris + '</b><br />Condition: <b>' + feature.properties.condition + '</b><br />Recommendation: <b>' + feature.properties.recommendation + '</b><br />Notes: ' + feature.properties.notes + '<br />' + '<img src="http://chartophile.com/icon/data/hpfmd/img/' + feature.properties.photo + '.' + feature.properties.extension + '">';
+          marker.bindPopup(content, {closeButton:true, minWidth:273});
+          return marker;
+        }
+      }).addTo(map);
+    })
+    $.getJSON("https://"+cartoDBUsername+".cartodb.com/api/v2/sql?format=GeoJSON&q="+sqlQuery2, function(data) {
+      cartoDBPoints = L.geoJson(data,{
+        pointToLayer: function(feature,latlng){
+          var marker = L.marker(latlng,{icon:orangeIcon});
+          var content = '<span style="font-size:15px;font-weight:600;color:#556270;">' + feature.properties.generation + ' ' + feature.properties.type + '</span><br />Purpose: <b>' + feature.properties.purpose + '</b><br />Sediment: <b>' + feature.properties.sediment + '</b><br />Debris: <b>'+ feature.properties.debris + '</b><br />Condition: <b>' + feature.properties.condition + '</b><br />Recommendation: <b>' + feature.properties.recommendation + '</b><br />Notes: ' + feature.properties.notes + '<br />' + '<img src="http://chartophile.com/icon/data/hpfmd/img/' + feature.properties.photo + '.' + feature.properties.extension + '">';
+          marker.bindPopup(content, {closeButton:true, minWidth:273});
+          return marker;
+        }
+      }).addTo(map);
+    })
+    $.getJSON("https://"+cartoDBUsername+".cartodb.com/api/v2/sql?format=GeoJSON&q="+sqlQuery3, function(data) {
+      cartoDBPoints = L.geoJson(data,{
+        pointToLayer: function(feature,latlng){
+          var marker = L.marker(latlng,{icon:yellowIcon});
+          var content = '<span style="font-size:15px;font-weight:600;color:#556270;">' + feature.properties.generation + ' ' + feature.properties.type + '</span><br />Purpose: <b>' + feature.properties.purpose + '</b><br />Sediment: <b>' + feature.properties.sediment + '</b><br />Debris: <b>'+ feature.properties.debris + '</b><br />Condition: <b>' + feature.properties.condition + '</b><br />Recommendation: <b>' + feature.properties.recommendation + '</b><br />Notes: ' + feature.properties.notes + '<br />' + '<img src="http://chartophile.com/icon/data/hpfmd/img/' + feature.properties.photo + '.' + feature.properties.extension + '">';
+          marker.bindPopup(content, {closeButton:true, minWidth:273});
+          return marker;
+        }
+      }).addTo(map);
+    })
+    $.getJSON("https://"+cartoDBUsername+".cartodb.com/api/v2/sql?format=GeoJSON&q="+sqlQuery4, function(data) {
+      cartoDBPoints = L.geoJson(data,{
+        pointToLayer: function(feature,latlng){
+          var marker = L.marker(latlng,{icon:greenIcon});
+          var content = '<span style="font-size:15px;font-weight:600;color:#556270;">' + feature.properties.generation + ' ' + feature.properties.type + '</span><br />Purpose: <b>' + feature.properties.purpose + '</b><br />Sediment: <b>' + feature.properties.sediment + '</b><br />Debris: <b>'+ feature.properties.debris + '</b><br />Condition: <b>' + feature.properties.condition + '</b><br />Recommendation: <b>' + feature.properties.recommendation + '</b><br />Notes: ' + feature.properties.notes + '<br />' + '<img src="http://chartophile.com/icon/data/hpfmd/img/' + feature.properties.photo + '.' + feature.properties.extension + '">';
+          marker.bindPopup(content, {closeButton:true, minWidth:273});
+          return marker;
+        }
+      }).addTo(map);
+    })
+    $.getJSON("https://"+cartoDBUsername+".cartodb.com/api/v2/sql?format=GeoJSON&q="+sqlQuery5, function(data) {
+      cartoDBPoints = L.geoJson(data,{
+        pointToLayer: function(feature,latlng){
+          var marker = L.marker(latlng,{icon:blueIcon});
+          var content = '<span style="font-size:15px;font-weight:600;color:#556270;">' + feature.properties.generation + ' ' + feature.properties.type + '</span><br />Purpose: <b>' + feature.properties.purpose + '</b><br />Sediment: <b>' + feature.properties.sediment + '</b><br />Debris: <b>'+ feature.properties.debris + '</b><br />Condition: <b>' + feature.properties.condition + '</b><br />Recommendation: <b>' + feature.properties.recommendation + '</b><br />Notes: ' + feature.properties.notes + '<br />' + '<img src="http://chartophile.com/icon/data/hpfmd/img/' + feature.properties.photo + '.' + feature.properties.extension + '">';
+          marker.bindPopup(content, {closeButton:true, minWidth:273});
+          return marker;
+        }
+      }).addTo(map);
+    });
+  };
+
+  // Run showAll function automatically when document loads
+  $( document ).ready(function() {
+    getGeoJSON();
+  });
+
+  var drawControl = new L.Control.Draw({
+    draw : {
+      polygon : false,
+      polyline : false,
+      rectangle : false,
+      circle : false
+    },
+    edit : false,
+    remove: false
+  });
+
+  var controlOnMap = false;
+
+  function startEdits(){
+    if(controlOnMap == true){
+      map.removeControl(drawControl);
+      controlOnMap = false;
+    }
+    map.addControl(drawControl);
+    controlOnMap = true;
+  };
+
+  function stopEdits(){
+    map.removeControl(drawControl);
+    controlOnMap = false;
+  };
+
+  map.on('draw:created', function (e) {
+      var layer = e.layer;
+
+      map.addLayer(drawnItems);
+      drawnItems.addLayer(layer);
+
+      dialog.dialog( "open" );
+
+      $(function(){
+       var randomnumber=Math.floor(Math.random()*10000000)
+       $('.productAttributeValue input[type="text"]').val( randomnumber );
+      });
+  });
+
+  var submitToProxy = function(q){
+    $.post("callProxy.php", { //Put path to your PHP file here
+      qurl:q,
+      cache: false,
+      timeStamp: new Date().getTime()
+    }, function(data) {
+      console.log(data);
+      refreshLayer();
+    });
+  };
+
+  dialog = $( "#dialog" ).dialog({
+    autoOpen: false,
+    height: 300,
+    width: 350,
+    modal: true,
+    position: {
+      my: "center center",
+      at: "center center",
+      of: "#map"
+    },
+    buttons: {
+      "Add to Database": setData,
+      Cancel: function() {
+        dialog.dialog("close");
+        map.removeLayer(drawnItems);
+        drawnItems = new L.FeatureGroup();
+      }
+    },
+    close: function() {
+      form[ 0 ].reset();
+      $("#uploadform")[0].reset();
+      var iframe = document.getElementById("results");
+      iframe.src = "about:blank";
+      console.log("Dialog closed");
+    }
+  });
+
+  form = dialog.find( "#postGIS" ).on( "submit", function( event ) {
+    event.preventDefault();
+    setData();
+  });
+
+  iframe = dialog.find( "#photoInput" ).on( "submit",function( event ) {
+      $('iframe').contents().find('body').css('margin','0px');
+      });
+
+  function setData() {
+    var enteredGeneration = generation.value;
+    var enteredType = type.value;
+    var enteredPurpose = purpose.value;
+    var enteredSediment = sediment.value;
+    var enteredDebris = debris.value;
+    var enteredCondition = condition.value;
+    var enteredRecommendation = recommendation.value;
+    var enteredNotes = notes.value;
+    var random = L.DomUtil.get('random').value;
+    var extension = L.DomUtil.get('photo').value.split('.').pop();
+    var photo = L.DomUtil.get('photo').value.replace("C:\\fakepath\\","");
+    if(photo === ""){
+        var photoInput = 'blank.jpg'
+            randomInput = 'blank'
+            extensionInput = 'jpg'}
+        else{var photoInput = photo
+                 randomInput = random
+                 extensionInput = extension};
+    drawnItems.eachLayer(function (layer) {
+      var sql = "INSERT INTO hpfmd_data_collector (the_geom, generation, type, purpose, sediment, debris, condition, recommendation, notes, photo, extension, latitude, longitude) VALUES (ST_SetSRID(ST_GeomFromGeoJSON('";
+      var a = layer.getLatLng();
+      console.log(a);
+      var sql2 ='{"type":"Point","coordinates":[' + a.lng + "," + a.lat + "]}'),4326),'" + enteredGeneration + "','" + enteredType + "','" + enteredPurpose + "','" + enteredSediment + "','" + enteredDebris + "','" + enteredCondition + "','" + enteredRecommendation + "','" + enteredNotes + "','" + randomInput + "','" + extensionInput + "','" + a.lat + "','" + a.lng +"')";
+      var pURL = escape(sql+sql2);
+      console.log(pURL);
+      submitToProxy(pURL);
+      console.log("Feature has been submitted to the Proxy");
+    });
+    map.removeLayer(drawnItems);
+    drawnItems = new L.FeatureGroup();
+    console.log("drawnItems has been cleared");
+    dialog.dialog("close");
+  };
+
+  function refreshLayer() {
+    if (map.hasLayer(cartoDBPoints)) {
+      map.removeLayer(cartoDBPoints);
+    };
+    getGeoJSON();
+  };
+
+  </script>
+  <script src="ext/jPushMenu.js"></script>
+
+  <!--call jPushMenu, required-->
+  <script>
+  jQuery(document).ready(function($) {
+    $('.toggle-menu').jPushMenu();
+  });
+  </script>
+</body>
+</html>

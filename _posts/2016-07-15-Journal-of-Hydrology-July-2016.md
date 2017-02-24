@@ -2,7 +2,7 @@
 layout: post
 title: Journal of Hydrology
 author: Tyler
-image: images/news/Rosburg_JournalofHydrology.JPG
+image: Rosburg_JournalofHydrology.JPG
 categories:
 - news
 description: The effect of flow data resolution on sediment yield estimation and channel design
