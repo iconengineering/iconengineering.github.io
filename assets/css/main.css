@@ -3227,7 +3227,8 @@ body {
   height: 10em;
   vertical-align: middle; }
   .uniform img {
-    object-fit: cover; }
+    object-fit: cover;
+    max-height: 10em; }
 
 ::-webkit-scrollbar {
   width: 6px;
