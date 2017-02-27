@@ -308,16 +308,9 @@ programming specific to each site.</p>
         <div class="slide_caption">Paintbrush Park</div>
       </div>
       <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/PR-Willow-Creek-(2).jpg">
-        <div class="slide_caption">Willow Creek</div>
-      </div>
-      <div class="image fit slide">
         <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/PR-Willow-Creek.jpg">
         <div class="slide_caption">Willow Creek</div>
       </div>
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/PR-Willow-Creek-(2).jpg">
-        <div class="slide_caption">Willow Creek</div>
       </div>
     </div>
   </div>
