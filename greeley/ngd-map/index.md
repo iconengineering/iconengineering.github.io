@@ -1,4 +1,4 @@
 ---
 layout: redirect
 ---
-This page has relocated to [here](../../maps/greeley/ngd-map).
+This map has been archived.
