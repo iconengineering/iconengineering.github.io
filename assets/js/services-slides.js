@@ -1,85 +1,72 @@
 $(document).ready(function(){
-  $('.sd-slides').slick({
+  $('.slides').slick({
     lazyLoad: 'ondemand',
     dots: true,
     infinite: true,
     speed: 500,
-    fade: true,
     autoplay: true,
     autoplaySpeed: 3000,
     pauseOnFocus:false,
-    cssEase: 'ease-in-out'
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
   });
 
-  $('.sr-slides').slick({
-    lazyLoad: 'ondemand',
-    dots: true,
-    infinite: true,
-    speed: 500,
-    fade: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    pauseOnFocus:false,
-    cssEase: 'ease-in-out'
-  });
+  $('.slides').slick('slickFilter','.sd');
 
-  $('.mp-slides').slick({
-    lazyLoad: 'ondemand',
-    dots: true,
-    infinite: true,
-    speed: 500,
-    fade: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    pauseOnFocus:false,
-    cssEase: 'ease-in-out'
-  });
+});
 
-  $('.fa-slides').slick({
-    lazyLoad: 'ondemand',
-    dots: true,
-    infinite: true,
-    speed: 500,
-    fade: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    pauseOnFocus:false,
-    cssEase: 'ease-in-out'
-  });
+$('#sd-unslick').on('click', function(){
+  $('.slides').slick('slickUnfilter');
+  $('.slides').slick('slickFilter','.sd');
+});
 
-  $('.rd-slides').slick({
-    lazyLoad: 'ondemand',
-    dots: true,
-    infinite: true,
-    speed: 500,
-    fade: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    pauseOnFocus:false,
-    cssEase: 'ease-in-out'
-  });
+$('#sr-unslick').on('click', function(){
+  $('.slides').slick('slickUnfilter');
+  $('.slides').slick('slickFilter','.sr');
+});
 
-  $('.pr-slides').slick({
-    lazyLoad: 'ondemand',
-    dots: true,
-    infinite: true,
-    speed: 500,
-    fade: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    pauseOnFocus:false,
-    cssEase: 'ease-in-out'
-  });
+$('#mp-unslick').on('click', function(){
+  $('.slides').slick('slickUnfilter');
+  $('.slides').slick('slickFilter','.mp');
+});
 
-  $('.gis-slides').slick({
-    lazyLoad: 'ondemand',
-    dots: true,
-    infinite: true,
-    speed: 500,
-    fade: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    pauseOnFocus:false,
-    cssEase: 'ease-in-out'
-  });
+$('#fp-unslick').on('click', function(){
+  $('.slides').slick('slickUnfilter');
+  $('.slides').slick('slickFilter','.fp');
+});
+
+$('#rd-unslick').on('click', function(){
+  $('.slides').slick('slickUnfilter');
+  $('.slides').slick('slickFilter','.rd');
+});
+
+$('#pr-unslick').on('click', function(){
+  $('.slides').slick('slickUnfilter');
+  $('.slides').slick('slickFilter','.pr');
+});
+
+$('#gis-unslick').on('click', function(){
+  $('.slides').slick('slickUnfilter');
+  $('.slides').slick('slickFilter','.gis');
 });

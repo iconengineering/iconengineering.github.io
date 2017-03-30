@@ -7,8 +7,8 @@ extra-js:
   - ../assets/js/services-slides.js
 extra-css:
   - ../assets/css/tabs.css
-  - //cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css
   - //cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css
+  - //cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css
 ---
 
 {% assign base = '' %}
@@ -24,17 +24,17 @@ extra-css:
 <div class="row">
   <div class="12u">
     <ul class="tabs">
-      <li class="tab col"><a href="#stormwater-design">Stormwater</a></li>
-      <li class="tab col"><a href="#stream-restoration">Stream Restoration</a></li>
-      <li class="tab col"><a href="#mitigation-master-planning">Master Planning</a></li>
-      <li class="tab col"><a href="#floodplain-analysis">Floodplains</a></li>
-      <li class="tab col"><a href="#roadway-design-and-multi-modal-transportation">Roadways</a></li>
-      <li class="tab col"><a href="#parks--recreation">Parks</a></li>
-      <li class="tab col"><a href="#gis-and-web-based-interfacing">Geospatial</a></li>
+      <li class="tab col"><a href="#stormwater-design" id="sd-unslick">Stormwater</a></li>
+      <li class="tab col"><a href="#stream-restoration" id="sr-unslick">Stream Restoration</a></li>
+      <li class="tab col"><a href="#mitigation-master-planning" id="mp-unslick">Master Planning</a></li>
+      <li class="tab col"><a href="#floodplain-analysis" id="fp-unslick">Floodplains</a></li>
+      <li class="tab col"><a href="#roadway-design-and-multi-modal-transportation" id="rd-unslick">Roadways</a></li>
+      <li class="tab col"><a href="#parks--recreation" id="pr-unslick">Parks</a></li>
+      <li class="tab col"><a href="#gis-and-web-based-interfacing" id="gis-unslick">Geospatial</a></li>
     </ul>
   </div>
 
-<div id="stormwater-design" class="col 12u">  
+<div id="stormwater-design" class="col 12u">
 
 <h4>Stormwater Design</h4>
 
@@ -57,48 +57,6 @@ of a full range of project solutions, project cost estimates, bid document
 preparation, permitting, outreach and meeting facilitation, and meeting local
 design criteria.</p>
 
-<div class="row">
-  <div class="8u -2u 12u$(small)">
-    <div class="sd-slides">
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/SW-Cherry-Creek-.jpg">
-        <div class="slide_caption">Cherry Creek</div>
-      </div>
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/SW-Cook-Park.jpg">
-        <div class="slide_caption">Cook Park</div>
-      </div>
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/SW-Brantner-Gulch.jpg">
-        <div class="slide_caption">Brantner Gulch</div>
-      </div>
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/SW-Dad-Clark-Gulch.jpg">
-        <div class="slide_caption">Dad Clark Gulch</div>
-      </div>
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/SW-Dininney-Reservoir.jpg">
-        <div class="slide_caption">Divinney Reservoir</div>
-      </div>
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/SW-Kennedy-Storm-sewer-Denver.jpg">
-        <div class="slide_caption">Kennedy Storm Sewer - Denver</div>
-      </div>
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/SW-Kennys-Run.jpg">
-        <div class="slide_caption">Kennys Run - Golden</div>
-      </div>
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/SW-Marston+Lake.jpg">
-        <div class="slide_caption">Marston Lake</div>
-      </div>
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/SW-city-center-photo.jpg">
-        <div class="slide_caption">City Center</div>
-      </div>
-    </div>
-  </div>
-</div>
 </div>
 <div id="stream-restoration" class="col 12u">
 
@@ -111,32 +69,6 @@ and projects related to stream stability and sediment transport challenges where
 restoration activities provide a balance of geomorphic design, sediment
 transport, and ecological diversity.</p>
 
-<div class="row">
-  <div class="8u -2u 12u$(small)">
-    <div class="sr-slides">
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/SR-Clear-Creek.jpg">
-        <div class="slide_caption">Clear Creek</div>
-      </div>
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/SR-Babiyar.jpg">
-        <div class="slide_caption">Babi Yar Park - City and County of Denver</div>
-      </div>
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/SR-Cook-Park.jpg">
-        <div class="slide_caption">Cook Park</div>
-      </div>
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/SR-LDC-Woodie-Hollow.jpg">
-        <div class="slide_caption">Little Dry Creek and Woodie Hollow Park - Cherry Hills Village</div>
-      </div>
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/SR-West-Fork-Kenney's-Run.jpg">
-        <div class="slide_caption">West Fork Kenny's Run - Golden</div>
-      </div>
-    </div>
-  </div>
-</div>
 </div>
 <div id="mitigation-master-planning" class="col 12u">
 
@@ -149,32 +81,6 @@ hydraulic modeling, floodplain delineation, damage assessment, geomorphology,
 stream stabilization, alternatives analysis, economic analysis for benefits vs.
 costs, conceptual or preliminary design presentation, and report preparation.</p>
 
-<div class="row">
-  <div class="8u -2u 12u$(small)">
-    <div class="mp-slides">
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/MP-Pages-from-Coal-Creek4.jpg">
-        <div class="slide_caption">Upper Coal Creek Watershed</div>
-      </div>
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/MP-Boulder-Creek-Restoration-MP.jpg">
-        <div class="slide_caption">Boulder Creek Restoration</div>
-      </div>
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/MP-Greeley-Alternatives.jpg">
-        <div class="slide_caption">North Greeley & Downtown Stormwater Masterplan</div>
-      </div>
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/MP-Hydrology-old-Town.jpg">
-        <div class="slide_caption">Fort Collins Old Town Hydrology</div>
-      </div>
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/MP-lee.jpg">
-        <div class="slide_caption">Lee Gulch</div>
-      </div>
-    </div>
-  </div>
-</div>
 </div>
 <div id="floodplain-analysis" class="col 12u">
 
@@ -188,28 +94,6 @@ FEMA Region VIII states. ICON staff has experience in 2-dimensional modeling and
 unsteady flow hydraulics, including use of the FLO-2D, SRH-2D and HECRAS 2D
 software programs.</p>
 
-<div class="row">
-  <div class="8u -2u 12u$(small)">
-    <div class="fa-slides">
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/FP-Floodplain-Mapping-FLO-2D-Inundation-Maps-Denver-CO.jpg">
-        <div class="slide_caption">Denver FLO-2D Inundation Mapping</div>
-      </div>
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/FP-Floodplain-Mapping-SRH-2D-Coal-Creek.jpg">
-        <div class="slide_caption">Coal Creek SRH-2D Floodplain Mapping</div>
-      </div>
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/FP-Floodplain-Mapping-HEC-RAS-West-Vine-Basin-Fort-Collins.jpg">
-        <div class="slide_caption">Fort Collins HECRAS Floodplain Modeling</div>
-      </div>
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/FP-Twomile.jpg">
-        <div class="slide_caption">FEMA LOMC Preparation and Reviews</div>
-      </div>
-    </div>
-  </div>
-</div>
 </div>
 <div id="roadway-design-and-multi-modal-transportation" class="col 12u">
 
@@ -226,36 +110,6 @@ traffic control plans, drainage design, including storm sewers, swales, and
 permanent BMP’s, storm water management plans, and erosion and preparation of
 sediment and control plans.</p>
 
-<div class="row">
-  <div class="8u -2u 12u$(small)">
-    <div class="rd-slides">
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/rd-1.jpg">
-        <div class="slide_caption">...</div>
-      </div>
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/rd-2.jpg">
-        <div class="slide_caption">...</div>
-      </div>
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/rd-3.jpg">
-        <div class="slide_caption">...</div>
-      </div>
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/rd-4.jpg">
-        <div class="slide_caption">...</div>
-      </div>
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/rd-5.jpg">
-        <div class="slide_caption">...</div>
-      </div>
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/rd-dahlia.jpg">
-        <div class="slide_caption">...</div>
-      </div>
-    </div>
-  </div>
-</div>
 </div>
 <div id="parks--recreation" class="col 12u">
 
@@ -276,45 +130,6 @@ improve floodplain conditions. From a recreation standpoint the project provides
 better connect with the riverine environments and incorporate recreation
 programming specific to each site.</p>
 
-<div class="row">
-  <div class="8u -2u 12u$(small)">
-    <div class="pr-slides">
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/PR-Johnson-Habitat-Park-(1).jpg">
-        <div class="slide_caption">Johnson Habitat Park - City and County of Denver</div>
-      </div>
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/PR-Johnson-Habitat-Park-(2).jpg">
-        <div class="slide_caption">Johnson Habitat Park - City and County of Denver</div>
-      </div>
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/PR-Sun-Valley---Weir-Gulch.jpg">
-        <div class="slide_caption">Sun Valley Community Park - City and County of Denver</div>
-      </div>
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/PR-clear-creek-trail.jpg">
-        <div class="slide_caption">Clear Creek Trail - City of Wheat Ridge</div>
-      </div>
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/PR-Aurora-Sports-Park.jpg">
-        <div class="slide_caption">Aurora Sports Park</div>
-      </div>
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/PR-Hoops-Park.jpg">
-        <div class="slide_caption">Hoops Park</div>
-      </div>
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/PR-Paintbrush-Park.jpg">
-        <div class="slide_caption">Paintbrush Park</div>
-      </div>
-      <div class="image fit slide">
-        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/PR-Willow-Creek.jpg">
-        <div class="slide_caption">Willow Creek</div>
-      </div>
-      </div>
-    </div>
-  </div>
-</div>
 </div>
 <div id="gis-and-web-based-interfacing" class="col 12u">
 
@@ -330,31 +145,187 @@ and engage interested parties in our projects. For many projects, ICON will
 develop custom project websites to display general project information, as well
 as upcoming events, mailing list subscriptions, and web-based comment.</p>
 
+</div>
+</div>
+
 <div class="row">
-  <div class="8u -2u 12u$(small)">
-    <div class="gis-slides">
-      <div class="image fit slide">
+  <div class="10u -1u 12u$(small)">
+    <div class="slides">
+      <!-- Stormwater Design -->
+      <div class="image fit slide sd">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/SW-Cherry-Creek-.jpg">
+        <div class="slide_caption">Cherry Creek</div>
+      </div>
+      <div class="image fit slide sd">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/SW-Cook-Park.jpg">
+        <div class="slide_caption">Cook Park</div>
+      </div>
+      <div class="image fit slide sd">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/SW-Brantner-Gulch.jpg">
+        <div class="slide_caption">Brantner Gulch</div>
+      </div>
+      <div class="image fit slide sd">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/SW-Dad-Clark-Gulch.jpg">
+        <div class="slide_caption">Dad Clark Gulch</div>
+      </div>
+      <div class="image fit slide sd">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/SW-Dininney-Reservoir.jpg">
+        <div class="slide_caption">Divinney Reservoir</div>
+      </div>
+      <div class="image fit slide sd">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/SW-Kennedy-Storm-sewer-Denver.jpg">
+        <div class="slide_caption">Kennedy Storm Sewer - Denver</div>
+      </div>
+      <div class="image fit slide sd">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/SW-Kennys-Run.jpg">
+        <div class="slide_caption">Kennys Run - Golden</div>
+      </div>
+      <div class="image fit slide sd">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/SW-Marston+Lake.jpg">
+        <div class="slide_caption">Marston Lake</div>
+      </div>
+      <div class="image fit slide sd">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/SW-city-center-photo.jpg">
+        <div class="slide_caption">City Center</div>
+      </div>
+      <!-- Stream Restoration -->
+      <div class="image fit slide sr">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/SR-Clear-Creek.jpg">
+        <div class="slide_caption">Clear Creek</div>
+      </div>
+      <div class="image fit slide sr">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/SR-Babiyar.jpg">
+        <div class="slide_caption">Babi Yar Park - City and County of Denver</div>
+      </div>
+      <div class="image fit slide sr">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/SR-Cook-Park.jpg">
+        <div class="slide_caption">Cook Park</div>
+      </div>
+      <div class="image fit slide sr">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/SR-LDC-Woodie-Hollow.jpg">
+        <div class="slide_caption">Little Dry Creek and Woodie Hollow Park - Cherry Hills Village</div>
+      </div>
+      <div class="image fit slide sr">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/SR-West-Fork-Kenney's-Run.jpg">
+        <div class="slide_caption">West Fork Kenny's Run - Golden</div>
+      </div>
+      <!-- Master Planning -->
+      <div class="image fit slide mp">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/MP-Pages-from-Coal-Creek4.jpg">
+        <div class="slide_caption">Upper Coal Creek Watershed</div>
+      </div>
+      <div class="image fit slide mp">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/MP-Boulder-Creek-Restoration-MP.jpg">
+        <div class="slide_caption">Boulder Creek Restoration</div>
+      </div>
+      <div class="image fit slide mp">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/MP-Greeley-Alternatives.jpg">
+        <div class="slide_caption">North Greeley & Downtown Stormwater Masterplan</div>
+      </div>
+      <div class="image fit slide mp">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/MP-Hydrology-old-Town.jpg">
+        <div class="slide_caption">Fort Collins Old Town Hydrology</div>
+      </div>
+      <div class="image fit slide mp">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/MP-lee.jpg">
+        <div class="slide_caption">Lee Gulch</div>
+      </div>
+      <!-- Floodplain -->
+      <div class="image fit slide fp">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/FP-Floodplain-Mapping-FLO-2D-Inundation-Maps-Denver-CO.jpg">
+        <div class="slide_caption">Denver FLO-2D Inundation Mapping</div>
+      </div>
+      <div class="image fit slide fp">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/FP-Floodplain-Mapping-SRH-2D-Coal-Creek.jpg">
+        <div class="slide_caption">Coal Creek SRH-2D Floodplain Mapping</div>
+      </div>
+      <div class="image fit slide fp">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/FP-Floodplain-Mapping-HEC-RAS-West-Vine-Basin-Fort-Collins.jpg">
+        <div class="slide_caption">Fort Collins HECRAS Floodplain Modeling</div>
+      </div>
+      <div class="image fit slide fp">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/FP-Twomile.jpg">
+        <div class="slide_caption">FEMA LOMC Preparation and Reviews</div>
+      </div>
+      <!-- Roadway -->
+      <div class="image fit slide rd">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/rd-1.jpg">
+        <div class="slide_caption">...</div>
+      </div>
+      <div class="image fit slide rd">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/rd-2.jpg">
+        <div class="slide_caption">...</div>
+      </div>
+      <div class="image fit slide rd">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/rd-3.jpg">
+        <div class="slide_caption">...</div>
+      </div>
+      <div class="image fit slide rd">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/rd-4.jpg">
+        <div class="slide_caption">...</div>
+      </div>
+      <div class="image fit slide rd">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/rd-5.jpg">
+        <div class="slide_caption">...</div>
+      </div>
+      <div class="image fit slide rd">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/rd-dahlia.jpg">
+        <div class="slide_caption">...</div>
+      </div>
+      <!-- Parks & Rec -->
+      <div class="image fit slide pr">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/PR-Johnson-Habitat-Park-(1).jpg">
+        <div class="slide_caption">Johnson Habitat Park - City and County of Denver</div>
+      </div>
+      <div class="image fit slide pr">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/PR-Johnson-Habitat-Park-(2).jpg">
+        <div class="slide_caption">Johnson Habitat Park - City and County of Denver</div>
+      </div>
+      <div class="image fit slide pr">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/PR-Sun-Valley---Weir-Gulch.jpg">
+        <div class="slide_caption">Sun Valley Community Park - City and County of Denver</div>
+      </div>
+      <div class="image fit slide pr">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/PR-clear-creek-trail.jpg">
+        <div class="slide_caption">Clear Creek Trail - City of Wheat Ridge</div>
+      </div>
+      <div class="image fit slide pr">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/PR-Aurora-Sports-Park.jpg">
+        <div class="slide_caption">Aurora Sports Park</div>
+      </div>
+      <div class="image fit slide pr">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/PR-Hoops-Park.jpg">
+        <div class="slide_caption">Hoops Park</div>
+      </div>
+      <div class="image fit slide pr">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/PR-Paintbrush-Park.jpg">
+        <div class="slide_caption">Paintbrush Park</div>
+      </div>
+      <div class="image fit slide pr">
+        <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/PR-Willow-Creek.jpg">
+        <div class="slide_caption">Willow Creek</div>
+      </div>
+      <!-- GIS -->
+      <div class="image fit slide gis">
         <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/GIS-oldTown.jpg">
         <div class="slide_caption">Old Town Fort Collins</div>
       </div>
-      <div class="image fit slide">
+      <div class="image fit slide gis">
         <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/GIS-boulder-sediment-assesment.jpg">
         <div class="slide_caption">City of Boulder Sediment Assessment</div>
       </div>
-      <div class="image fit slide">
+      <div class="image fit slide gis">
         <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/GIS-Skunk.jpg">
         <div class="slide_caption">Skunk Creek</div>
       </div>
-      <div class="image fit slide">
+      <div class="image fit slide gis">
         <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/GIS-Lyons-Alternatives.jpg">
         <div class="slide_caption">Town of Lyons Interactive Masterplan</div>
       </div>
-      <div class="image fit slide">
+      <div class="image fit slide gis">
         <img data-lazy="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/slides/GIS-High-Prairie-Data-Inventory.jpg">
         <div class="slide_caption">High Prarie Farms Stormwater Inventory</div>
       </div>
     </div>
   </div>
-</div>
-</div>
 </div>

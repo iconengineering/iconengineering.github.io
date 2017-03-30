@@ -3203,9 +3203,9 @@ body {
 
 .slide_caption {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  bottom: 10px;
+  left: 10px;
+  width: calc(100% - 20px);
   text-align: center;
   padding: .5em 1em;
   border-bottom-left-radius: 4px;
@@ -3213,6 +3213,9 @@ body {
   min-height: 40px;
   background-color: rgba(76, 76, 76, 0.5);
   color: #ffffff; }
+
+.image.fit.slide {
+  padding: 10px; }
 
 .slick-arrow, .slick-dots li button {
   box-shadow: none !important; }
