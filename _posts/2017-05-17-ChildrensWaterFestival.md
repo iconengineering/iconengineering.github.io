@@ -8,7 +8,7 @@ categories:
 description: ICON participates in 2017 Children's water festival.
 ---
 
-ICON staff engineers Nick Stone and Tyler Rosburg recently represented ICON
+ICON project engineers Nick Stone and Tyler Rosburg recently represented ICON
 Engineering at the Children's Water Festival in Fort Collins. The festival,
 which is sponsored by Fort Collins Utilities and Northern Colorado Water
 Conservancy District (NCWCD), hosts 1,800 third graders from public and private
