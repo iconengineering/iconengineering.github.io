@@ -18,5 +18,8 @@ We are always looking for the best people to join our team. Typical needs includ
 #### GIS Specialist
 >Ideal candidate will have 1 to 4 years experience. ArcGIS, geodatabase, spatial analysis skills essential. AutoCad experience is a plus.
 
+#### Web Developer
+>Ideal candidate will have 3 to 10 years experience, BSCE, experience in developing interactive web applications and mapping. Proficiency in HTML and R, and experience using GitHub is desired.
+
 <hr>
 **Contact [icon@iconeng.com](mailto:icon@iconeng.com) if you think you would be a great addition to our company.**
