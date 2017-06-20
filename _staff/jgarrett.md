@@ -1,6 +1,6 @@
 ---
 name: Jessica Garrett
-title: GIS Specialist
+title: GIS Engineer
 email: jgarrett@iconeng.com
 photo: placeholder.png
 ---
