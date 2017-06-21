@@ -2472,7 +2472,7 @@ table.alt tbody tr td {
       .wrapper.style2 .button.special {
         box-shadow: none;
         background-color: #ffffff;
-        color: #be4040 !important; }
+        color: #995B81 !important; }
     .wrapper.style2 label {
       color: #ffffff; }
     .wrapper.style2 input[type="text"],
@@ -2502,7 +2502,7 @@ table.alt tbody tr td {
     .wrapper.style2 input[type="radio"]:checked + label:before {
       background-color: #ffffff;
       border-color: #ffffff;
-      color: #be4040; }
+      color: #995B81; }
     .wrapper.style2 input[type="checkbox"]:focus + label:before,
     .wrapper.style2 input[type="radio"]:focus + label:before {
       border-color: #ffffff;
