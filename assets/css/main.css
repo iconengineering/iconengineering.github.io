@@ -2670,8 +2670,10 @@ table.alt tbody tr td {
       border-top-color: #ffffff; }
     .wrapper.style3 table.alt tbody tr td {
       border-color: #ffffff; }
+    
+      /* Purple */
     .wrapper.style4 {
-    background-color: #7BC148;
+    background-color: #995b81;
     color: #ffffff; }
     .wrapper.style4 input, .wrapper.style4 select, .wrapper.style4 textarea {
       color: #ffffff; }
@@ -2718,7 +2720,7 @@ table.alt tbody tr td {
       .wrapper.style4 .button.special {
         box-shadow: none;
         background-color: #ffffff;
-        color: #7BC148 !important; }
+        color: #995b81 !important; }
     .wrapper.style4 label {
       color: #ffffff; }
     .wrapper.style4 input[type="text"],
@@ -2748,7 +2750,7 @@ table.alt tbody tr td {
     .wrapper.style4 input[type="radio"]:checked + label:before {
       background-color: #ffffff;
       border-color: #ffffff;
-      color: #7BC148; }
+      color: #995b81; }
     .wrapper.style4 input[type="checkbox"]:focus + label:before,
     .wrapper.style4 input[type="radio"]:focus + label:before {
       border-color: #ffffff;
