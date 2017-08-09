@@ -15,8 +15,8 @@ footer {
 }
 
 .navbar{
-  background-color:#225953;       /*left menu*/
-  border: 1px solid #456E6B !important;
+  background-color:#225953;       /*left menu DARK TEAL*/
+  border: 1px solid #456E6B !important;	/*WASHED TEAL*/
 }
 
 .navbar a {
@@ -65,7 +65,7 @@ footer {
     border: 1px solid #428bca;
     border-left-width: 5px;
     border-radius: 3px;
-    border-left-color: #428bca;
+    border-left-color: #428bca;	/*DARK SKY BLUE*/
 }
 
 .paper .tab-content{
@@ -90,7 +90,7 @@ footer {
   font-size:.5em;
   vertical-align:super;
   padding:2px;
-  background: #ac0000;
+  background: #ac0000;  /*red*/
 }
 
 .red {
@@ -127,7 +127,7 @@ footer {
 
 .icon-pills .active a,
 .icon-pills .active a:hover {
-    background-color:#d2640a !important;
+    background-color:#d2640a !important;		/*ORANGE*/
     color:#fff !important;
 }
 
@@ -175,21 +175,21 @@ footer {
 
 .panel-success > .panel-leftheading
 {
-    color: #3c763d;
+    color: #3c763d;		/*FOREST GREEN*/
     background-color: #dff0d8;
     border-color: #d6e9c6;
 }
 
 .panel-info > .panel-leftheading
 {
-    color: #31708f;
+    color: #31708f;			/*WASHED BLUE*/
     background-color: #d9edf7;
     border-color: #bce8f1;
 }
 
 .panel-warning > .panel-leftheading
 {
-    color: #8a6d3b;
+    color: #8a6d3b;			/*BROWN*/
     background-color: #fcf8e3;
     border-color: #faebcc;
 }
@@ -197,7 +197,7 @@ footer {
 .panel-danger > .panel-leftheading
 {
     color: #fff;
-    background-color: #d2640a;
+    background-color: #d2640a;		/*BURNT ORANGE*/
     border-color: #d2640a !important;
 }
 
