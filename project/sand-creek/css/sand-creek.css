@@ -39,7 +39,8 @@ footer {
 
 .jumbotron {
   margin-top: 5px;
-  background-image: url("../img/cover.png");
+  background-image: url("../img/cover_enhanced_edited3.jpg");
+  background-repeat:no-repeat;
   background-size: 100% 100%;
   color:white !important;
   text-shadow: 0 2px 5px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
