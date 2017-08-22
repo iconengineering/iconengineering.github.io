@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Sand Creek Major Drainageway Plan
+title: Sand Creek Major Drainageway Plan & FHAD
 image: cover_enhanced_edited.jpg
 categories:
 - current-projects
