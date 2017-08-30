@@ -1,6 +1,3 @@
----
-name: Wyatt Reis
+email: jmichaelsen@iconeng.com
 title: Engineer
-email: wreis@iconeng.com
-photo: placeholder.png
----
+name: Jaclyn Michaelsen
