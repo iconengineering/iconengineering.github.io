@@ -1,3 +1,6 @@
-email: jmichaelsen@iconeng.com
-title: Engineer
-name: Jaclyn Michaelsen
+--- 
+name: Jaclyn Michaelsen 
+title: Engineer 
+email: jmichaelsen@iconeng.com 
+photo: placeholder.png 
+--- 
