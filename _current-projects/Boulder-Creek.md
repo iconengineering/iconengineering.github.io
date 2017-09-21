@@ -2,7 +2,7 @@
 layout: project
 title: Boulder Creek Restoration Master Plan
 image: boulder-creek-cover.png
-type: archive
+type: current
 link: project/boulder-creek
 categories:
 - current-projects
