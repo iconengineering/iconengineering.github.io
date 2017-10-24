@@ -27,7 +27,7 @@ footer {
 .nav > li > a:focus,
 .navbar li:hover,
 .nav > li > a:hover {
-  background-color: #456E6B !important;   /*left hover*/
+  background-color: #456E6B !important;   /*left hover; washed teal*/
 }
 
 .main-column{
@@ -66,7 +66,7 @@ footer {
     border: 1px solid #428bca;
     border-left-width: 5px;
     border-radius: 3px;
-    border-left-color: #428bca;	/*DARK SKY BLUE*/
+    border-left-color: #428bca;
 }
 
 .paper .tab-content{
@@ -91,7 +91,7 @@ footer {
   font-size:.5em;
   vertical-align:super;
   padding:2px;
-  background: #ac0000;  /*red*/
+  background: #ac0000;
 }
 
 .red {
@@ -128,7 +128,7 @@ footer {
 
 .icon-pills .active a,
 .icon-pills .active a:hover {
-    background-color:#d2640a !important;		/*ORANGE*/
+    background-color:#d2640a !important;
     color:#fff !important;
 }
 
@@ -176,23 +176,23 @@ footer {
 
 .panel-success > .panel-leftheading
 {
-    color: #3c763d;		/*FOREST GREEN*/
+    color: #3c763d;
     background-color: #dff0d8;
-    border-color: #d6e9c6;
+    border-color: #d6e9c6; /*puke light green*/
 }
 
 .panel-info > .panel-leftheading
 {
-    color: #31708f;			/*WASHED BLUE*/
+    color: #31708f;
     background-color: #d9edf7;
-    border-color: #bce8f1;
+    border-color: #bce8f1; /*baby blue*/
 }
 
 .panel-warning > .panel-leftheading
 {
-    color: #8a6d3b;			/*BROWN*/
+    color: #8a6d3b;
     background-color: #fcf8e3;
-    border-color: #faebcc;
+    border-color: #faebcc; /*egg white*/
 }
 
 .panel-danger > .panel-leftheading
