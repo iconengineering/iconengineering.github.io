@@ -23,6 +23,18 @@ layout: page
     <ul class="actions">
       <li><a href="{{base}}/{{post.link}}" class="button">More</a></li>
     </ul>
+
+
+    {% else if post.type == "redirect" %}
+    <a href="{{post.link}}" class="image fit uniform"><img src="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/project/{{post.image}}" alt="" /></a>
+    <h3>{{post.title}}</h3>
+    <p>{{post.description}}</p>
+    <ul class="actions">
+      <li><a href="{{post.link}}" class="button">More</a></li>
+    </ul>
+    
+    
+
     {% else %}
     <a href="{{base}}{{post.url}}" class="image fit uniform"><img src="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/project/{{post.image}}" alt="" /></a>
     <h3>{{post.title}}</h3>
