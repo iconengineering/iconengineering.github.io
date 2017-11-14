@@ -2,7 +2,7 @@
 layout: project
 title: Milliken Stormwater Master Plan
 image: milliken-cover.jpg
-type: archive
+type: current
 link: project/milliken/milliken-stormwater-master-plan.html
 categories:
 - current-projects
