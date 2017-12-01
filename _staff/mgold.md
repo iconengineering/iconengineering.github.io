@@ -1,6 +1,6 @@
 ---
-name: Matt Gold
+name: Matthew Goldman
 title: Engineer
-email: mgold@iconeng.com
+email: mgoldman@iconeng.com
 photo: placeholder.png
 ---
