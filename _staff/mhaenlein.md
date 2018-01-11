@@ -1,6 +1,6 @@
 ---
 name: Mary Haenlein
-title: Office Coordinator
+title: Office Manager
 email: mhaenlein@iconeng.com
 photo: Mary b_w.jpg
 ---
