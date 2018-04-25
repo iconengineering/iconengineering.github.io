@@ -2,5 +2,5 @@
 name: Dave Neill
 title: CAD Manager
 email: dneill@iconeng.com
-photo: Dave.img
+photo: Dave.jpg
 ---

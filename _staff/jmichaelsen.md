@@ -2,5 +2,5 @@
 name: Jaclyn Michaelsen
 title: Engineer
 email: jmichaelsen@iconeng.com
-photo: Jackie.img
---- 
+photo: Jackie.jpg
+---
