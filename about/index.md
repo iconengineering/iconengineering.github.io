@@ -25,7 +25,7 @@ capabilities also include roadway design, land development, and the development
 of geospatial and web-based solutions. ICON currently employs over 20
 engineering staff with GIS, CAD, and administrative support.
 
-## Management
+## Meet the Team
 
 <div class="box alt">
   <div class="row">
@@ -86,7 +86,7 @@ engineering staff with GIS, CAD, and administrative support.
   </div>
 </div>
 
-## Staff
+##
 
 <div class="row staff">
 {% for employee in site.staff %}
