@@ -11,7 +11,7 @@ ICON has a friendly, cooperative atmosphere and provides a range of benefits inc
 
 
 #### Civil Design Engineer
->href="https://s3-us-west-2.amazonaws.com/iconeng/pdfs/sand-creek/Sand_Creek_Hydrology_Progress_Meeting_Minutes_2017_12_19.pdf"
+<a href="https://s3-us-west-2.amazonaws.com/iconeng/pdfs/Careers/JobAnnouncement-Civil+Design+Engineer+2018.pdf" > More Information </a></td>
 
 #### Project Engineer
 
