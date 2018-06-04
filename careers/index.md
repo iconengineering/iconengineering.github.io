@@ -11,10 +11,10 @@ ICON has a friendly, cooperative atmosphere and provides a range of benefits inc
 
 
 #### Civil Design Engineer
->asdf
+>Link: https://s3-us-west-2.amazonaws.com/iconeng/pdfs/Careers/JobAnnouncement-Civil+Design+Engineer+2018.pdf
 
 #### Project Engineer
->asdf
+>Link: https://s3-us-west-2.amazonaws.com/iconeng/pdfs/Careers/JobAnnouncement-CAD+Designer+2018.pdf
 
 
 
