@@ -12,13 +12,9 @@ ICON has a friendly, cooperative atmosphere and provides a range of benefits inc
 
 
 #### Civil Design Engineer
-<td><a href="https://s3-us-west-2.amazonaws.com/iconeng/pdfs/Careers/JobAnnouncement-Civil+Design+Engineer+2018.pdf" target="blank" > More Information </a></td>
+<td><a href="https://s3-us-west-2.amazonaws.com/iconeng/pdfs/Careers/JobAnnouncement-Civil+Design+Engineer+2018.pdf" > More Information </a></td>
 
 <hr>
 
 #### CAD Designer
-<td><a href="https://s3-us-west-2.amazonaws.com/iconeng/pdfs/Careers/JobAnnouncement-CAD+Designer+2018.pdf" target="blank" > More Information </a></td>
-
-
-<hr>
-**Contact [icon@iconeng.com](mailto:icon@iconeng.com) if you think you would be a great addition to our company.**
+<td><a href="https://s3-us-west-2.amazonaws.com/iconeng/pdfs/Careers/JobAnnouncement-CAD+Designer+2018.pdf" > More Information </a></td>
