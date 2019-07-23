@@ -76,7 +76,7 @@ engineering staff with GIS, CAD, and administrative support.
       <div class="principal-contact">
         <span class="principal">Aaron Bousselot, PE, CFM</span>
         <span class="small"><a href="mailto:abousselot@iconeng.com"><i class="fa fa-envelope"></i> abousselot@iconeng.com</a></span>
-      <span class="image fit"><img src="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/staff/Troy.jpg" alt="" /></span>
+      <span class="image fit"><img src="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/staff/Aaron.jpg" alt="" /></span>
     </div>
   </div>
 </div>
