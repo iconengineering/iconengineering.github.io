@@ -31,21 +31,6 @@ engineering staff with GIS, CAD, and administrative support.
   <div class="row">
     <div class="9u">
       <div class="principal-contact">
-        <span class="principal">Doug Williams, PE</span>
-        <span class="small"><a href="mailto:dwilliams@iconeng.com"><i class="fa fa-envelope"></i> dwilliams@iconeng.com</a></span>
-      </div>
-      <p>
-        With nearly 40 years of experience, Doug has a wide variety of engineering expertise in water resources planning, design and construction. He has completed numerous drainage and flood control designs ranging from less than $10,000 to over $5M in construction costs. His practical approach to problem solving has been coupled with an awareness of aesthetics that has produced facilities that are functional as well as community amenities.</p>
-    </div>
-    <div class="3u">
-      <span class="image fit"><img src="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/staff/Doug.jpg" alt="" /></span>
-    </div>
-  </div>
-</div>
-<div class="box alt">
-  <div class="row">
-    <div class="9u">
-      <div class="principal-contact">
         <span class="principal">Matt Ursetta, PE</span>
         <span class="small"><a href="mailto:mursetta@iconeng.com"><i class="fa fa-envelope"></i> mursetta@iconeng.com</a></span>
       </div>
@@ -81,6 +66,16 @@ engineering staff with GIS, CAD, and administrative support.
       <p>Troy has 20 years of experience in civil engineering specializing in stormwater projects along the Front Range of his home state of Colorado. His design work includes stream restoration, channel stabilization, and flood control projects across numerous tributaries in the South Platte River Basin. Project designs have required coordination with the Army Corps of Engineers, Environmental Consultants, U.S. Fish and Wildlife Service, EPA, CDPHE, and local municipal entities. Additionally, he directs ICON’s GIS department and has been responsible for the production of countywide DFIRMs for FEMA Map Modernization projects in Colorado, South Dakota and Wyoming. Troy routinely presents this work to city councils, commissions, and boards and has made multiple presentations at national, state, and local conferences.</p>
     </div>
     <div class="3u">
+      <span class="image fit"><img src="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/staff/Troy.jpg" alt="" /></span>
+    </div>
+  </div>
+</div>
+<div class="box alt">
+  <div class="row">
+    <div class="9u">
+      <div class="principal-contact">
+        <span class="principal">Aaron Bousselot, PE, CFM</span>
+        <span class="small"><a href="mailto:abousselot@iconeng.com"><i class="fa fa-envelope"></i> abousselot@iconeng.com</a></span>
       <span class="image fit"><img src="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/staff/Troy.jpg" alt="" /></span>
     </div>
   </div>
