@@ -78,6 +78,7 @@ engineering staff with GIS, CAD, and administrative support.
         <span class="small"><a href="mailto:abousselot@iconeng.com"><i class="fa fa-envelope"></i> abousselot@iconeng.com</a></span>
       <span class="image fit"><img src="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/staff/Aaron.jpg" alt="" /></span>
     </div>
+    <p>Aaron has 20 years of experience with civil design and project management for a wide range of stormwater, parks and trails projects. On the management side, he has led multi-disciplinary teams to successful project completion with ICON where his responsibilities have included developing project scopes and schedules, budget tracking, design support, facilitating meetings and overall coordination with the project team and stakeholders. On the engineering side, Aaron performs site evaluations and project planning, hydrologic and hydraulic analyses, comprehensive designs, specification and bid document preparation, and construction related services. Overall, his strength is in performing hydrologic and hydraulic modeling, estimating design and construction costs, environmental restoration planning, stormwater management plans, floodplain evaluations, drainage reports and master plans.</p>
   </div>
 </div>
 
