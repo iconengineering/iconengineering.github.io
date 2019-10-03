@@ -79,22 +79,3 @@ engineering staff with GIS, CAD, and administrative support.
     <span class="image fit"><img src="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/staff/Aaron.jpg" alt="" /></span>
   </div>
 </div>
-
-
-
-<div class="row staff">
-{% for employee in site.staff %}
-{% assign base = '' %}
-{% assign depth = page.url | split: '/' | size | minus: 0 %}
-{% if    depth <= 1 %}{% assign base = '.' %}
-{% elsif depth == 2 %}{% assign base = '..' %}
-{% elsif depth == 3 %}{% assign base = '../..' %}
-{% elsif depth == 4 %}{% assign base = '../../..' %}{% endif %}
-
- <div class="3u 6u$(small) -3u(small) profile">
-  <span class="image fit"><img src="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/staff/{{ employee.photo }}" alt="" /></span>
-  <strong>{{ employee.name }}</strong><br/>
-  <span>{{ employee.title }}</span><br/>
-  </div>
-{% endfor %}
-</div>
