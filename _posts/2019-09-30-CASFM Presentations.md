@@ -2,7 +2,7 @@
 layout: post
 title: 2019 CASFM Presentations
 author: Jennifer Green
-image: FortCollinsFlood.JPG
+image: CASFM_CB_19.jpg
 categories:
 - news
 description: Flood Education Day in Fort Collins.
