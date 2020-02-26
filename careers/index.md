@@ -11,13 +11,6 @@ ICON has a friendly, cooperative atmosphere and provides a range of benefits inc
 <hr>
 
 
-#### Project Engineer /  Manager & Engineer Intern - Stormwater
-<td><a href="https://iconeng.s3-us-west-2.amazonaws.com/pdfs/Careers/PE_EI_Stormwater_FINAL_2020.pdf" > More Information </a></td>
-
-
-<hr>
-
-
 #### Project Engineer / Manager - Transportation
 <td><a href="https://iconeng.s3-us-west-2.amazonaws.com/pdfs/Careers/PE_Transportation_FINAL_2020.pdf" > More Information </a></td>
 
@@ -25,8 +18,11 @@ ICON has a friendly, cooperative atmosphere and provides a range of benefits inc
 <hr>
 
 
-#### CAD Designer
-<td><a href="https://iconeng.s3-us-west-2.amazonaws.com/pdfs/Careers/CAD_FINAL_2020.pdf" > More Information </a></td>
-
+#### Project Engineer /  Manager & Engineer Intern - Stormwater
+<td><a href="https://iconeng.s3-us-west-2.amazonaws.com/pdfs/Careers/PE_EI_Stormwater_FINAL_2020.pdf" > More Information </a></td>
 
 <hr>
+
+
+#### CAD Designer
+<td><a href="https://iconeng.s3-us-west-2.amazonaws.com/pdfs/Careers/CAD_FINAL_2020.pdf" > More Information </a></td>
