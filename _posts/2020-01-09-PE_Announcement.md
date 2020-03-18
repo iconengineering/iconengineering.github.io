@@ -5,7 +5,7 @@ author: Jennifer Green
 image: applause.jpg
 categories:
 - news
-description: ICON Social Calendar
+description: ICON Office News
 ---
 
 We would like to recognize our newest Professional Engineer, Jake McMillen. Congratulations on passing your PE exam, and adding value to the ICON team with this great accomplishment!
