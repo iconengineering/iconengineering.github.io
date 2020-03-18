@@ -2,7 +2,7 @@
 layout: post
 title: COVID 19 Update
 author: Jennifer Green
-image: COVID_update.jpg
+image: COVID_update2.jpg
 categories:
 - news
 description: Office Update
