@@ -2,7 +2,7 @@
 layout: post
 title: Sanderson Gulch Construction Complete
 author: Jennifer Green
-image: SG_130.jpg
+image: SG_100.jpg
 categories:
 - news
 description: Construction Complete!
