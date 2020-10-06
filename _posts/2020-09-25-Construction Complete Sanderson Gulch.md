@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sanderson Gulch
+title: Sanderson Gulch Construction Complete
 author: Jennifer Green
 image: SG_139.jpg
 categories:
