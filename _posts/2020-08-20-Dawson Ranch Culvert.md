@@ -2,7 +2,7 @@
 layout: post
 title: Dawson Ranch Culvert Analysis
 author: Jennifer Green
-image: Ptarmigan Box Culvert.jpg
+image: DawsonRanch.JPG
 categories:
 - news
 description: Culvert Analysis Complete!
