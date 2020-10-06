@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sanderson Gulch Channel Improvements: Award Winning Design
+title: Sanderson Gulch Channel Improvements Award Winning Design
 author: Jennifer Green
 image: SG_139.jpg
 categories:
