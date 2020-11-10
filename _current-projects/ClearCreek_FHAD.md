@@ -6,6 +6,6 @@ type: current
 link: project/ClearCreek_FHAD
 categories:
 - current-projects
-description: ClearCreek_FHAD
+description: Clear Creek Flood Hazard Area Delineation Study
 ---
 This project has been archived.
