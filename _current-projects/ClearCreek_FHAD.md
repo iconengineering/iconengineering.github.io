@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Clear Creek FHAD Study
-image: boulder-creek-cover.png
+image: COVER_UPDATE.jpg
 type: current
 link: project/ClearCreek_FHAD
 categories:
