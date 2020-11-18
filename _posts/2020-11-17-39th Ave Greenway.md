@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 39th Ave Greenway - Best Overall Project Award for CNU Colorado
+title: 39th Ave Greenway Wins CNU Colorado's Best Overall Project Award 2020
 author: Jennifer Green
 image: 39thAve_Post.jpg
 categories:
