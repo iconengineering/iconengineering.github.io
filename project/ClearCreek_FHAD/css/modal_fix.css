@@ -1,0 +1,8 @@
+.modal-dialog {
+  position: relative;
+  z-index: 1;
+  width: auto;
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
