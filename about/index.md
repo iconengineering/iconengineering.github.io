@@ -22,7 +22,7 @@ floodplain modeling and hydrologic/hydraulic analyses, development of river and
 drainage master plans, stream stabilization and restoration improvements, bridge
 hydraulics, and design of utility and storm water infrastructure. ICON’s
 capabilities also include roadway design, land development, and the development
-of geospatial and web-based solutions. ICON currently employs over 20
+of geospatial and web-based solutions. ICON currently employs over 30
 engineering staff with GIS, CAD, and administrative support.
 
 ## Meet the Team
