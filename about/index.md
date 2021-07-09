@@ -25,7 +25,7 @@ capabilities also include roadway design, land development, and the development
 of geospatial and web-based solutions. ICON currently employs over 30
 engineering staff with GIS, CAD, and administrative support.
 
-## Meet the Team
+## Meet the Principals
 
 <div class="box alt">
   <div class="row">
@@ -34,7 +34,7 @@ engineering staff with GIS, CAD, and administrative support.
         <span class="principal">Matt Ursetta, PE</span>
       </div>
       <p>
-        Matt has over 35 years of experience in general civil engineering, including water resources, park development and design, roadway design, utility design, and development services. He has managed and designed hundreds of large, medium, and small drainage and flood control improvements throughout the state of Colorado. He also specializes in managing the completion of drawings and contract documents for drainage and flood control projects that include open channels, major storm sewer outfalls, regional detention ponds, water quality ponds, dams, hydraulics structures, and transportation/roadway systems.</p>
+        Matt's experience lies in civil engineering, including water resources, park development and design, roadway design, utility design, and development services. He has managed and designed hundreds of large, medium, and small drainage and flood control improvements throughout the state of Colorado. He also specializes in managing the completion of drawings and contract documents for drainage and flood control projects that include open channels, major storm sewer outfalls, regional detention ponds, water quality ponds, dams, hydraulics structures, and transportation/roadway systems.</p>
     </div>
     <div class="3u">
       <span class="image fit"><img src="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/staff/Matt1.jpg" alt="" /></span>
@@ -47,7 +47,7 @@ engineering staff with GIS, CAD, and administrative support.
       <div class="principal-contact">
         <span class="principal">Craig Jacobson, PE, CFM</span>
       </div>
-      <p>Craig has over 25 years of water resource engineering with an emphasis in floodplain management and hydrologic and hydraulic analyses. Craig has managed and designed a large array of stormwater improvements throughout the state of Colorado. His project experience includes steady state and two-dimensional hydraulic modeling, stormwater improvement and channel stabilization designs, channel restoration and maintenance, master planning, and construction management. He completed or managed the hydraulic analysis of hundreds of miles of floodplains for creeks and rivers along Colorado’s Front Range and western slope, in addition to projects in Wyoming and South Dakota. Craig is a Certified Floodplain Manager (CFM) through ASFPM and instructs classes with the Urban Watershed Research Institute (UWRI) regarding preparation and processing of FEMA Letters of Map Changes (LOMCs).</p>
+      <p>Craig is an expert in water resource engineering with an emphasis in floodplain management and hydrologic and hydraulic analyses. Craig has managed and designed a large array of stormwater improvements throughout the state of Colorado. His project experience includes steady state and two-dimensional hydraulic modeling, stormwater improvement and channel stabilization designs, channel restoration and maintenance, master planning, and construction management. He completed or managed the hydraulic analysis of hundreds of miles of floodplains for creeks and rivers along Colorado’s Front Range and western slope, in addition to projects in Wyoming and South Dakota. Craig is a Certified Floodplain Manager (CFM) through ASFPM and instructs classes with the Urban Watershed Research Institute (UWRI) regarding preparation and processing of FEMA Letters of Map Changes (LOMCs).</p>
     </div>
     <div class="3u">
       <span class="image fit"><img src="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/staff/Craig1.jpg" alt="" /></span>
@@ -60,7 +60,7 @@ engineering staff with GIS, CAD, and administrative support.
       <div class="principal-contact">
         <span class="principal">Troy Carmann, PE, CFM</span>
       </div>
-      <p>Troy has  over 22 years of experience in civil engineering specializing in stormwater projects along the Front Range of his home state of Colorado. His design work includes stream restoration, channel stabilization, and flood control projects across numerous tributaries in the South Platte River Basin. Project designs have required coordination with the Army Corps of Engineers, Environmental Consultants, U.S. Fish and Wildlife Service, EPA, CDPHE, and local municipal entities. Additionally, he directs ICON’s GIS department and has been responsible for the production of countywide DFIRMs for FEMA Map Modernization projects in Colorado, South Dakota and Wyoming. Troy routinely presents this work to city councils, commissions, and boards and has made multiple presentations at national, state, and local conferences.</p>
+      <p>Troy specializes in stormwater projects along the Front Range of his home state of Colorado. His design work includes stream restoration, channel stabilization, and flood control projects across numerous tributaries in the South Platte River Basin. Project designs have required coordination with the Army Corps of Engineers, Environmental Consultants, U.S. Fish and Wildlife Service, EPA, CDPHE, and local municipal entities. Additionally, he directs ICON’s GIS department and has been responsible for the production of countywide DFIRMs for FEMA Map Modernization projects in Colorado, South Dakota and Wyoming. Troy routinely presents this work to city councils, commissions, and boards and has made multiple presentations at national, state, and local conferences.</p>
     </div>
     <div class="3u">
       <span class="image fit"><img src="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/staff/Troy1.jpg" alt="" /></span>
@@ -73,7 +73,7 @@ engineering staff with GIS, CAD, and administrative support.
       <div class="principal-contact">
         <span class="principal">Aaron Bousselot, PE, CFM</span>
     </div>
-    <p>Aaron has 20 years of experience with civil design and project management for a wide range of stormwater, parks and trails projects. On the management side, he has led multi-disciplinary teams to successful project completion with ICON where his responsibilities have included developing project scopes and schedules, budget tracking, design support, facilitating meetings and overall coordination with the project team and stakeholders. On the engineering side, Aaron performs site evaluations and project planning, hydrologic and hydraulic analyses, comprehensive designs, specification and bid document preparation, and construction related services. Overall, his strength is in performing hydrologic and hydraulic modeling, estimating design and construction costs, environmental restoration planning, stormwater management plans, floodplain evaluations, drainage reports and master plans.</p>
+    <p>Aaron has performed civil design and project management for a wide range of stormwater, parks and trails projects. On the management side, he has led multi-disciplinary teams to successful project completion with ICON where his responsibilities have included developing project scopes and schedules, budget tracking, design support, facilitating meetings and overall coordination with the project team and stakeholders. On the engineering side, Aaron performs site evaluations and project planning, hydrologic and hydraulic analyses, comprehensive designs, specification and bid document preparation, and construction related services. Overall, his strength is in performing hydrologic and hydraulic modeling, estimating design and construction costs, environmental restoration planning, stormwater management plans, floodplain evaluations, drainage reports and master plans.</p>
   </div>
   <div class="3u">    
     <span class="image fit"><img src="//s3-us-west-2.amazonaws.com/iconeng/iconeng-img/staff/Aaron1.jpg" alt="" /></span>
