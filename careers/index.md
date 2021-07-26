@@ -16,7 +16,7 @@ ICON has a friendly, cooperative atmosphere and provides a range of benefits inc
 <br>
 <b>Job Duties</b>
 <ul>
-<li> Manage civil engineering projects including roadways and other infrastructure projects for public agencies</li>
+<li> Manage civil engineering projects including roadways and other infrastructure projects for public agencies.</li>
 <li> Lead, self-perform, and/or oversee engineering design in the preparation of construction plans and specifications, technical design reports, project schedules, cost estimates, and other associated project/contract deliverables.</li>
 <li> Coordinate workload and resource allocation on a weekly basis with other project managers.</li>
 <li> Responsible and accountable for meeting client expectations and maintaining positive connections with our clients.</li>
