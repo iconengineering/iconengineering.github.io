@@ -13,6 +13,7 @@ ICON has a friendly, cooperative atmosphere and provides a range of benefits inc
 
 <details>
 <summary>Project Engineer / Manager - Transportation</summary>
+
 	Job Duties
 		+Manage civil engineering projects including roadways and other infrastructure projects for public agencies.
 		+Lead, self-perform, and/or oversee engineering design in the preparation of construction plans and specifications, technical design reports, project schedules, cost estimates, and other associated project/contract deliverables.
