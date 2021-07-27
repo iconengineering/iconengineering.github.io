@@ -46,7 +46,7 @@ ICON has a friendly, cooperative atmosphere and provides a range of benefits inc
 <hr>
 
 
-<a href="/careers/JobPost_test"> Project Engineer / Manager - Transportation</a>
+<a href="/careers/JobPost_test" target="_blank"> Project Engineer / Manager - Transportation</a>
 
 
 <hr>
