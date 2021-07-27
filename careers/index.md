@@ -10,7 +10,7 @@ ICON has a friendly, cooperative atmosphere and provides a range of benefits inc
 <hr>
 
 
-<div style="background-color:#028598A;color:white;padding:10px;">
+<div style="background-color:#154360;color:white;padding:10px;">
   <details>
   <summary><b>BENEFITS:</b></summary>
 
@@ -22,7 +22,7 @@ ICON has a friendly, cooperative atmosphere and provides a range of benefits inc
 <hr>
 
 
-<div style="background-color:#028598A;color:white;padding:10px;">
+<div style="background-color:#154360;color:white;padding:10px;">
   <details>
   <summary><b>WORK-LIFE BALANCE:</b></summary>
 
@@ -34,7 +34,7 @@ ICON has a friendly, cooperative atmosphere and provides a range of benefits inc
 <hr>
 
 
- <div style="background-color:#028598A;color:white;padding:10px;">
+ <div style="background-color:#154360;color:white;padding:10px;">
    <details>
    <summary><b>PROFESSIONAL DEVELOPMENT:</b></summary>
 
