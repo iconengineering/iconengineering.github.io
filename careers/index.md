@@ -7,6 +7,16 @@ ICON Engineering is a locally owned civil engineering consulting firm located in
 
 ICON has a friendly, cooperative atmosphere and provides a range of benefits including medical, long-term disability, and life insurance; 401(k) retirement plan; personal time off (PTO), holiday, paid overtime; and training and education. We believe in work-life balance and have flexibility in work schedules. We seek highly motivated people with excellent communication and problem solving skills.  If you would like to become part of our team, please see the list of opportunities below:
 
+<hr>
+
+
+<div style="background-color:blue;color:white;padding:10px;">
+  <details>
+  <summary>Benefits</summary>
+</div>
+  The benefit of working for a growing firm with 30+ employees is the opportunity to make a difference, work on a variety of projects, affect company culture, and implement positive change. Our rewards package includes a competitive salary with professional/career growth opportunities, medical/dental/vision/life/disability insurance, 8 paid holidays, accruing PTO, 401(k), performance-based bonuses, and fees paid for professional society participation.
+  </details>
+
 
 <hr>
 
