@@ -13,7 +13,7 @@ ICON has a friendly, cooperative atmosphere and provides a range of benefits inc
 <div style="background-color:blue;color:white;padding:10px;">
   <details>
   <summary>Benefits</summary>
-</div>
+  </div>
   The benefit of working for a growing firm with 30+ employees is the opportunity to make a difference, work on a variety of projects, affect company culture, and implement positive change. Our rewards package includes a competitive salary with professional/career growth opportunities, medical/dental/vision/life/disability insurance, 8 paid holidays, accruing PTO, 401(k), performance-based bonuses, and fees paid for professional society participation.
   </details>
 
