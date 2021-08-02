@@ -3,26 +3,19 @@ title: Careers at ICON Engineering
 layout: page
 ---
 
-ICON Engineering is a locally owned civil engineering consulting firm located in Centennial, Colorado. We offer engineering services for stormwater and floodplain management, transportation and parks and open space projects. The company was founded in 1997 and we have focused on building long-term client relationships through responsiveness, quality of service, and providing unique and comprehensive solutions. ICON strives to improve the quality of life within the communities we serve and call home.
+In business since 1997, ICON Engineering is one of Colorado’s most reputable planning, design, and project management civil engineering firms. We provide resourceful solutions for the communities we live in and the mountainous areas we enjoy through the design of stormwater, transportation, floodplain management, and parks/open space areas. At ICON, we promote work-life balance, team work, training/professional growth, accountability, and inclusion for all who want to be part of our connected team. We are looking for engaging, team-oriented people for our Centennial location who bring a desire to grow and the passion to make a difference.  
 
 
 <hr>
 
 
-<a href="/careers/JobPost_test" target="_blank"> <b>Project Engineer / Manager - Transportation</b></a>
+<a href="/careers/PE_PM_Transportation" target="_blank"> <b>Project Engineer / Manager - Transportation</b></a>
 
 
 <hr>
 
+<a href="/careers/PE_Storm" target="_blank"> <b>Project Engineer - Stormwater, Drainage, Floodplain Management</b></a>
 
-#### Project Engineer /  Manager & Engineer Intern - Stormwater
-<td><a href="https://iconeng.s3-us-west-2.amazonaws.com/pdfs/Careers/PE_EI_Stormwater_FINAL_2020.pdf" target="_blank"> More Information </a></td>
-
-<hr>
-
-
-#### CAD Designer
-<td><a href="https://iconeng.s3-us-west-2.amazonaws.com/pdfs/Careers/CAD_FINAL_2020.pdf" target="_blank"> More Information </a></td>
 
 <hr>
 
