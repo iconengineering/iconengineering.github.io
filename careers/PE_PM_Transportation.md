@@ -5,25 +5,23 @@ layout: page
 The ideal candidate for this position will have experience working in watersheds along the Front Range of Colorado and the ability to work independently on a variety of projects.
 
 <b>Essential Responsibilities</b>
-<li>Develop innovative designs for stream stabilization & stormwater management facilities.</li>
-<li>Calculate unique water quality treatment systems and analyze flood control infrastructure.</li>
-<li>Study watersheds, analyze basin characteristics, precipitation, and runoff volumes.</li>
-<li>Design storm sewers, detention/water quality ponds, channels, and natural drainage systems.</li>
-<li>Floodplain studies and related FEMA flood mapping products.</li>
-<li>Stormwater Management, Erosion and Sediment Control, and Master Planning studies.</li>
-<li>Permitting stormwater, floodplain development, and wetland permit applications.</li>
-<li>Development and site plan review and municipal engineering tasks.</li>
-<li>Construction plan and specification development, construction management.</li>
-<li>Prepare outreach materials, attend meetings, and present technical information to clients.</li>
+<li>Develop innovative designs for Colorado Front Range communities on local and regional transportation improvements.</li>
+<li>A demonstrated ability to work through civil infrastructure challenges related to urbanized right-of-way including underground utilities, stormwater drainage, private property, and shared uses.</li>
+<li>Prepare engineering drawings and specifications to clearly convey construction requirements.</li>
+<li>Perform engineering calculations, data analysis, and field observations.</li>
+<li>Develop an understanding of construction methods to translate engineering plans and specs to the final construction.</li>
+<li>Be actively involved in client meetings with fellow engineers.</li>
+<li>Support projects during construction including reviewing submittals, answering questions, and conducting field visits.</li>
 
 <br>
 <b>Education / Experience</b>
 
-<li>BS Degree in Civil or Environmental Engineering.</li>
-<li>Basic understanding and willingness to learn CAD, GIS, HEC-RAS, CUHP, SWMM, and other related software tools</li>
+<li>BS Degree in Civil Engineering with at least 6 years of work experience.</li>
+<li>Professional Engineering license</li>
 <li>Ability to use CAD, GIS, HEC-RAS, CUHP, SWMM, and other related software tools to plan and design civil projects.</li>
-<li>Previous experience with CAD Civil 3D, GIS, hydrologic and hydraulic modeling, field survey, roadway design, parks and trails, water and natural resources.</li>
+<li>Experience in civil infrastructure projects, specifically stormwater, water resources, and/or transportation engineering.</li>
 <li>Ability to work in a collaborative, flexible, small team environment.</li>
+<li>Established experience and relationships with Counties, Cities, and Districts.</li>
 
 <br>
 <br>
