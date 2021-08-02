@@ -1,5 +1,5 @@
 ---
-title: Project Engineer / Manager - Transportation
+title: Project Engineer - Transportation
 layout: page
 ---
 The ideal candidate for this position will have experience working in watersheds along the Front Range of Colorado and the ability to work independently on a variety of projects.
