@@ -14,10 +14,16 @@ layout: page
 <br>
 <b>Education / Experience</b>
 
+<li>BS Degree in Civil or Environmental Engineering.</li>
+<li>Basic understanding and willingness to learn CAD, GIS, HEC-RAS, CUHP, SWMM, and other related software tools</li>
+<li>Ability to use CAD, GIS, HEC-RAS, CUHP, SWMM, and other related software tools to plan and design civil projects.</li>
+<li>Previous experience with CAD Civil 3D, GIS, hydrologic and hydraulic modeling, field survey, roadway design, parks and trails, water and natural resources.</li>
+<li>Ability to work in a collaborative, flexible, small team environment.</li>
+
 <li>BS Degree in Civil Engineering with at least 6 years of work experience.</li>
 <li>Professional Engineering license</li>
 <li>Ability to use CAD, GIS, HEC-RAS, CUHP, SWMM, and other related software tools to plan and design civil projects.</li>
-<li>Experience in civil infrastructure projects, specifically stormwater, water resources, and/or transportation engineering.</li>
+<li>Experience in civil infrastructure projects, specifically stormwater, or water resource engineering.</li>
 <li>Ability to work in a collaborative, flexible, small team environment.</li>
 <li>Established experience and relationships with Counties, Cities, and Districts.</li>
 

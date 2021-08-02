@@ -19,7 +19,7 @@ The ideal candidate for this position will have experience working in watersheds
 <li>BS Degree in Civil Engineering with at least 6 years of work experience.</li>
 <li>Professional Engineering license</li>
 <li>Ability to use CAD, GIS, HEC-RAS, CUHP, SWMM, and other related software tools to plan and design civil projects.</li>
-<li>Experience in civil infrastructure projects, specifically stormwater, water resources, and/or transportation engineering.</li>
+<li>Experience in civil infrastructure projects, specifically transportation engineering.</li>
 <li>Ability to work in a collaborative, flexible, small team environment.</li>
 <li>Established experience and relationships with Counties, Cities, and Districts.</li>
 
