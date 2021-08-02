@@ -2,29 +2,31 @@
 title: Project Engineer / Manager - Transportation
 layout: page
 ---
-
+The ideal candidate for this position will have experience working in watersheds along the Front Range of Colorado and the ability to work independently on a variety of projects.
 
 <b>Essential Responsibilities</b>
-<li>Manage civil engineering projects including roadways and other infrastructure projects for public agencies.</li>
-<li>Lead, self-perform, and/or oversee engineering design in the preparation of construction plans and specifications, technical design reports, project schedules, cost estimates, and other associated project/contract deliverables.</li>
-<li>Coordinate workload and resource allocation on a weekly basis with other project managers.</li>
-<li>Responsible and accountable for meeting client expectations and maintaining positive connections with our clients.</li>
-<li>Prepare and carry-out project management and quality control plans to meet project goals, budgets,and schedules.</li>
-<li>Prepare invoicing and follow-up to collect AR in a timely manner.</li>
-<li>Support the construction process by reviewing submittals, answering questions, and conducting field visits.</li>
-<li>Assist in business development activities and prepare proposals for competitive pursuits.</li>
+<li>Develop innovative designs for stream stabilization & stormwater management facilities.</li>
+<li>Calculate unique water quality treatment systems and analyze flood control infrastructure.</li>
+<li>Study watersheds, analyze basin characteristics, precipitation, and runoff volumes.</li>
+<li>Design storm sewers, detention/water quality ponds, channels, and natural drainage systems.</li>
+<li>Floodplain studies and related FEMA flood mapping products.</li>
+<li>Stormwater Management, Erosion and Sediment Control, and Master Planning studies.</li>
+<li>Permitting stormwater, floodplain development, and wetland permit applications.</li>
+<li>Development and site plan review and municipal engineering tasks.</li>
+<li>Construction plan and specification development, construction management.</li>
+<li>Prepare outreach materials, attend meetings, and present technical information to clients.</li>
 
 <br>
 <b>Education / Experience</b>
 
-<li>BS Degree in Civil Engineering with at least 6 years of work experience.</li>
-<li>Professional Engineering license</li>
+<li>BS Degree in Civil or Environmental Engineering.</li>
+<li>Basic understanding and willingness to learn CAD, GIS, HEC-RAS, CUHP, SWMM, and other related software tools</li>
 <li>Ability to use CAD, GIS, HEC-RAS, CUHP, SWMM, and other related software tools to plan and design civil projects.</li>
-<li>Advanced understanding of Civil 3D and other applicable design software, and Microsoft Office programs including Word, Excel, Outlook, Project, etc.</li>
-<li>Local experience and relationships with Counties, Cities, and Districts is a plus.</li>
+<li>Previous experience with CAD Civil 3D, GIS, hydrologic and hydraulic modeling, field survey, roadway design, parks and trails, water and natural resources.</li>
+<li>Ability to work in a collaborative, flexible, small team environment.</li>
 
 <br>
 <br>
 
-Please send your letter of interest and resume of qualifications via email to¬
+Please send your letter of interest and resume of qualifications via email to
 Mr. Troy Carmann | <tcarmann@iconeng.com>

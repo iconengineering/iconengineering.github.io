@@ -1,5 +1,5 @@
 ---
-title: Project Engineer - Stormwater, Drainage, and/or Floodplain Management
+title: Project Engineer - Stormwater, Drainage, Floodplain Management
 layout: page
 ---
 
@@ -12,7 +12,6 @@ The ideal candidate for this position will have experience working in watersheds
 <li>Perform engineering calculations, data analysis, and field observations.</li>
 <li>Develop an understanding of construction methods to translate engineering plans and specs to the final construction.</li>
 <li>Be actively involved in client meetings with fellow engineers.</li>
-<li>Support the construction process by reviewing submittals, answering questions, and conducting field visits.</li>
 <li>Support projects during construction including reviewing submittals, answering questions, and conducting field visits.</li>
 
 <br>
@@ -28,5 +27,5 @@ The ideal candidate for this position will have experience working in watersheds
 <br>
 <br>
 
-Please send your letter of interest and resume of qualifications via email to¬
+Please send your letter of interest and resume of qualifications via email to
 Mr. Troy Carmann | <tcarmann@iconeng.com>
