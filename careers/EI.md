@@ -2,6 +2,9 @@
 title: Engineering Intern - Stormwater, Drainage, Floodplain Management
 layout: page
 ---
+
+The ideal candidate for this position will have experience working in watersheds along the Front Range of Colorado and the ability to work independently on a variety of projects.
+
 <b>Essential Responsibilities</b>
 <li>Manage the planning, design, and production of engineering documents for a variety of projects to include stormwater and drainage design, stream restoration, floodplain analysis, detention and water quality, parks and trails.</li>
 <li>Contribute to studies, master plans, permitting, and computer modeling.</li>
