@@ -2,7 +2,7 @@
 title: Project Engineer - Transportation
 layout: page
 ---
-The ideal candidate for this position will have experience working in watersheds along the Front Range of Colorado and the ability to work independently on a variety of projects.
+The ideal candidate for this position will have experience designing intersection improvements and roadway widenings, sidewalks and stormwater drainage, parking lots and pedestrian/bike trails, meeting local agency and CDOT requirements, and the ability to work independently on a variety of projects.
 
 <b>Essential Responsibilities</b>
 <li>Develop innovative designs for Colorado Front Range communities on local and regional transportation improvements.</li>
