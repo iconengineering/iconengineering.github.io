@@ -2,7 +2,7 @@
 layout: post
 title: Carlsonator Water Quality Vault
 author: Jennifer Green
-image: Brighton North Outfall 2021.jpg
+image: Brighton North Outfall Carlsonator.JPG
 categories:
 - news
 description: City of Brighton North Outfall
