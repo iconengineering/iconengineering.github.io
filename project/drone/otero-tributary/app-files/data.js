@@ -31,10 +31,6 @@ var APP_DATA = {
       "linkHotspots": [],
       "infoHotspots": [
         {
-          "yaw": -3.0575959494595057,
-          "pitch": 1.2840507551621538,
-          "title": "Roadway Reconstruction",
-          "text": "Outfall and Junction Structure"
         }
       ]
     }

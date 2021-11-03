@@ -253,81 +253,78 @@
             </div>
             <iframe loading="lazy" width="100%" height="640" style="width: 100%; height: 640px; border: none; max-width: 100%;" frameborder="0" allowfullscreen="" allow="xr-spatial-tracking; gyroscope; accelerometer" scrolling="no"
               src=https://www.iconeng.com/project/drone/otero-tributary/app-files/index.html></iframe>
+          </div>
+
+
+
         </div>
-
-
+        <footer>
+          <p>&copy; ICON Engineering 2021</p>
+        </footer>
 
       </div>
-
-      <hr>
-
-      <footer>
-        <p>&copy; ICON Engineering 2021</p>
-      </footer>
-
-    </div>
-    <!--/.container-->
+      <!--/.container-->
 
 
-    <!-- Bootstrap core JavaScript
+      <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jasny-bootstrap.min.js"></script>
-    <script src="js/docs.min.js"></script>
-    <script src="js/ekko-lightbox-min.js"></script>
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jasny-bootstrap.min.js"></script>
+      <script src="js/docs.min.js"></script>
+      <script src="js/ekko-lightbox-min.js"></script>
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 
-    <script>
-      $(document).ready(function() {
-        $('[data-toggle="offcanvas"]').click(function() {
-          $('.row-offcanvas').toggleClass('active')
+      <script>
+        $(document).ready(function() {
+          $('[data-toggle="offcanvas"]').click(function() {
+            $('.row-offcanvas').toggleClass('active')
+          });
         });
-      });
 
-      $(document).ready(function() {
-        $('[data-toggle="popover"]').popover({
-          placement: 'top'
+        $(document).ready(function() {
+          $('[data-toggle="popover"]').popover({
+            placement: 'top'
+          });
         });
-      });
 
-      $('body').on('click', function(e) {
-        $('[data-toggle="popover"]').each(function() {
-          //the 'is' for buttons that trigger popups
-          //the 'has' for icons within a button that triggers a popup
-          if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
-            $(this).popover('hide');
-          }
+        $('body').on('click', function(e) {
+          $('[data-toggle="popover"]').each(function() {
+            //the 'is' for buttons that trigger popups
+            //the 'has' for icons within a button that triggers a popup
+            if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+              $(this).popover('hide');
+            }
+          });
         });
-      });
 
-      $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
-        event.preventDefault();
-        $(this).ekkoLightbox();
-      });
+        $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+          event.preventDefault();
+          $(this).ekkoLightbox();
+        });
 
-      $(function() {
-        $('#myTab a:last').tab('show')
-      })
-    </script>
-    <script>
-      (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-          (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-          m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        $(function() {
+          $('#myTab a:last').tab('show')
+        })
+      </script>
+      <script>
+        (function(i, s, o, g, r, a, m) {
+          i['GoogleAnalyticsObject'] = r;
+          i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+          a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+          a.async = 1;
+          a.src = g;
+          m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-      ga('create', 'UA-57837083-1', 'auto');
-      ga('send', 'pageview');
-    </script>
+        ga('create', 'UA-57837083-1', 'auto');
+        ga('send', 'pageview');
+      </script>
 </body>
 
 </html>
