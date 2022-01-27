@@ -1,8 +1,12 @@
 ---
 layout: redirect
 ---
-## Drone Projects
+# Drone Projects
 
-[Otero Tributary Pano](../project\drone\otero-tributary\app-files\index.html)
+## Otero Tributary Stream Restoration
+[Upstream End](https://www.iconeng.com/project/drone/otero-tributary/us/index.html)
 
+[Middle Reach](https://www.iconeng.com/project/drone/otero-tributary/mid/index.html)
+
+## Willow Creek Stream Restoration
 [Willow Creek at Sterling Ranch Pano](../project\drone\willow-creek-sterling-ranch\app-files\index.html)
