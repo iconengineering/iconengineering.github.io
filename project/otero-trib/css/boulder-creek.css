@@ -39,7 +39,7 @@ footer {
 
 .jumbotron {
   margin-top: 5px;
-  background-image: url("../img/cover.png");
+  background-image: url("../img/20200513_125142.jpg");
   background-size: 100% 100%;
   color:white !important;
   text-shadow: 0 2px 5px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
@@ -75,7 +75,7 @@ footer {
   overflow-x:hidden !important;
 }
 
-.report {  
+.report {
   text-align: justify;
 }
 
@@ -136,7 +136,7 @@ footer {
   text-indent: 25px;
 }
 
-.contacts {  
+.contacts {
   list-style: none;
 }
 
@@ -301,5 +301,3 @@ footer {
   text-align: left;
   }
 }
-
-
