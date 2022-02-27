@@ -128,8 +128,8 @@ var APP_DATA = {
   "name": "Otero Tributary - Middle Reach",
   "settings": {
     "mouseViewMode": "drag",
-    "autorotateEnabled": true,
+    "autorotateEnabled": false,
     "fullscreenButton": false,
-    "viewControlButtons": false
+    "viewControlButtons": true
   }
 };
