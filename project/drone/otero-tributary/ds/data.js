@@ -95,7 +95,7 @@ var APP_DATA = {
     },
     {
       "id": "3-jan-16th-2022jan",
-      "name": "Jan 16th, 2022Jan",
+      "name": "Jan 16th, 2022",
       "levels": [
         {
           "tileSize": 256,
@@ -128,8 +128,8 @@ var APP_DATA = {
   "name": "Otero Tributary - Downstream",
   "settings": {
     "mouseViewMode": "drag",
-    "autorotateEnabled": true,
-    "fullscreenButton": false,
-    "viewControlButtons": false
+    "autorotateEnabled": false,
+    "fullscreenButton": true,
+    "viewControlButtons": true
   }
 };
