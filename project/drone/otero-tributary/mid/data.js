@@ -63,8 +63,8 @@ var APP_DATA = {
       "infoHotspots": []
     },
     {
-      "id": "2-feb-20th-2022",
-      "name": "Feb 20th, 2022",
+      "id": "2-jan-16th-2022",
+      "name": "Jan 16th, 2022",
       "levels": [
         {
           "tileSize": 256,
@@ -94,8 +94,8 @@ var APP_DATA = {
       "infoHotspots": []
     },
     {
-      "id": "3-jan-16th-2022",
-      "name": "Jan 16th, 2022",
+      "id": "3-feb-20th-2022",
+      "name": "Feb 20th, 2022",
       "levels": [
         {
           "tileSize": 256,
