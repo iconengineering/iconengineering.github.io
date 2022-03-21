@@ -63,8 +63,8 @@ var APP_DATA = {
       "infoHotspots": []
     },
     {
-      "id": "2-jan-16th-2022jan",
-      "name": "Jan 16th, 2022Jan",
+      "id": "2-jan-16th-2022",
+      "name": "Jan 16th, 2022",
       "levels": [
         {
           "tileSize": 256,
