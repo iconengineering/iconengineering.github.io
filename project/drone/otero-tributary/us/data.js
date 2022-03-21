@@ -24,9 +24,9 @@ var APP_DATA = {
       ],
       "faceSize": 2048,
       "initialViewParameters": {
-        "yaw": 0.27240788374555436,
-        "pitch": 1.163374479033612,
-        "fov": 1.5707963267948966
+        "yaw": 0.06586986072623802,
+        "pitch": 0.8946331032017945,
+        "fov": 1.5341081613008751
       },
       "linkHotspots": [],
       "infoHotspots": []
@@ -55,9 +55,9 @@ var APP_DATA = {
       ],
       "faceSize": 2048,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": -0.01178613151331831,
+        "pitch": 0.8541490014053608,
+        "fov": 1.5341081613008751
       },
       "linkHotspots": [],
       "infoHotspots": []
@@ -96,6 +96,37 @@ var APP_DATA = {
     {
       "id": "3-feb-20th-2022",
       "name": "Feb 20th, 2022",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 2048,
+      "initialViewParameters": {
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [],
+      "infoHotspots": []
+    },
+    {
+      "id": "4-march-20th-2022",
+      "name": "March 20th, 2022",
       "levels": [
         {
           "tileSize": 256,
