@@ -10,7 +10,7 @@ layout: redirect
 
 [Downstream](../project\drone\otero-tributary\ds\index.html)
 
-##Stone Tree Stream Restoration
+## Stone Tree Stream Restoration
 [Inlet W04](../project\drone\stone-tree\W04\index.html)
 
 [Inlet E01](../project\drone\stone-tree\E01\index.html)
