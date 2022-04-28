@@ -4,7 +4,7 @@ layout: redirect
 # Data Request Page
 
 ## Draw AOI Boundary
-<iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+<iframe width="1200" height="800" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
 src="https://iconengineering.maps.arcgis.com/apps/View/index.html?appid=ed68c8b166cd48bfb37165a3101c2d69"></iframe></div>
 
 ## Google Form
