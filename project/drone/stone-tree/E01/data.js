@@ -24,9 +24,9 @@ var APP_DATA = {
       ],
       "faceSize": 2048,
       "initialViewParameters": {
-        "yaw": -1.542925007861097,
-        "pitch": 1.5707963267948966,
-        "fov": 1.441990686926133
+        "yaw": -1.00844711920214,
+        "pitch": 1.4659866707891442,
+        "fov": 1.2820191017947098
       },
       "linkHotspots": [],
       "infoHotspots": []
@@ -55,15 +55,46 @@ var APP_DATA = {
       ],
       "faceSize": 2048,
       "initialViewParameters": {
-        "yaw": -0.9339209289270816,
-        "pitch": 1.1389957112990157,
-        "fov": 1.441990686926133
+        "yaw": -1.159520982699613,
+        "pitch": 1.2679345565536444,
+        "fov": 1.2820191017947098
+      },
+      "linkHotspots": [],
+      "infoHotspots": []
+    },
+    {
+      "id": "2-may-13th-2022",
+      "name": "May 13th, 2022",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 2048,
+      "initialViewParameters": {
+        "yaw": 0.3513707735528637,
+        "pitch": 1.4786865013455888,
+        "fov": 1.2820191017947098
       },
       "linkHotspots": [],
       "infoHotspots": []
     }
   ],
-  "name": "Stonetree Improvements - Inlet E01",
+  "name": "Stonetree - E01",
   "settings": {
     "mouseViewMode": "drag",
     "autorotateEnabled": false,
