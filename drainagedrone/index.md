@@ -3,82 +3,60 @@ title: Drainage Drone
 layout: page
 ---
 
-In business since 1997,
+Drainage Drone Test Page
 
-**Recent Projects:**
+**Under Construction:**
 
-<hr>
+<div style="background-color:#154360;color:#FDFEFE;padding:10px;">
+<details>
+<summary style="color:#FDFEFE; font-style:bold;">Stonetree Drainage Improvements:</summary>
 
 ## Stone Tree Drainage Improvements
 
 A project
 
-[Inlet W04](../drainagedrone\stone-tree\W04\index.html)
+[Inlet W04](../drainagedrone\360\stone-tree\W04\index.html)
 
-[Inlet W02](../project\drone\stone-tree\W02\index.html)
+[Inlet W02](../drainagedrone\360\stone-tree\W02\index.html)
 
 [Inlet E01](../drainagedrone\360\stone-tree\E01\index.html)
 
-[Inlet E03](../project\drone\stone-tree\E3\index.html)
+[Inlet E03](../drainagedrone\360\stone-tree\E03\index.html)
+</details>
+</div>
 
+<br>
 
-<hr>
+**Completed Projects:**
 
-<a href="/careers/PE_Storm" target="_blank"> <b>Project Engineer - Stormwater, Drainage, Floodplain Management</b></a>
-
-
-<hr>
-
-<a href="/careers/EI_Storm" target="_blank"> <b>Engineering Intern - Stormwater, Drainage, Floodplain Management</b></a>
-
-<hr>
-
-<a href="/careers/EI_Transportation" target="_blank"> <b>Engineering Intern - Transportation</b></a>
 <div style="background-color:#154360;color:#FDFEFE;padding:10px;">
   <details>
-  <summary style="color:#FDFEFE; font-style:bold;">BENEFITS:</summary>
+  <summary style="color:#FDFEFE; font-style:bold;">Otero Tributary Stream Restoration:</summary>
 
-  The benefit of working for a growing firm with 30+ employees is the opportunity to make a difference, work on a variety of projects, affect company culture, and implement positive change. Our rewards package includes a competitive salary with professional/career growth opportunities, medical/dental/vision/life/disability insurance, 8 paid holidays, accruing PTO, 401(k), performance-based bonuses, and fees paid for professional society participation.
+
+  ## Otero Tributary Stream Restoration
+  [Upstream End](../project\drone\otero-tributary\us\index.html)
+
+  [Middle Reach](../project\drone\otero-tributary\mid\index.html)
+
+  [Downstream](../project\drone\otero-tributary\ds\index.html)
 
   </details>
 </div>
 
-<hr>
-
+<br>
 
 <div style="background-color:#154360;color:#FDFEFE;padding:10px;">
   <details>
-  <summary style="color:#FDFEFE; font-style:bold;">WORK-LIFE BALANCE:</summary>
+  <summary style="color:#FDFEFE; font-style:bold;">Willow Creek Stream Restoration:</summary>
 
-  With ICON’s flex-time work environment, we work 4.5 days a week (four 9-hour days and a half day on Friday). You also have the option to work two of those days from a home office. At ICON, you will enjoy interacting with good people, collaborate in engaging design conversations, socialize at various company sponsored and social events (including happy hours, bowling, chili cook-off, super bowl squares, holiday parties, and season tickets to Rockies games), become involved with internal committees, and it’s important to us that you work toward achieving your personal and career goals.
+  ## Willow Creek Stream Restoration
+  [Upstream](../project\drone\willow-creek-sterling-ranch\us\index.html)
+
+  [Middle](../project\drone\willow-creek-sterling-ranch\mid\index.html)
+
+  [Downstream](../project\drone\willow-creek-sterling-ranch\ds\index.html)
+
 
   </details>
 </div>
-
-## Otero Tributary Stream Restoration
-[Upstream End](../project\drone\otero-tributary\us\index.html)
-
-[Middle Reach](../project\drone\otero-tributary\mid\index.html)
-
-[Downstream](../project\drone\otero-tributary\ds\index.html)
-
-
-
-## Willow Creek Stream Restoration
-[Upstream](../project\drone\willow-creek-sterling-ranch\us\index.html)
-
-[Middle](../project\drone\willow-creek-sterling-ranch\mid\index.html)
-
-[Downstream](../project\drone\willow-creek-sterling-ranch\ds\index.html)
-
-<hr>
-
-
- <div style="background-color:#154360;color:#FDFEFE;padding:10px;">
-   <details>
-   <summary style="color:#FDFEFE; font-style:bold;">PROFESSIONAL DEVELOPMENT:</summary>
-
-   To help our staff stay current in our industry, we provide monthly “lunch and learn” sessions in the office to provide staff the opportunity to do exactly that: have lunch together and learn something new! We also pay for membership dues to professional organizations and attendance at professional conferences/seminars.
-
-   </details>
- </div>
