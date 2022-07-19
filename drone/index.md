@@ -17,14 +17,7 @@ layout: redirect
 
 [Downstream](../project\drone\otero-tributary\ds\index.html)
 
-#### Stone Tree Drainage Improvements
-[Inlet W04](../project\drone\stone-tree\W04\index.html)
-
-[Inlet E01](../project\drone\stone-tree\E01\index.html)
-
-[Inlet E05](../project\drone\stone-tree\E05\index.html)
-
-#### Willow Creek at Sterline Ranch Stream Restoration
+#### Willow Creek at Sterling Ranch Stream Restoration
 [Upstream](../project\drone\willow-creek-sterling-ranch\us\index.html)
 
 [Middle](../project\drone\willow-creek-sterling-ranch\mid\index.html)
