@@ -22,4 +22,4 @@ layout: redirect
 
 [Middle](../project\drone\willow-creek-sterling-ranch\mid\index.html)
 
-[Downstream](../project\drone\willow-creek-sterling-ranch\ds\index.html")
+[Downstream](../project\drone\willow-creek-sterling-ranch\ds\index.html)
