@@ -5,9 +5,9 @@ layout: redirect
 
 ### Panoramic
 
-[2201 Clinton Site Visit - August 5th, 2022](../project\drone\westerly-creek-stanley-marketplace\2022-08-05\index.html)
+[2201 Clinton Site Visit - August 5th, 2022](../westerly-creek-stanley-marketplace\2022-08-05\index.html)
 
-[Stanley Property Site Visit - April 24th, 2022](../project\drone\westerly-creek-stanley-marketplace\2022-04-29\index.html)
+[Stanley Property Site Visit - April 24th, 2022](../\westerly-creek-stanley-marketplace\2022-04-29\index.html)
 
 ### Recent Videos
 
