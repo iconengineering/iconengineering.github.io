@@ -11,19 +11,6 @@ layout: redirect
 
 ### Recent Videos
 
-<div>
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/737166811?h=b3f66dc28a" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-</div>
 
-https://youtu.be/MWrtAtGafww
-
-
-<iframe
-    width="640"
-    height="480"
-    src="https://youtu.be/MWrtAtGafww"
-    frameborder="0"
-    allow="autoplay; encrypted-media"
-    allowfullscreen
->
-</iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MWrtAtGafww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
