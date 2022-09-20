@@ -5,8 +5,11 @@ layout: redirect
 
 ### Panoramic Photos
 
-[Pre-Project Photos - September 7th, 2022](../toll-gate-creek\Pre-Project\index.html)
+[Pre-Project Panoramic - September 7th, 2022](../toll-gate-creek\Pre-Project\index.html)
 
+### Existing Site Photos
+
+[Pre-Project Photos - September 7th, 2022](https://iconengcom-my.sharepoint.com/:f:/g/personal/jdeischer_iconeng_com/EhYUK9z5U1FGtW-8ccQXGz8B6S-y1iHQRA2t6o-wzQWOWA?e=HFDxSW)
 
 ### Recent Videos
 
