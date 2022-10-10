@@ -1,5 +1,5 @@
 ---
-title: Engineering Intern - Floodplain Analysis & Infrastructure Review
+title: Engineering Intern - Floodplain Analysis and Infrastructure Review
 layout: page
 ---
 
