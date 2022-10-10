@@ -1,5 +1,5 @@
 ---
-title: Engineer Intern - Stream Restoration, Stormwater, Parks & Open Space
+title: Engineer Intern - Stream Restoration, Stormwater, Parks and Open Space
 layout: page
 ---
 ICON Engineering is seeking a water resource engineer or engineer-in-training to join our engineering
