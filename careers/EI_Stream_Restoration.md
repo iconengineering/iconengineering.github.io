@@ -30,6 +30,7 @@ degraded riverine, riparian, and urban waterway environments.</li>
 <li>Experience working in a team environment. Excellent communication skills.</li>
 <li>Willingness to ask questions, seek instruction, and problem solve.</li>
 
+<br>
 <b> Additional Desired Qualifications </b>
 <li>Master’s Degree in Civil Engineering with emphasis in water resources.</li>
 <li>Coursework in Fluvial Geomorphology, River Mechanics, Hydrometry.</li>
