@@ -12,7 +12,7 @@ Restoration Projects across the Colorado Front Range and Local Mountain Communit
 Floodplain Studies and FEMA Map Revision Preparation; and Water Quality Improvement Design. The person who fills this position will
 assist over the life cycle of these projects, from assessment, design, permitting, implementation through construction. The ideal
 candidate will have a passion for stormwater management, flood mitigation, streams, rivers, and watersheds. A highly qualified
-candidate will also bring past experience in hydrology, hydraulics, and computer programs noted above.
+candidate will also bring past experience in hydrology, hydraulics, and computer programs noted above..
 
 <b>Essential Responsibilities</b>
 <li>Calculate unique water quality treatment systems and analyze flood mitigation infrastructure.</li>
@@ -38,9 +38,9 @@ studies.</li>
 
 ICON offers a competitive compensation package that includes paid time off, holiday pay, health/dental/vision insurance,
 401k, I-Coin Performance Bonus Program, staff social events, training, internal committees, career development, RTD ECO-
-Pass, and much more! ICON offers a flexible work week, remote, and hybrid work environments. Details depend on position and team assignments. Salary range for this position is $65k to $95k, dependent on experience. All inquiries will be handled
+Pass, and much more! ICON offers a flexible work week, remote, and hybrid work environments. Details depend on position and team assignments. Salary range for this position is $60k to $90k, dependent on experience. All inquiries will be handled
 confidentially.
 
 
 <b>Please send your letter of interest and resume of qualifications via email to
-Mr. Craig Jacobson | <cjacobson@iconeng.com></b>
+Mr. Troy Carmann | <tcarmann@iconeng.com></b>
