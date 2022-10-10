@@ -1,5 +1,5 @@
 ---
-title: Engineering Intern - Transportation Design
+title: Engineering Intern - Roadways, Pedestrian Improvements, and Drainage
 layout: page
 ---
 We are seeking a civil engineer to join our engineering firm’s Civil Infrastructure Design Team. Our civil design projects are often multi-
@@ -12,7 +12,7 @@ learning, developing as an engineer, and participating in capital improvement de
 
 <b>Essential Responsibilities</b>
 <li>Assist in the planning, design, and production of engineering documents for a variety of projects to include roadway work,
-pedestrian underpasses; sidewalks; stormwater management and drainage infrastructure; parking lots; and parks/trail design.</li>
+pedestrian underpasses, sidewalks, stormwater management and drainage infrastructure, parking lots, and parks/trail design.</li>
 <li>Contribute to studies, master plans, design reports, cost estimates, permitting, and computer modeling.</li>
 <li>Prepare engineering drawings and specifications to clearly convey construction requirements.</li>
 <li>Perform engineering calculations, data analysis, and field observations.</li>
@@ -26,6 +26,7 @@ pedestrian underpasses; sidewalks; stormwater management and drainage infrastruc
 <li>Bachelor’s degree in civil engineering.</li>
 <li>EI designation or the ability to obtain within 6-months of hire date.</li>
 <li>0-4 years of full-time experience in civil engineering.</li>
+<li>Basic understanding and willingness to learn CAD, GIS, HEC-RAS, SWMM and other related software tools</li>
 <li>Experience working in a team environment. Excellent communication skills.</li>
 <li>Willingness to ask questions, seek instruction, and problem solve.</li>
 
