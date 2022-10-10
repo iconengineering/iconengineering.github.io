@@ -36,7 +36,7 @@ pedestrian underpasses, sidewalks, stormwater management and drainage infrastruc
 ICON offers a competitive compensation package that includes paid time off, holiday pay, health/dental/vision insurance,
 401k, I-Coin Performance Bonus Program, staff social events, training, internal committees, career development, RTD ECO-
 Pass, and much more! ICON offers a flexible work week, remote, and hybrid work environments. Details depend on position and team assignments.
-Salary range for this position is $65k to $90k, dependent on experience. All inquiries will be handled confidentially.
+Salary range for this position is $60k to $90k, dependent on experience. All inquiries will be handled confidentially.
 
 
 <b>Please send your letter of interest and resume of qualifications via email to
