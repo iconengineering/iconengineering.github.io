@@ -37,7 +37,7 @@ In business since 1997, ICON Engineering is one of Colorado’s most reputable p
   <details>
   <summary style="color:#FDFEFE; font-style:bold;">BENEFITS:</summary>
 
-  The benefit of working for a growing firm with 30+ employees is the opportunity to make a difference, work on a variety of projects, affect company culture, and implement positive change. Our rewards package includes a competitive salary with professional/career growth opportunities, medical/dental/vision/life/disability insurance, 8 paid holidays, accruing PTO, 401(k), performance-based bonuses, and fees paid for professional society participation.
+  The benefit of working for a growing firm with 30+ employees is the opportunity to make a difference, work on a variety of projects, affect company culture, and implement positive change. Our rewards package includes a competitive salary with professional/career growth opportunities, medical/dental/vision/life/disability insurance, 8 paid holidays, accruing PTO, 401(k), performance-based bonuses, RTD Eco Pass, and fees paid for professional society participation.
 
   </details>
 </div>
@@ -49,7 +49,7 @@ In business since 1997, ICON Engineering is one of Colorado’s most reputable p
   <details>
   <summary style="color:#FDFEFE; font-style:bold;">WORK-LIFE BALANCE:</summary>
 
-  With ICON’s flex-time work environment, we work 4.5 days a week (four 9-hour days and a half day on Friday). You also have the option to work two of those days from a home office. At ICON, you will enjoy interacting with good people, collaborate in engaging design conversations, socialize at various company sponsored and social events (including happy hours, bowling, chili cook-off, super bowl squares, holiday parties, and season tickets to Rockies games), become involved with internal committees, and it’s important to us that you work toward achieving your personal and career goals.
+  With ICON’s flex-time work environment, we work 4.5 days a week (four 9-hour days and a half day on Friday). You also have the option to work two of those days from a home office. At ICON, you will enjoy interacting with good people, collaborate in engaging design conversations, socialize at various company sponsored and social events (including happy hours, bowling, chili cook-off, super bowl squares, and holiday parties), become involved with internal committees, and it’s important to us that you work toward achieving your personal and career goals.
 
   </details>
 </div>
@@ -61,7 +61,7 @@ In business since 1997, ICON Engineering is one of Colorado’s most reputable p
    <details>
    <summary style="color:#FDFEFE; font-style:bold;">PROFESSIONAL DEVELOPMENT:</summary>
 
-   To help our staff stay current in our industry, we provide monthly “lunch and learn” sessions in the office to provide staff the opportunity to do exactly that: have lunch together and learn something new! We also pay for membership dues to professional organizations and attendance at professional conferences/seminars.
+   To help our staff stay current in our industry, we provide monthly “lunch and learn” sessions in the office, providing an opportunity to do exactly that: have lunch together and learn something new! We also do monthly Field Visits followed by a Happy Hour where staff can listen to project design details on site, understand lessons learned, and see the real-life results of their work… followed by some social time. Lastly, we pay for membership dues to professional organizations and attendance at professional conferences/seminars to enhance our knowledge in our areas of expertise.
 
    </details>
  </div>
