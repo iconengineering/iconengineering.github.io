@@ -34,8 +34,8 @@ programs.</li>
 
 <br>
 <b>Additional Desired Qualifications</b>
-<li>EI designation or the ability to obtain within 6-months of hire date</li>
-<li>Previous experience with CAD Civil 3D, GIS, hydrologic and hydraulic modeling</li>
+<li>EI designation or the ability to obtain within 6-months of hire date.</li>
+<li>Previous experience with CAD Civil 3D, GIS, hydrologic and hydraulic modeling.</li>
 
 <br>
 <br>
