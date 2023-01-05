@@ -1,5 +1,5 @@
 ---
-title: Engineer Intern - Stream Restoration, Stormwater, Parks and Open Space
+title: Design Engineer (0-4 years) - Stream Restoration, Stormwater, Parks and Open Space
 layout: page
 ---
 ICON Engineering is seeking a water resource engineer or engineer-in-training to join our engineering
@@ -45,4 +45,4 @@ ICON offers a competitive compensation package that includes paid time off, holi
 Pass, and much more! ICON offers a flexible work week, remote, and hybrid work environments. Details depend on position and team assignments. Salary range for this position is $65k to $85k, dependent on experience. All inquiries will be handled confidentially.
 
 <b>Please send your letter of interest and resume of qualifications via email to
-Mr. Troy Carmann | <tcarmann@iconeng.com></b>
+Mr. Craig Jacobson | <cjacobson@iconeng.com></b>
