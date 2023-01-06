@@ -10,17 +10,17 @@ In business since 1997, ICON Engineering is one of Colorado’s most reputable p
 <hr>
 
 
-<a href="/careers/PE_PM_Transportation" target="_blank"> <b>Project Engineer (5-10 years)- Transportation</b></a>
+<a href="/careers/PE_PM_Transportation" target="_blank"> <b>Project Engineer (5-10 years) - Transportation</b></a>
 
 
 <hr>
 
-<a href="/careers/PE_Storm" target="_blank"> <b>Project Engineer (5-10 years)- Stormwater, Drainage, Floodplain Management</b></a>
+<a href="/careers/PE_Storm" target="_blank"> <b>Project Engineer (5-10 years) - Stormwater, Drainage, Floodplain Management</b></a>
 
 
 <hr>
 
-<a href="/careers/EI_Storm" target="_blank"> <b>Design Engineer (0-4 years)- Stormwater and Planning</b></a>
+<a href="/careers/EI_Storm" target="_blank"> <b>Design Engineer (0-4 years) - Stormwater and Planning</b></a>
 
 <hr>
 
