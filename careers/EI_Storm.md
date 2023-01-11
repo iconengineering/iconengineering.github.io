@@ -43,4 +43,4 @@ confidentially.
 
 
 <b>Please send your letter of interest and resume of qualifications via email to
-Mr. Craig Jacobson | <cjacobson@iconeng.com></b>
+Jennifer Green | <jgreen@iconeng.com></b>

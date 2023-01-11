@@ -33,4 +33,4 @@ The benefit of working for a growing firm with 30+ employees is the opportunity 
 Salary range for this position is $85k to $140k, dependent on experience.
 
 <b>Please send your letter of interest and resume of qualifications via email to
-Mr. Craig Jacobson | <cjacobson@iconeng.com></b>
+Jennifer Green | <jgreen@iconeng.com></b>

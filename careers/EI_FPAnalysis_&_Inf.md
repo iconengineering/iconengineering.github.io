@@ -46,4 +46,4 @@ Pass, and much more! ICON offers a flexible work week, remote, and hybrid work e
 
 
 <b>Please send your letter of interest and resume of qualifications via email to
-Mr. Craig Jacobson | <cjacobson@iconeng.com></b>
+Jennifer Green | <jgreen@iconeng.com></b>
