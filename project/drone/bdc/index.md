@@ -5,7 +5,7 @@ layout: redirect
 
 ### Panoramic By Date
 
-[Westerly Creek Flood Event - August 7th, 2022](../bdc\pano\index.html)
+[Big Dry Creek Panoramic Flood Event](../bdc\pano\index.html)
 
 
 ### Recent Videos
