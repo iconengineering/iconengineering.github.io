@@ -1,5 +1,5 @@
 ---
-title: Project Engineer - Stormwater, Drainage, Floodplain Management
+title: Project Engineer (5-10 years) - Stormwater, Drainage, Floodplain Management
 layout: page
 ---
 
@@ -35,7 +35,7 @@ ICON’s projects revolve around enhancing and protecting all types of infrastru
 
 The benefit of working for a growing firm with 30+ employees is the opportunity to make a difference, work on a variety of projects, affect company culture, and implement positive change. With ICON’s flex-time work environment, you will enjoy working with good people, collaborate in engaging design conversations, socialize at various company sponsored events (including season tickets to Rockies games), become involved with internal committees, and have the ability to achieve your career goals. Our rewards package includes a competitive salary with professional/career growth opportunities, medical/dental/vision/life/disability insurance, holiday, and PTO, 401(k), performance-based bonuses, and fees paid for professional society participation.
 
-Salary range for this position is $70k to $140k, dependent on experience.
+Salary range for this position is $85k to $140k, dependent on experience.
 
 <b>Please send your letter of interest and resume of qualifications via email to
-Mr. Troy Carmann | <tcarmann@iconeng.com></b>
+Jennifer Green | <jgreen@iconeng.com></b>
