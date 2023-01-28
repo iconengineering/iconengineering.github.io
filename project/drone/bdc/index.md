@@ -13,6 +13,7 @@ layout: redirect
 
 [Reach 7 - Upstream (Sphere 5)](../bdc\Sphere 5\index.html)
 
+[Crossing J (Sphere 6)](../bdc\Sphere 6\index.html)
 
 ### Project Videos
 
