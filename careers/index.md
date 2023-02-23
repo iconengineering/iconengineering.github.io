@@ -25,9 +25,10 @@ In business since 1997, ICON Engineering is one of Colorado’s most reputable p
 <a href="/careers/EI_Stream_Restoration" target="_blank"> <b>Design Engineer (0-4 years) - Stream Restoration</b></a>
 
 <hr>
--->
+
 
 <a href="/careers/EI_FPAnalysis_&_Inf" target="_blank"> <b>Design Engineer (0-4 years) - Floodplain Analysis and Infrastructure Review</b></a>
+-->
 <div style="background-color:#154360;color:#FDFEFE;padding:10px;">
   <details>
   <summary style="color:#FDFEFE; font-style:bold;">BENEFITS:</summary>
