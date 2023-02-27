@@ -5,6 +5,6 @@ layout: redirect
 
 ### Panoramic By Location
 
-[Montview Bridge](../brighton-south-outfall\2023-02-06\index.html)
+[Brighton South Outfall](../brighton-south-outfall\2023-02-06\index.html)
 
 
