@@ -9,7 +9,9 @@ layout: redirect
 
 [Reach 2](../bdc\Sphere 2\index.html)
 
-[Reach 7 - Mid (Sphere 4)](../bdc\Sphere 4\index.html)
+[Reach 7 - Downstream (Sphere 3)](../bdc\Sphere 3\index.html)
+
+[Reach 7 - MidReach (Sphere 4)](../bdc\Sphere 4\index.html)
 
 [Reach 7 - Upstream (Sphere 5)](../bdc\Sphere 5\index.html)
 
