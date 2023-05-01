@@ -5,13 +5,15 @@ layout: redirect
 
 ### Panoramic By Date
 
+[2023-04-30 - Site Visit](../\westerly-creek-stanley-marketplace\D_2023-04-30\index.html)
+
 [2023-02-05 - Site Visit](../\westerly-creek-stanley-marketplace\D_2023-02-05\index.html)
 
 [2022-08-07 - Westerly Creek Flood Event](../\westerly-creek-stanley-marketplace\2022-08-07\index.html)
 
 [2022-08-05 - 2201 Site Visit](../westerly-creek-stanley-marketplace\2022-08-05\index.html)
 
-[2022-04-24 - Stanley Site Visit](../\westerly-creek-stanley-marketplace\2022-04-29\index.html)
+
 
 
 ### Panoramic By Location
@@ -42,8 +44,9 @@ layout: redirect
 
 ### Recent Videos
 
-<iframe width="960" height="540" src="https://www.youtube.com/embed/MWrtAtGafww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="960" height="540" src="https://www.youtube.com/embed/EwlLbmH4ykQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+<iframe width="960" height="540" src="https://www.youtube.com/embed/MWrtAtGafww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 <iframe width="960" height="540" src="https://www.youtube.com/embed/2UXGa5sv4uE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
