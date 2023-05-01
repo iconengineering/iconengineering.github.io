@@ -5,11 +5,11 @@ layout: redirect
 
 ### Panoramic By Date
 
-[2023-04-30 - Site Visit](../\westerly-creek-stanley-marketplace\D_2023-04-30\index.html)
+[2023-04-30 - Site Visit](../westerly-creek-stanley-marketplace\2023-04-30\index.html)
 
-[2023-02-05 - Site Visit](../\westerly-creek-stanley-marketplace\D_2023-02-05\index.html)
+[2023-02-05 - Site Visit](../westerly-creek-stanley-marketplace\D_2023-02-05\index.html)
 
-[2022-08-07 - Westerly Creek Flood Event](../\westerly-creek-stanley-marketplace\2022-08-07\index.html)
+[2022-08-07 - Westerly Creek Flood Event](../westerly-creek-stanley-marketplace\2022-08-07\index.html)
 
 [2022-08-05 - 2201 Site Visit](../westerly-creek-stanley-marketplace\2022-08-05\index.html)
 
