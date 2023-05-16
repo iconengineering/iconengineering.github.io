@@ -1,8 +1,8 @@
 var APP_DATA = {
   "scenes": [
     {
-      "id": "0-apr-29-2022-dji_0992",
-      "name": "Apr 29, 2022 DJI_0992",
+      "id": "0-apr-30-2023-dji_0256",
+      "name": "Apr 30, 2023 DJI_0256",
       "levels": [
         {
           "tileSize": 256,
@@ -24,16 +24,16 @@ var APP_DATA = {
       ],
       "faceSize": 2048,
       "initialViewParameters": {
-        "yaw": 2.8942936998722253,
-        "pitch": 0.8449464752525984,
-        "fov": 1.5707963267948966
+        "yaw": 1.0420048360667025,
+        "pitch": 0.7806578658959165,
+        "fov": 1.4848622508727212
       },
       "linkHotspots": [],
       "infoHotspots": []
     },
     {
-      "id": "1-aug-5-2022-dji_0512",
-      "name": "Aug 5, 2022 DJI_0512",
+      "id": "1-feb-5-2023-dji_0050",
+      "name": "Feb 5, 2023 DJI_0050",
       "levels": [
         {
           "tileSize": 256,
@@ -55,9 +55,9 @@ var APP_DATA = {
       ],
       "faceSize": 2048,
       "initialViewParameters": {
-        "yaw": 0.7481050543590442,
-        "pitch": 0.676092519629206,
-        "fov": 1.5707963267948966
+        "yaw": 0.6265876256746523,
+        "pitch": 0.9937834867847393,
+        "fov": 1.4848622508727212
       },
       "linkHotspots": [],
       "infoHotspots": []
@@ -86,16 +86,16 @@ var APP_DATA = {
       ],
       "faceSize": 2048,
       "initialViewParameters": {
-        "yaw": 2.07546569418,
-        "pitch": 0.5660108439863691,
-        "fov": 1.5707963267948966
+        "yaw": 0.9918085898109865,
+        "pitch": 0.5698535315361877,
+        "fov": 1.4848622508727212
       },
       "linkHotspots": [],
       "infoHotspots": []
     },
     {
-      "id": "3-feb-5-2023-dji_0050",
-      "name": "Feb 5, 2023 DJI_0050",
+      "id": "3-aug-5-2022-dji_0512",
+      "name": "Aug 5, 2022 DJI_0512",
       "levels": [
         {
           "tileSize": 256,
@@ -117,9 +117,40 @@ var APP_DATA = {
       ],
       "faceSize": 2048,
       "initialViewParameters": {
-        "yaw": 2.420901738827876,
-        "pitch": 0.7111473059858575,
-        "fov": 1.5707963267948966
+        "yaw": 0.09866158746810427,
+        "pitch": 0.4007506542917021,
+        "fov": 1.4848622508727212
+      },
+      "linkHotspots": [],
+      "infoHotspots": []
+    },
+    {
+      "id": "4-apr-29-2022-dji_0992",
+      "name": "Apr 29, 2022 DJI_0992",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 2048,
+      "initialViewParameters": {
+        "yaw": 1.2469180244949989,
+        "pitch": 0.9775549766618354,
+        "fov": 1.4848622508727212
       },
       "linkHotspots": [],
       "infoHotspots": []
