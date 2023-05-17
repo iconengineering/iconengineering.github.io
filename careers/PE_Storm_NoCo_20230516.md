@@ -45,6 +45,9 @@ studies.</li>
 <li>ICON offers a competitive compensation package that includes paid time off, holiday pay, health/dental/vision insurance, 401k, I-Coin Performance Bonus Program, staff social events, training, internal committees, career development, RTD ECOPass, and much more!</li>
 <li>ICON offers a flexible work week, remote, and hybrid work environments. Details depend on position and team assignments.</li>
 <li>Salary range for this position is $90k to $120k, dependent on experience. All inquiries will be handled confidentially.</li>
+
+<br>
+
 “ICON provides a collaborative environment where our employees learn and grow. We invest in each team member’s growth
 and their knowledge in the industry through career training, mentoring, and management of a work-life balance. This
 supportive atmosphere guarantees our employees feel like a part of the team.”

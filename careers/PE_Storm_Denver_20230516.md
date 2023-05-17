@@ -4,7 +4,7 @@ layout: page
 ---
 
 We are seeking a civil engineer to join our engineering firm’s Stormwater Design and Planning Team.
-This team enjoys working on projects covering all aspects of stormwater analysis and design. These projects are often multi-disciplinary and exemplify all aspects of stormwater and civil infrastructure design. Project examples may include: preparation of 
+This team enjoys working on projects covering all aspects of stormwater analysis and design. These projects are often multi-disciplinary and exemplify all aspects of stormwater and civil infrastructure design. Project examples may include: preparation of
 Stormwater Master Plans; Technical Floodplain Analysis using 1D and 2D HECRAS; Hydrology Studies using EPA-SWMM; Design of
 Stormwater Systems and Stream Restoration Projects using CAD Civil3D; Major Drainageway Floodplain Studies and FEMA Map
 Revision Preparation; and Water Quality Improvement Design. The person who fills this position will assist over the life cycle of these
@@ -44,6 +44,9 @@ studies.</li>
 <li>ICON offers a competitive compensation package that includes paid time off, holiday pay, health/dental/vision insurance, 401k, I-Coin Performance Bonus Program, staff social events, training, internal committees, career development, RTD ECOPass, and much more!</li>
 <li>ICON offers a flexible work week, remote, and hybrid work environments. Details depend on position and team assignments.</li>
 <li>Salary range for this position is $90k to $120k, dependent on experience. All inquiries will be handled confidentially.</li>
+
+<br>
+
 “ICON provides a collaborative environment where our employees learn and grow. We invest in each team member’s growth
 and their knowledge in the industry through career training, mentoring, and management of a work-life balance. This
 supportive atmosphere guarantees our employees feel like a part of the team.”
