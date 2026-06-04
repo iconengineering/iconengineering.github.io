@@ -28,9 +28,9 @@ var APP_DATA = {
       ],
       "faceSize": 3000,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": 0.9725263181487342,
+        "pitch": 0.3842959176022944,
+        "fov": 0.9393055603256694
       },
       "linkHotspots": [],
       "infoHotspots": []
@@ -63,9 +63,9 @@ var APP_DATA = {
       ],
       "faceSize": 3000,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": -0.8434283699960474,
+        "pitch": 0.7980807803257441,
+        "fov": 1.4990976819632245
       },
       "linkHotspots": [],
       "infoHotspots": []
@@ -211,8 +211,8 @@ var APP_DATA = {
       "infoHotspots": []
     },
     {
-      "id": "6-stanley-market-place",
-      "name": "Stanley Market Place",
+      "id": "6-stanley-marketplace",
+      "name": "Stanley Marketplace",
       "levels": [
         {
           "tileSize": 256,
@@ -281,8 +281,8 @@ var APP_DATA = {
       "infoHotspots": []
     },
     {
-      "id": "8-west-bound-s",
-      "name": "West Bound (S)",
+      "id": "8-west-boundary-s",
+      "name": "West Boundary (S)",
       "levels": [
         {
           "tileSize": 256,
@@ -308,9 +308,9 @@ var APP_DATA = {
       ],
       "faceSize": 3000,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": 2.5410734393082306,
+        "pitch": 0.6560799207632808,
+        "fov": 1.4990976819632245
       },
       "linkHotspots": [],
       "infoHotspots": []
@@ -343,9 +343,9 @@ var APP_DATA = {
       ],
       "faceSize": 3000,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": 0.11470591733467472,
+        "pitch": 0.5050916650259829,
+        "fov": 1.4990976819632245
       },
       "linkHotspots": [],
       "infoHotspots": []
@@ -378,9 +378,9 @@ var APP_DATA = {
       ],
       "faceSize": 3000,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": -0.04453288555346191,
+        "pitch": 0.5680034382498658,
+        "fov": 1.4990976819632245
       },
       "linkHotspots": [],
       "infoHotspots": []
