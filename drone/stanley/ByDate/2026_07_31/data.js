@@ -133,8 +133,8 @@ var APP_DATA = {
       ],
       "faceSize": 3000,
       "initialViewParameters": {
-        "yaw": -2.3522736158238846,
-        "pitch": 0.8141372120575063,
+        "yaw": -2.3765642806712215,
+        "pitch": 0.8009449248698175,
         "fov": 1.34561329314477
       },
       "linkHotspots": [],
@@ -203,8 +203,8 @@ var APP_DATA = {
       ],
       "faceSize": 3000,
       "initialViewParameters": {
-        "yaw": -1.5222149971001944,
-        "pitch": 1.0968444490339913,
+        "yaw": -2.3440491577686586,
+        "pitch": 0.9969599888985954,
         "fov": 1.34561329314477
       },
       "linkHotspots": [],
@@ -316,7 +316,42 @@ var APP_DATA = {
       "infoHotspots": []
     },
     {
-      "id": "9-23rd-avenue-outfall",
+      "id": "9-west-boundary-s",
+      "name": "West Boundary (S)",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 3000,
+      "initialViewParameters": {
+        "yaw": 2.32404402166664,
+        "pitch": 0.6325645707289276,
+        "fov": 1.34561329314477
+      },
+      "linkHotspots": [],
+      "infoHotspots": []
+    },
+    {
+      "id": "10-23rd-avenue-outfall",
       "name": "23rd Avenue Outfall",
       "levels": [
         {
@@ -351,7 +386,7 @@ var APP_DATA = {
       "infoHotspots": []
     },
     {
-      "id": "10-23rd-avenue-west",
+      "id": "11-23rd-avenue-west",
       "name": "23rd Avenue West",
       "levels": [
         {
