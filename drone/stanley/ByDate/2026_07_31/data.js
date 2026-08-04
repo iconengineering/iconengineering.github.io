@@ -238,8 +238,8 @@ var APP_DATA = {
       ],
       "faceSize": 3000,
       "initialViewParameters": {
-        "yaw": 2.9286576394953414,
-        "pitch": 0.6219221102769943,
+        "yaw": 2.822848886992885,
+        "pitch": 0.5380229601049216,
         "fov": 1.34561329314477
       },
       "linkHotspots": [],
