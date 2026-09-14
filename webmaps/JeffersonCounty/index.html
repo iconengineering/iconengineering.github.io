@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  />
+
+  <title>Jefferson County Affected Homes</title>
+
+  <!-- Load ArcGIS Maps SDK for JavaScript 5.1 -->
+  <script
+    type="module"
+    src="https://js.arcgis.com/5.1/"
+  ></script>
+
+  <style>
+    :root {
+      --icon-dark: #1a323b;
+      --icon-gold: #fad264;
+      --panel-border: #d9d9d9;
+    }
+
+    html,
+    body,
+    calcite-shell {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .app-header {
+      height: 68px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      padding: 0 18px 0 24px;
+      background-color: var(--icon-dark);
+      border-bottom: 4px solid var(--icon-gold);
+      color: #ffffff;
+    }
+
+    .app-logo {
+      display: block;
+      width: 167px;
+      height: auto;
+      flex-shrink: 0;
+    }
+
+    .title-group {
+      min-width: 0;
+      padding-left: 22px;
+      border-left: 1px solid rgba(255, 255, 255, 0.35);
+    }
+
+    .app-title {
+      margin: 0;
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 1.15;
+      letter-spacing: 0.2px;
+    }
+
+    .app-subtitle {
+      margin: 3px 0 0;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 12px;
+      letter-spacing: 0.25px;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-left: auto;
+    }
+
+    .header-button {
+      min-height: 36px;
+      padding: 7px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.07);
+      color: #ffffff;
+      font: inherit;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .header-button:hover,
+    .header-button:focus-visible {
+      border-color: var(--icon-gold);
+      background: rgba(250, 210, 100, 0.14);
+      outline: none;
+    }
+
+    .map-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      min-width: 0;
+      min-height: 0;
+    }
+
+    arcgis-map,
+    arcgis-assistant {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    #assistant-panel {
+      border-left: 1px solid var(--panel-border);
+    }
+
+    .flood-chart-card {
+      position: absolute;
+      right: 18px;
+      bottom: 22px;
+      z-index: 2;
+      width: 285px;
+      box-sizing: border-box;
+      padding: 14px 16px 15px;
+      border-left: 5px solid var(--icon-gold);
+      border-radius: 4px;
+      background: rgba(26, 50, 59, 0.94);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.28);
+      color: #ffffff;
+      pointer-events: none;
+    }
+
+    .chart-heading {
+      margin: 0 0 10px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .chart-total-row {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .chart-total {
+      font-size: 27px;
+      font-weight: 700;
+      line-height: 1;
+      color: var(--icon-gold);
+    }
+
+    .chart-total-label {
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 11px;
+    }
+
+    .chart-row {
+      display: grid;
+      grid-template-columns: 72px minmax(80px, 1fr) 48px;
+      align-items: center;
+      gap: 8px;
+      margin-top: 8px;
+      font-size: 11px;
+    }
+
+    .chart-zone {
+      color: rgba(255, 255, 255, 0.9);
+      white-space: nowrap;
+    }
+
+    .chart-track {
+      height: 9px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.14);
+    }
+
+    .chart-bar {
+      width: 0;
+      height: 100%;
+      border-radius: inherit;
+      transition: width 350ms ease;
+    }
+
+    .zone-02 {
+      background: #f7c948;
+    }
+
+    .zone-ae {
+      background: #f28c28;
+    }
+
+    .zone-floodway {
+      background: #d43f3a;
+    }
+
+    .chart-value {
+      color: #ffffff;
+      font-variant-numeric: tabular-nums;
+      text-align: right;
+    }
+
+    .chart-note {
+      margin-top: 11px;
+      color: rgba(255, 255, 255, 0.68);
+      font-size: 10px;
+    }
+
+    #status-message {
+      padding: 12px;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .about-dialog {
+      width: min(520px, calc(100vw - 36px));
+      padding: 0;
+      border: 0;
+      border-radius: 7px;
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35);
+      color: #263238;
+    }
+
+    .about-dialog::backdrop {
+      background: rgba(0, 0, 0, 0.48);
+    }
+
+    .dialog-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 18px;
+      border-bottom: 4px solid var(--icon-gold);
+      background: var(--icon-dark);
+      color: #ffffff;
+    }
+
+    .dialog-header h2 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .dialog-close {
+      width: 32px;
+      height: 32px;
+      border: 0;
+      border-radius: 50%;
+      background: transparent;
+      color: #ffffff;
+      font-size: 25px;
+      line-height: 1;
+      cursor: pointer;
+    }
+
+    .dialog-close:hover,
+    .dialog-close:focus-visible {
+      background: rgba(255, 255, 255, 0.14);
+      outline: 2px solid var(--icon-gold);
+    }
+
+    .dialog-content {
+      padding: 18px 20px 22px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .dialog-content p:first-child {
+      margin-top: 0;
+    }
+
+    .dialog-content ul {
+      padding-left: 20px;
+    }
+
+    .dialog-note {
+      padding: 10px 12px;
+      border-left: 4px solid var(--icon-gold);
+      background: #f4f5f5;
+      font-size: 12px;
+    }
+
+    @media (max-width: 760px) {
+      .app-header {
+        height: 60px;
+        gap: 12px;
+        padding: 0 10px 0 14px;
+      }
+
+      .app-logo {
+        width: 122px;
+      }
+
+      .title-group {
+        padding-left: 12px;
+      }
+
+      .app-title {
+        font-size: 16px;
+      }
+
+      .app-subtitle,
+      .button-text {
+        display: none;
+      }
+
+      .header-button {
+        min-width: 36px;
+        padding: 7px;
+        font-size: 17px;
+      }
+
+      .flood-chart-card {
+        right: 10px;
+        bottom: 18px;
+        width: 250px;
+      }
+
+      .chart-total {
+        font-size: 23px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <calcite-shell>
+
+    <!-- ICON Engineering header -->
+    <header class="app-header" slot="header">
+      <img
+        class="app-logo"
+        src="https://www.iconeng.com/wp-content/uploads/2022/09/logo.svg"
+        alt="ICON Engineering"
+      />
+
+      <div class="title-group">
+        <h1 class="app-title">Jefferson County Affected Homes</h1>
+        <p class="app-subtitle">AI-powered flood-impact exploration</p>
+      </div>
+
+      <nav class="header-actions" aria-label="Application tools">
+        <button
+          id="about-button"
+          class="header-button"
+          type="button"
+          title="About this map"
+        >
+          &#9432; <span class="button-text">About</span>
+        </button>
+
+        <button
+          id="assistant-toggle"
+          class="header-button"
+          type="button"
+          aria-controls="assistant-panel"
+          aria-expanded="true"
+          title="Hide the AI Assistant"
+        >
+          <span id="assistant-toggle-icon">&#9664;</span>
+          <span id="assistant-toggle-text" class="button-text">Hide Assistant</span>
+        </button>
+      </nav>
+    </header>
+
+    <main class="map-container">
+      <!-- Main Jefferson County web map -->
+      <arcgis-map
+        id="jeffco-map"
+        item-id="89bb69ffb5af4adc82dcd17bc9e47095"
+      >
+        <arcgis-zoom slot="top-left"></arcgis-zoom>
+        <arcgis-home slot="top-left"></arcgis-home>
+        <arcgis-locate slot="top-left"></arcgis-locate>
+
+        <arcgis-search slot="top-right"></arcgis-search>
+
+        <arcgis-expand slot="top-left" expand-tooltip="Legend">
+          <arcgis-legend></arcgis-legend>
+        </arcgis-expand>
+
+        <arcgis-expand slot="top-left" expand-tooltip="Layers">
+          <arcgis-layer-list></arcgis-layer-list>
+        </arcgis-expand>
+
+        <arcgis-scale-bar slot="bottom-left" unit="dual"></arcgis-scale-bar>
+      </arcgis-map>
+
+      <!-- Live flood-zone chart for the current map extent -->
+      <section class="flood-chart-card" aria-live="polite">
+        <h2 class="chart-heading">Structures by Flood Zone</h2>
+
+        <div class="chart-total-row">
+          <div id="flood-zone-total" class="chart-total">—</div>
+          <div class="chart-total-label">in mapped flood zones</div>
+        </div>
+
+        <div class="chart-row">
+          <div class="chart-zone">0.2% annual</div>
+          <div class="chart-track">
+            <div id="bar-02" class="chart-bar zone-02"></div>
+          </div>
+          <div id="value-02" class="chart-value">—</div>
+        </div>
+
+        <div class="chart-row">
+          <div class="chart-zone">Zone AE</div>
+          <div class="chart-track">
+            <div id="bar-ae" class="chart-bar zone-ae"></div>
+          </div>
+          <div id="value-ae" class="chart-value">—</div>
+        </div>
+
+        <div class="chart-row">
+          <div class="chart-zone">Floodway</div>
+          <div class="chart-track">
+            <div id="bar-floodway" class="chart-bar zone-floodway"></div>
+          </div>
+          <div id="value-floodway" class="chart-value">—</div>
+        </div>
+
+        <div id="chart-note" class="chart-note">Calculating current map view…</div>
+      </section>
+    </main>
+
+    <!-- Right-side AI Assistant panel -->
+    <calcite-shell-panel
+      id="assistant-panel"
+      slot="panel-end"
+      width="l"
+    >
+      <calcite-panel
+        heading="Jefferson County Mapping Assistant"
+        description="Explore the map using natural-language questions."
+      >
+        <arcgis-assistant
+          id="map-assistant"
+          reference-element="#jeffco-map"
+          heading="Ask the Map"
+          description="Explore structures, parcels, city boundaries, streams, and other Jefferson County information."
+          entry-message="Ask a question about the information shown on the map, or choose one of the suggested prompts."
+          copy-enabled
+          feedback-enabled
+          log-enabled
+        >
+          <arcgis-assistant-navigation-agent>
+          </arcgis-assistant-navigation-agent>
+
+          <arcgis-assistant-data-exploration-agent>
+          </arcgis-assistant-data-exploration-agent>
+
+          <arcgis-assistant-help-agent>
+          </arcgis-assistant-help-agent>
+        </arcgis-assistant>
+
+        <div id="status-message" hidden></div>
+      </calcite-panel>
+    </calcite-shell-panel>
+
+  </calcite-shell>
+
+  <!-- About This Map window -->
+  <dialog id="about-dialog" class="about-dialog">
+    <div class="dialog-header">
+      <h2>About This Map</h2>
+      <button
+        id="about-close"
+        class="dialog-close"
+        type="button"
+        aria-label="Close About This Map"
+      >&times;</button>
+    </div>
+
+    <div class="dialog-content">
+      <p>
+        The <strong>Jefferson County Affected Homes</strong> application combines
+        active structure locations with floodplain, municipal boundary, and
+        river and stream information.
+      </p>
+
+      <ul>
+        <li>Use the map controls to search, zoom, identify features, and manage layers.</li>
+        <li>The chart updates to show structures by flood zone inside the current map view.</li>
+        <li>Use the AI Assistant to explore supported map layers with natural-language questions.</li>
+      </ul>
+
+      <p class="dialog-note">
+        This map is intended for planning and informational purposes. Results
+        depend on the available source data and should not replace an official
+        floodplain determination or site-specific engineering analysis.
+      </p>
+    </div>
+  </dialog>
+
+  <script type="module">
+    const mapElement = document.querySelector("#jeffco-map");
+    const assistantElement = document.querySelector("#map-assistant");
+    const assistantPanel = document.querySelector("#assistant-panel");
+    const assistantToggle = document.querySelector("#assistant-toggle");
+    const assistantToggleIcon = document.querySelector("#assistant-toggle-icon");
+    const assistantToggleText = document.querySelector("#assistant-toggle-text");
+    const statusMessage = document.querySelector("#status-message");
+    const floodZoneTotal = document.querySelector("#flood-zone-total");
+    const chartNote = document.querySelector("#chart-note");
+    const zoneDisplays = {
+      "0.2 PCT": {
+        bar: document.querySelector("#bar-02"),
+        value: document.querySelector("#value-02")
+      },
+      "AE": {
+        bar: document.querySelector("#bar-ae"),
+        value: document.querySelector("#value-ae")
+      },
+      "FLOODWAY": {
+        bar: document.querySelector("#bar-floodway"),
+        value: document.querySelector("#value-floodway")
+      }
+    };
+    const aboutButton = document.querySelector("#about-button");
+    const aboutDialog = document.querySelector("#about-dialog");
+    const aboutClose = document.querySelector("#about-close");
+
+    /*
+      Flood-zone chart settings. These values match the existing
+      S_FLD_HAZ_AR_ZONE field in the structure point layer.
+    */
+    const COUNT_LAYER_TITLE = "Active Structure by Address - Points";
+    const FLOOD_ZONE_FIELD = "S_FLD_HAZ_AR_ZONE";
+    const FLOOD_ZONES = ["0.2 PCT", "AE", "FLOODWAY"];
+
+    assistantElement.suggestedPrompts = [
+      "What layers are available in this map?",
+      "Go to Golden, Colorado.",
+      "How many active structures are within Golden?",
+      "Show me the city boundaries in Jefferson County.",
+      "Find active structures near rivers and streams."
+    ];
+
+    // Collapse or reopen the AI Assistant panel.
+    assistantToggle.addEventListener("click", () => {
+      const willCollapse = !assistantPanel.hidden;
+      assistantPanel.hidden = willCollapse;
+      assistantToggle.setAttribute("aria-expanded", String(!willCollapse));
+      assistantToggle.title = willCollapse
+        ? "Show the AI Assistant"
+        : "Hide the AI Assistant";
+      assistantToggleIcon.textContent = willCollapse ? "▶" : "◀";
+      assistantToggleText.textContent = willCollapse
+        ? "Show Assistant"
+        : "Hide Assistant";
+    });
+
+    // Open and close the About This Map window.
+    aboutButton.addEventListener("click", () => aboutDialog.showModal());
+    aboutClose.addEventListener("click", () => aboutDialog.close());
+
+    aboutDialog.addEventListener("click", (event) => {
+      if (event.target === aboutDialog) {
+        aboutDialog.close();
+      }
+    });
+
+    // Wait until the map and its view are ready.
+    await mapElement.componentOnReady();
+    await mapElement.view.when();
+    await mapElement.map.loadAll();
+
+    console.log("Jefferson County web map component loaded.");
+
+    const countLayer = mapElement.map.allLayers.find(
+      (layer) => layer.title === COUNT_LAYER_TITLE
+    );
+
+    let countTimer;
+    let countRequestNumber = 0;
+
+    async function updateFloodZoneChart() {
+      if (!countLayer || typeof countLayer.queryFeatures !== "function") {
+        floodZoneTotal.textContent = "N/A";
+        chartNote.textContent = "Structure layer was not found";
+        return;
+      }
+
+      const requestNumber = ++countRequestNumber;
+      chartNote.textContent = "Updating current map view…";
+
+      try {
+        await countLayer.load();
+
+        const query = countLayer.createQuery();
+        const layerWhere = query.where || "1=1";
+        const zoneList = FLOOD_ZONES.map((zone) => `'${zone}'`).join(", ");
+
+        query.geometry = mapElement.view.extent;
+        query.spatialRelationship = "intersects";
+        query.returnGeometry = false;
+        query.where = `(${layerWhere}) AND ${FLOOD_ZONE_FIELD} IN (${zoneList})`;
+        query.outStatistics = [
+          {
+            statisticType: "count",
+            onStatisticField: countLayer.objectIdField,
+            outStatisticFieldName: "structure_count"
+          }
+        ];
+        query.groupByFieldsForStatistics = [FLOOD_ZONE_FIELD];
+
+        const result = await countLayer.queryFeatures(query);
+
+        // Ignore an older response if the user has already moved the map again.
+        if (requestNumber !== countRequestNumber) {
+          return;
+        }
+
+        const counts = Object.fromEntries(FLOOD_ZONES.map((zone) => [zone, 0]));
+
+        for (const feature of result.features) {
+          const zone = feature.attributes[FLOOD_ZONE_FIELD];
+          if (zone in counts) {
+            counts[zone] = Number(feature.attributes.structure_count) || 0;
+          }
+        }
+
+        const total = FLOOD_ZONES.reduce((sum, zone) => sum + counts[zone], 0);
+        const largestCount = Math.max(...Object.values(counts), 1);
+
+        floodZoneTotal.textContent = total.toLocaleString();
+
+        for (const zone of FLOOD_ZONES) {
+          const count = counts[zone];
+          const percentage = (count / largestCount) * 100;
+          zoneDisplays[zone].value.textContent = count.toLocaleString();
+          zoneDisplays[zone].bar.style.width = `${percentage}%`;
+        }
+
+        chartNote.textContent = "Current view · updates as you move the map";
+      } catch (error) {
+        console.error("Unable to update the flood-zone chart:", error);
+        floodZoneTotal.textContent = "—";
+        chartNote.textContent = "Flood-zone counts temporarily unavailable";
+      }
+    }
+
+    function scheduleCountUpdate() {
+      window.clearTimeout(countTimer);
+      countTimer = window.setTimeout(updateFloodZoneChart, 400);
+    }
+
+    mapElement.addEventListener("arcgisViewChange", scheduleCountUpdate);
+    await updateFloodZoneChart();
+
+    await assistantElement.componentOnReady();
+
+    console.log("ArcGIS AI Assistant component loaded.");
+
+    assistantElement.addEventListener("arcgisError", (event) => {
+      console.error("Assistant error:", event.detail);
+      statusMessage.hidden = false;
+      statusMessage.textContent =
+        "The assistant encountered an error. Check your AGOL sign-in, AI Assistant privileges, beta settings, and web-map embeddings.";
+    });
+
+    assistantElement.addEventListener("arcgisFeedback", (event) => {
+      console.log("Assistant feedback:", event.detail);
+    });
+  </script>
+</body>
+</html>
