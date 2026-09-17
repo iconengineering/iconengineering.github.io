@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "0-apr-29-2022",
-      "name": "APR 29, 2022",
+      "name": "Apr 29, 2022",
       "levels": [
         {
           "tileSize": 256,
@@ -24,16 +24,16 @@ var APP_DATA = {
       ],
       "faceSize": 2048,
       "initialViewParameters": {
-        "yaw": 2.6752484497976017,
-        "pitch": 0.5913706683044424,
-        "fov": 1.4990976819632245
+        "yaw": 2.6654821917604217,
+        "pitch": 0.664910031016035,
+        "fov": 1.34561329314477
       },
       "linkHotspots": [],
       "infoHotspots": []
     },
     {
-      "id": "1-feb-05-2023",
-      "name": "FEB 05, 2023",
+      "id": "1-feb-5-2023",
+      "name": "Feb 5, 2023",
       "levels": [
         {
           "tileSize": 256,
@@ -55,16 +55,16 @@ var APP_DATA = {
       ],
       "faceSize": 2048,
       "initialViewParameters": {
-        "yaw": 2.4142221895498874,
-        "pitch": 0.8448152404349063,
-        "fov": 1.4990976819632245
+        "yaw": 2.501962015544648,
+        "pitch": 0.6610196013575091,
+        "fov": 1.34561329314477
       },
       "linkHotspots": [],
       "infoHotspots": []
     },
     {
       "id": "2-apr-30-2023",
-      "name": "APR 30, 2023",
+      "name": "Apr 30, 2023",
       "levels": [
         {
           "tileSize": 256,
@@ -86,16 +86,16 @@ var APP_DATA = {
       ],
       "faceSize": 2048,
       "initialViewParameters": {
-        "yaw": 2.3055488577650367,
-        "pitch": 0.5232568826095214,
-        "fov": 1.4990976819632245
+        "yaw": 2.4924921096135533,
+        "pitch": 0.6464220721969767,
+        "fov": 1.34561329314477
       },
       "linkHotspots": [],
       "infoHotspots": []
     },
     {
       "id": "3-aug-11-2023",
-      "name": "AUG 11, 2023",
+      "name": "Aug 11, 2023",
       "levels": [
         {
           "tileSize": 256,
@@ -121,16 +121,16 @@ var APP_DATA = {
       ],
       "faceSize": 3000,
       "initialViewParameters": {
-        "yaw": 1.9742912595368853,
-        "pitch": 0.7135992562822544,
-        "fov": 1.4990976819632245
+        "yaw": 2.0352240698684954,
+        "pitch": 0.6353980615799166,
+        "fov": 1.34561329314477
       },
       "linkHotspots": [],
       "infoHotspots": []
     },
     {
       "id": "4-oct-08-2023",
-      "name": "OCT 08, 2023",
+      "name": "Oct 08, 2023",
       "levels": [
         {
           "tileSize": 256,
@@ -152,16 +152,16 @@ var APP_DATA = {
       ],
       "faceSize": 2048,
       "initialViewParameters": {
-        "yaw": 1.4790619591119114,
-        "pitch": 0.7423993711256003,
-        "fov": 1.4990976819632245
+        "yaw": 1.6180281751091767,
+        "pitch": 0.7293450202339287,
+        "fov": 1.34561329314477
       },
       "linkHotspots": [],
       "infoHotspots": []
     },
     {
-      "id": "5-oct-18-2024",
-      "name": "OCT 18, 2024",
+      "id": "5-oct-18-2024-",
+      "name": "Oct 18, 2024 ",
       "levels": [
         {
           "tileSize": 256,
@@ -183,16 +183,16 @@ var APP_DATA = {
       ],
       "faceSize": 2048,
       "initialViewParameters": {
-        "yaw": 2.1929802683749315,
-        "pitch": 0.6830421092878023,
-        "fov": 1.4990976819632245
+        "yaw": 2.1821113921197153,
+        "pitch": 0.5465376120615986,
+        "fov": 1.34561329314477
       },
       "linkHotspots": [],
       "infoHotspots": []
     },
     {
-      "id": "6-dec-29-2024",
-      "name": "DEC 29, 2024",
+      "id": "6-dec-29-2024-",
+      "name": "Dec 29, 2024 ",
       "levels": [
         {
           "tileSize": 256,
@@ -218,16 +218,16 @@ var APP_DATA = {
       ],
       "faceSize": 3000,
       "initialViewParameters": {
-        "yaw": 0.7692040838091181,
-        "pitch": 0.3451160131138362,
-        "fov": 1.4990976819632245
+        "yaw": 2.163234085034383,
+        "pitch": 0.5616145117046756,
+        "fov": 1.34561329314477
       },
       "linkHotspots": [],
       "infoHotspots": []
     },
     {
       "id": "7-jan-08-2025",
-      "name": "JAN 08, 2025",
+      "name": "Jan 08, 2025",
       "levels": [
         {
           "tileSize": 256,
@@ -253,16 +253,16 @@ var APP_DATA = {
       ],
       "faceSize": 3000,
       "initialViewParameters": {
-        "yaw": -2.631488691795578,
-        "pitch": 0.6814441903196364,
-        "fov": 1.4990976819632245
+        "yaw": -2.612360966073375,
+        "pitch": 0.5884495749503245,
+        "fov": 1.34561329314477
       },
       "linkHotspots": [],
       "infoHotspots": []
     },
     {
       "id": "8-jan-22-2025",
-      "name": "JAN 22, 2025",
+      "name": "Jan 22, 2025",
       "levels": [
         {
           "tileSize": 256,
@@ -288,16 +288,16 @@ var APP_DATA = {
       ],
       "faceSize": 3000,
       "initialViewParameters": {
-        "yaw": 0.2698962760815995,
-        "pitch": 0.598560585244325,
-        "fov": 1.4990976819632245
+        "yaw": 0.19432531877875192,
+        "pitch": 0.5993067608123717,
+        "fov": 1.34561329314477
       },
       "linkHotspots": [],
       "infoHotspots": []
     },
     {
       "id": "9-feb-05-2025",
-      "name": "FEB 05, 2025",
+      "name": "Feb 05, 2025",
       "levels": [
         {
           "tileSize": 256,
@@ -323,16 +323,16 @@ var APP_DATA = {
       ],
       "faceSize": 3000,
       "initialViewParameters": {
-        "yaw": -1.0188433904925276,
-        "pitch": 0.6597068088759084,
-        "fov": 1.4990976819632245
+        "yaw": 2.264565349397718,
+        "pitch": 0.6065179333874298,
+        "fov": 1.2796837813208752
       },
       "linkHotspots": [],
       "infoHotspots": []
     },
     {
       "id": "10-feb-26-2025",
-      "name": "FEB 26, 2025",
+      "name": "Feb 26, 2025",
       "levels": [
         {
           "tileSize": 256,
@@ -358,16 +358,16 @@ var APP_DATA = {
       ],
       "faceSize": 3000,
       "initialViewParameters": {
-        "yaw": 0.5451904776848266,
-        "pitch": 0.1851403612017002,
-        "fov": 1.4990976819632245
+        "yaw": 0.3846021934162813,
+        "pitch": 0.5295760999631298,
+        "fov": 1.34561329314477
       },
       "linkHotspots": [],
       "infoHotspots": []
     },
     {
       "id": "11-mar-11-2025",
-      "name": "MAR 11, 2025",
+      "name": "Mar 11, 2025",
       "levels": [
         {
           "tileSize": 256,
@@ -393,16 +393,16 @@ var APP_DATA = {
       ],
       "faceSize": 3000,
       "initialViewParameters": {
-        "yaw": -0.16598620979018008,
-        "pitch": -0.014379833879743842,
-        "fov": 1.4990976819632245
+        "yaw": -0.2604499064187351,
+        "pitch": 0.5616145117046933,
+        "fov": 1.34561329314477
       },
       "linkHotspots": [],
       "infoHotspots": []
     },
     {
       "id": "12-mar-26-2025",
-      "name": "MAR 26, 2025",
+      "name": "Mar 26, 2025",
       "levels": [
         {
           "tileSize": 256,
@@ -428,16 +428,16 @@ var APP_DATA = {
       ],
       "faceSize": 3000,
       "initialViewParameters": {
-        "yaw": 2.833911534987517,
-        "pitch": 0.2210899459010509,
-        "fov": 1.4990976819632245
+        "yaw": 2.6048006636319876,
+        "pitch": 0.48623001348927275,
+        "fov": 1.34561329314477
       },
       "linkHotspots": [],
       "infoHotspots": []
     },
     {
       "id": "13-apr-09-2025",
-      "name": "APR 09, 2025",
+      "name": "Apr 09, 2025",
       "levels": [
         {
           "tileSize": 256,
@@ -463,16 +463,16 @@ var APP_DATA = {
       ],
       "faceSize": 3000,
       "initialViewParameters": {
-        "yaw": 2.9904695889493844,
-        "pitch": 0.2696218852451775,
-        "fov": 1.4990976819632245
+        "yaw": 2.7016617235767866,
+        "pitch": 0.564196307498225,
+        "fov": 1.34561329314477
       },
       "linkHotspots": [],
       "infoHotspots": []
     },
     {
       "id": "14-apr-23-2025",
-      "name": "APR 23, 2025",
+      "name": "Apr 23, 2025",
       "levels": [
         {
           "tileSize": 256,
@@ -498,16 +498,16 @@ var APP_DATA = {
       ],
       "faceSize": 3000,
       "initialViewParameters": {
-        "yaw": -2.0190789265444504,
-        "pitch": 0.5212816611602573,
-        "fov": 1.4990976819632245
+        "yaw": -2.165891191130598,
+        "pitch": 0.48807534292667576,
+        "fov": 1.34561329314477
       },
       "linkHotspots": [],
       "infoHotspots": []
     },
     {
       "id": "15-may-23-2025",
-      "name": "MAY 23, 2025",
+      "name": "May 23, 2025",
       "levels": [
         {
           "tileSize": 256,
@@ -533,16 +533,16 @@ var APP_DATA = {
       ],
       "faceSize": 3000,
       "initialViewParameters": {
-        "yaw": -1.8967119325340676,
-        "pitch": 0.4000296052908805,
-        "fov": 1.4990976819632245
+        "yaw": -2.095292232490811,
+        "pitch": 0.5741545512057975,
+        "fov": 1.34561329314477
       },
       "linkHotspots": [],
       "infoHotspots": []
     },
     {
       "id": "16-jun-11-2025",
-      "name": "JUN 11, 2025",
+      "name": "Jun 11, 2025",
       "levels": [
         {
           "tileSize": 256,
@@ -568,16 +568,16 @@ var APP_DATA = {
       ],
       "faceSize": 3000,
       "initialViewParameters": {
-        "yaw": 2.3953294502241818,
-        "pitch": 0.38825551475307307,
-        "fov": 1.4990976819632245
+        "yaw": 2.2639022067445715,
+        "pitch": 0.495653075766203,
+        "fov": 1.34561329314477
       },
       "linkHotspots": [],
       "infoHotspots": []
     },
     {
-      "id": "17-jun-25-2025",
-      "name": "JUN 25, 2025",
+      "id": "17-jun-25-2025-",
+      "name": "Jun 25, 2025 ",
       "levels": [
         {
           "tileSize": 256,
@@ -603,16 +603,16 @@ var APP_DATA = {
       ],
       "faceSize": 3000,
       "initialViewParameters": {
-        "yaw": 2.2409162384492705,
-        "pitch": 0.33612861693899987,
-        "fov": 1.4990976819632245
+        "yaw": 2.157927915536521,
+        "pitch": 0.5276914875077487,
+        "fov": 1.34561329314477
       },
       "linkHotspots": [],
       "infoHotspots": []
     },
     {
       "id": "18-jul-23-2025",
-      "name": "JUL 23, 2025",
+      "name": "Jul 23, 2025",
       "levels": [
         {
           "tileSize": 256,
@@ -638,16 +638,16 @@ var APP_DATA = {
       ],
       "faceSize": 3000,
       "initialViewParameters": {
-        "yaw": -2.77175935549686,
-        "pitch": 0.41701518251255365,
-        "fov": 1.4990976819632245
+        "yaw": -2.85102540374551,
+        "pitch": 0.6396459928058285,
+        "fov": 1.34561329314477
       },
       "linkHotspots": [],
       "infoHotspots": []
     },
     {
       "id": "19-aug-28-2025",
-      "name": "AUG 28, 2025",
+      "name": "Aug 28, 2025",
       "levels": [
         {
           "tileSize": 256,
@@ -673,16 +673,16 @@ var APP_DATA = {
       ],
       "faceSize": 3000,
       "initialViewParameters": {
-        "yaw": 2.329999577705002,
-        "pitch": 0.3469134923488202,
-        "fov": 1.4990976819632245
+        "yaw": 2.109239397577686,
+        "pitch": 0.5427683871508222,
+        "fov": 1.34561329314477
       },
       "linkHotspots": [],
       "infoHotspots": []
     },
     {
       "id": "20-sep-22-2025",
-      "name": "SEP 22, 2025",
+      "name": "Sep 22, 2025",
       "levels": [
         {
           "tileSize": 256,
@@ -708,16 +708,16 @@ var APP_DATA = {
       ],
       "faceSize": 3000,
       "initialViewParameters": {
-        "yaw": -2.5991022214233723,
-        "pitch": 0.451165845767882,
-        "fov": 1.4990976819632245
+        "yaw": -2.6863719986099923,
+        "pitch": 0.5273804559781823,
+        "fov": 1.34561329314477
       },
       "linkHotspots": [],
       "infoHotspots": []
     },
     {
       "id": "21-oct-23-2025",
-      "name": "OCT 23, 2025",
+      "name": "Oct 23, 2025",
       "levels": [
         {
           "tileSize": 256,
@@ -744,15 +744,15 @@ var APP_DATA = {
       "faceSize": 3000,
       "initialViewParameters": {
         "yaw": -0.4453288555346333,
-        "pitch": 0.32534374152920087,
-        "fov": 1.4990976819632245
+        "pitch": 0.5729221864369798,
+        "fov": 1.34561329314477
       },
       "linkHotspots": [],
       "infoHotspots": []
     },
     {
       "id": "22-nov-25-2025",
-      "name": "NOV 25, 2025",
+      "name": "Nov 25, 2025",
       "levels": [
         {
           "tileSize": 256,
@@ -778,16 +778,16 @@ var APP_DATA = {
       ],
       "faceSize": 3000,
       "initialViewParameters": {
-        "yaw": -2.2266114758322786,
-        "pitch": 0.5626110005449672,
-        "fov": 1.4990976819632245
+        "yaw": -2.3121927502325583,
+        "pitch": 0.6027352908508377,
+        "fov": 1.34561329314477
       },
       "linkHotspots": [],
       "infoHotspots": []
     },
     {
       "id": "23-dec-30-2025",
-      "name": "DEC 30, 2025",
+      "name": "Dec 30, 2025",
       "levels": [
         {
           "tileSize": 256,
@@ -813,16 +813,16 @@ var APP_DATA = {
       ],
       "faceSize": 3000,
       "initialViewParameters": {
-        "yaw": -2.360234211290752,
-        "pitch": 0.5176090025312021,
-        "fov": 1.4990976819632245
+        "yaw": -2.399293911381328,
+        "pitch": 0.5917683109908225,
+        "fov": 1.34561329314477
       },
       "linkHotspots": [],
       "infoHotspots": []
     },
     {
       "id": "24-jan-29-2026",
-      "name": "JAN 29, 2026",
+      "name": "Jan 29, 2026",
       "levels": [
         {
           "tileSize": 256,
@@ -848,16 +848,16 @@ var APP_DATA = {
       ],
       "faceSize": 3000,
       "initialViewParameters": {
-        "yaw": -2.1468651915390407,
-        "pitch": 0.4762734366333099,
-        "fov": 1.4990976819632245
+        "yaw": -2.306263679117258,
+        "pitch": 0.5578452867939134,
+        "fov": 1.34561329314477
       },
       "linkHotspots": [],
       "infoHotspots": []
     },
     {
       "id": "25-feb-26-2026",
-      "name": "FEB 26, 2026",
+      "name": "Feb 26, 2026",
       "levels": [
         {
           "tileSize": 256,
@@ -883,16 +883,16 @@ var APP_DATA = {
       ],
       "faceSize": 3000,
       "initialViewParameters": {
-        "yaw": -2.0645421516725193,
-        "pitch": 0.4608363415708183,
-        "fov": 1.4990976819632245
+        "yaw": -2.105940205501243,
+        "pitch": 0.6162682729108369,
+        "fov": 1.34561329314477
       },
       "linkHotspots": [],
       "infoHotspots": []
     },
     {
-      "id": "26-mar-25-2026",
-      "name": "MAR 25, 2026",
+      "id": "26-mar-25-2026-",
+      "name": "Mar 25, 2026 ",
       "levels": [
         {
           "tileSize": 256,
@@ -918,9 +918,149 @@ var APP_DATA = {
       ],
       "faceSize": 3000,
       "initialViewParameters": {
-        "yaw": -0.5947874397368267,
-        "pitch": 0.5229689492779936,
-        "fov": 1.4990976819632245
+        "yaw": -0.6855365412472558,
+        "pitch": 0.5144992003200421,
+        "fov": 1.34561329314477
+      },
+      "linkHotspots": [],
+      "infoHotspots": []
+    },
+    {
+      "id": "27-apr-23-2026",
+      "name": "Apr 23, 2026",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 3000,
+      "initialViewParameters": {
+        "yaw": 1.5262788734818153,
+        "pitch": 0.546537612061595,
+        "fov": 1.34561329314477
+      },
+      "linkHotspots": [],
+      "infoHotspots": []
+    },
+    {
+      "id": "28-jun-25-2026-",
+      "name": "Jun 25, 2026 ",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 3000,
+      "initialViewParameters": {
+        "yaw": -0.3724568609926031,
+        "pitch": 0.5201530376861889,
+        "fov": 1.34561329314477
+      },
+      "linkHotspots": [],
+      "infoHotspots": []
+    },
+    {
+      "id": "29-jul-30-2026-",
+      "name": "Jul 30, 2026 ",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 3000,
+      "initialViewParameters": {
+        "yaw": -2.4195699355240556,
+        "pitch": 0.5758529793294898,
+        "fov": 1.34561329314477
+      },
+      "linkHotspots": [],
+      "infoHotspots": []
+    },
+    {
+      "id": "30-aug-31-2026",
+      "name": "Aug 31, 2026",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 3000,
+      "initialViewParameters": {
+        "yaw": -2.3392235666554377,
+        "pitch": 0.6030759857231409,
+        "fov": 1.34561329314477
       },
       "linkHotspots": [],
       "infoHotspots": []
