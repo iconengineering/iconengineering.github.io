@@ -121,53 +121,6 @@
       border-left: 1px solid var(--panel-border);
     }
 
-    .kpi-strip {
-      position: absolute;
-      top: 14px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 3;
-      display: grid;
-      grid-template-columns: repeat(4, minmax(120px, 1fr));
-      gap: 8px;
-      width: min(650px, calc(100% - 210px));
-      pointer-events: none;
-    }
-
-    .kpi-card {
-      padding: 9px 12px;
-      border-top: 3px solid var(--icon-gold);
-      border-radius: 4px;
-      background: rgba(255,255,255,.95);
-      box-shadow: 0 2px 8px rgba(0,0,0,.18);
-    }
-    .kpi-label { font-size: 10px; color: #607078; text-transform: uppercase; letter-spacing: .45px; }
-    .kpi-value { margin-top: 2px; font-size: 21px; font-weight: 700; color: var(--icon-dark); }
-
-    .analysis-tools {
-      position: absolute; left: 14px; bottom: 48px; z-index: 3;
-      display: flex; gap: 7px;
-    }
-    .map-action {
-      border: 1px solid #c7cdd0; border-radius: 4px; background: rgba(255,255,255,.96);
-      color: var(--icon-dark); padding: 8px 11px; box-shadow: 0 1px 5px rgba(0,0,0,.16);
-      font: inherit; font-size: 12px; font-weight: 600; cursor: pointer;
-    }
-    .map-action:hover { border-color: var(--icon-gold); background: #fffdf5; }
-    .map-action.active { background: var(--icon-dark); color: #fff; border-color: var(--icon-dark); }
-
-    .selection-card {
-      position: absolute; left: 14px; top: 84px; z-index: 3; width: 265px;
-      padding: 13px 14px; border-left: 5px solid var(--icon-gold); border-radius: 4px;
-      background: rgba(255,255,255,.97); box-shadow: 0 2px 10px rgba(0,0,0,.2); color: #263238;
-    }
-    .selection-card[hidden] { display: none; }
-    .selection-title { font-size: 14px; font-weight: 700; color: var(--icon-dark); margin-bottom: 9px; }
-    .selection-grid { display:grid; grid-template-columns: 1fr auto; gap: 6px 12px; font-size: 12px; }
-    .selection-grid strong { font-variant-numeric: tabular-nums; }
-    .selection-actions { display:flex; gap:6px; margin-top:11px; }
-    .selection-actions button { flex:1; }
-
     .flood-chart-card {
       position: absolute;
       right: 18px;
@@ -365,11 +318,6 @@
         font-size: 17px;
       }
 
-      .kpi-strip { width: calc(100% - 28px); grid-template-columns: repeat(2,1fr); top: 10px; }
-      .kpi-value { font-size: 17px; }
-      .selection-card { top: 118px; }
-      .analysis-tools { left: 10px; bottom: 44px; }
-
       .flood-chart-card {
         right: 10px;
         bottom: 18px;
@@ -445,33 +393,6 @@
 
         <arcgis-scale-bar slot="bottom-left" unit="dual"></arcgis-scale-bar>
       </arcgis-map>
-
-      <!-- At-a-glance impact indicators for the current map view -->
-      <section class="kpi-strip" aria-label="Current map view summary">
-        <div class="kpi-card"><div class="kpi-label">Affected Structures</div><div id="kpi-total" class="kpi-value">—</div></div>
-        <div class="kpi-card"><div class="kpi-label">Zone AE</div><div id="kpi-ae" class="kpi-value">—</div></div>
-        <div class="kpi-card"><div class="kpi-label">Floodway</div><div id="kpi-floodway" class="kpi-value">—</div></div>
-        <div class="kpi-card"><div class="kpi-label">0.2% Annual</div><div id="kpi-02" class="kpi-value">—</div></div>
-      </section>
-
-      <div class="analysis-tools">
-        <button id="select-area" class="map-action" type="button">▱ Select Area</button>
-        <button id="export-view" class="map-action" type="button">⇩ Export View CSV</button>
-      </div>
-
-      <section id="selection-card" class="selection-card" hidden>
-        <div class="selection-title">Selected Area Summary</div>
-        <div class="selection-grid">
-          <span>Total structures</span><strong id="sel-total">—</strong>
-          <span>Zone AE</span><strong id="sel-ae">—</strong>
-          <span>Floodway</span><strong id="sel-floodway">—</strong>
-          <span>0.2% annual</span><strong id="sel-02">—</strong>
-        </div>
-        <div class="selection-actions">
-          <button id="export-selection" class="map-action" type="button">Export CSV</button>
-          <button id="clear-selection" class="map-action" type="button">Clear</button>
-        </div>
-      </section>
 
       <!-- Live flood-zone chart for the current map extent -->
       <section class="flood-chart-card" aria-live="polite">
@@ -567,9 +488,7 @@
 
       <ul>
         <li>Use the map controls to search, zoom, identify features, and manage layers.</li>
-        <li>The KPI cards and chart update to summarize structures in the current map view.</li>
-        <li>Use <strong>Select Area</strong> to draw an analysis area and summarize affected structures.</li>
-        <li>Export structures from the current view or selected area to CSV for additional analysis.</li>
+        <li>The chart updates to show structures by flood zone inside the current map view.</li>
         <li>Use the AI Assistant to explore supported map layers with natural-language questions.</li>
       </ul>
 
@@ -591,19 +510,6 @@
     const statusMessage = document.querySelector("#status-message");
     const floodZoneTotal = document.querySelector("#flood-zone-total");
     const chartNote = document.querySelector("#chart-note");
-    const kpiTotal = document.querySelector("#kpi-total");
-    const kpiAE = document.querySelector("#kpi-ae");
-    const kpiFloodway = document.querySelector("#kpi-floodway");
-    const kpi02 = document.querySelector("#kpi-02");
-    const selectAreaButton = document.querySelector("#select-area");
-    const exportViewButton = document.querySelector("#export-view");
-    const selectionCard = document.querySelector("#selection-card");
-    const exportSelectionButton = document.querySelector("#export-selection");
-    const clearSelectionButton = document.querySelector("#clear-selection");
-    const selTotal = document.querySelector("#sel-total");
-    const selAE = document.querySelector("#sel-ae");
-    const selFloodway = document.querySelector("#sel-floodway");
-    const sel02 = document.querySelector("#sel-02");
     const zoneDisplays = {
       "0.2 PCT": {
         bar: document.querySelector("#bar-02"),
@@ -726,10 +632,6 @@
         const largestCount = Math.max(...Object.values(counts), 1);
 
         floodZoneTotal.textContent = total.toLocaleString();
-        kpiTotal.textContent = total.toLocaleString();
-        kpiAE.textContent = counts["AE"].toLocaleString();
-        kpiFloodway.textContent = counts["FLOODWAY"].toLocaleString();
-        kpi02.textContent = counts["0.2 PCT"].toLocaleString();
 
         for (const zone of FLOOD_ZONES) {
           const count = counts[zone];
@@ -753,96 +655,6 @@
 
     mapElement.addEventListener("arcgisViewChange", scheduleCountUpdate);
     await updateFloodZoneChart();
-
-
-    // Selection + CSV export upgrades. Uses the structure layer already in the web map.
-    let selectionGeometry = null;
-    let selectionFeatures = [];
-    let sketchVM = null;
-    let selectionGraphicsLayer = null;
-
-    async function queryStructures(geometry) {
-      await countLayer.load();
-      const q = countLayer.createQuery();
-      q.geometry = geometry;
-      q.spatialRelationship = "intersects";
-      q.where = q.where || "1=1";
-      q.outFields = ["*"];
-      q.returnGeometry = false;
-      return (await countLayer.queryFeatures(q)).features;
-    }
-
-    function csvEscape(value) {
-      const text = value == null ? "" : String(value);
-      return /[",\n]/.test(text) ? `"${text.replaceAll('"','""')}"` : text;
-    }
-
-    function downloadCSV(features, filename) {
-      if (!features.length) { alert("No structures were found to export."); return; }
-      const preferred = ["Address", "FULLADDR", "SITE_ADDR", "S_FLD_HAZ_AR_ZONE"];
-      const keys = Object.keys(features[0].attributes);
-      const fields = [...preferred.filter(f => keys.includes(f)), ...keys.filter(f => !preferred.includes(f))];
-      const rows = [fields.join(","), ...features.map(f => fields.map(k => csvEscape(f.attributes[k])).join(","))];
-      const blob = new Blob([rows.join("\n")], { type: "text/csv;charset=utf-8" });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement("a"); a.href = url; a.download = filename; a.click();
-      setTimeout(() => URL.revokeObjectURL(url), 1000);
-    }
-
-    function showSelectionSummary(features) {
-      const counts = {"AE":0,"FLOODWAY":0,"0.2 PCT":0};
-      features.forEach(f => { const z=f.attributes[FLOOD_ZONE_FIELD]; if (z in counts) counts[z]++; });
-      selTotal.textContent = features.length.toLocaleString();
-      selAE.textContent = counts.AE.toLocaleString();
-      selFloodway.textContent = counts.FLOODWAY.toLocaleString();
-      sel02.textContent = counts["0.2 PCT"].toLocaleString();
-      selectionCard.hidden = false;
-    }
-
-    selectAreaButton.addEventListener("click", async () => {
-      try {
-        if (!sketchVM) {
-          // ArcGIS CDN modules must be loaded through $arcgis.import().
-          // Direct dynamic imports from js.arcgis.com do not initialize correctly
-          // with the 5.1 component CDN build.
-          const [SketchViewModel, GraphicsLayer] = await $arcgis.import([
-            "@arcgis/core/widgets/Sketch/SketchViewModel.js",
-            "@arcgis/core/layers/GraphicsLayer.js"
-          ]);
-          selectionGraphicsLayer = new GraphicsLayer({ title: "Analysis Selection" });
-          mapElement.map.add(selectionGraphicsLayer);
-          sketchVM = new SketchViewModel({ view: mapElement.view, layer: selectionGraphicsLayer });
-          sketchVM.on("create", async (event) => {
-            if (event.state !== "complete") return;
-            selectionGeometry = event.graphic.geometry;
-            selectionFeatures = await queryStructures(selectionGeometry);
-            showSelectionSummary(selectionFeatures);
-            selectAreaButton.classList.remove("active");
-            selectAreaButton.textContent = "▱ Select Area";
-          });
-        }
-        selectionGraphicsLayer.removeAll();
-        selectionCard.hidden = true;
-        selectAreaButton.classList.add("active");
-        selectAreaButton.textContent = "Draw on map…";
-        await sketchVM.create("polygon");
-      } catch (e) {
-        console.error("Area selection could not be started:", e);
-        selectAreaButton.classList.remove("active");
-        selectAreaButton.textContent = "▱ Select Area";
-        alert("Area selection could not be started. Check the browser console for details.");
-      }
-    });
-
-    clearSelectionButton.addEventListener("click", () => {
-      selectionGeometry = null; selectionFeatures = []; selectionCard.hidden = true;
-      if (selectionGraphicsLayer) selectionGraphicsLayer.removeAll();
-    });
-    exportSelectionButton.addEventListener("click", () => downloadCSV(selectionFeatures, "JeffCo_Selected_Structures.csv"));
-    exportViewButton.addEventListener("click", async () => {
-      try { downloadCSV(await queryStructures(mapElement.view.extent), "JeffCo_Current_View_Structures.csv"); }
-      catch(e) { console.error(e); alert("Current-view export is temporarily unavailable."); }
-    });
 
     await assistantElement.componentOnReady();
 
